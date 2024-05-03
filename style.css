@@ -1,0 +1,462 @@
+/* ------- PAGE STYLING ------- */
+body {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+h1 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 3.5rem;
+}
+
+h2 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 3.1rem;
+    margin-bottom: 0;
+}
+
+h3 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+p {
+    font-family: "Lato", sans-serif;
+    font-weight: normal;
+    font-size: 1.7rem;
+    line-height: 1.3;
+    text-align: justify;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+span {
+    font-family: "Lato", sans-serif;
+    font-size: 1.5rem;
+}
+
+.social-icon {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+/* -------- HEADER STYLING -------- */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 10%;
+    width: 100%;
+    background: transparent;
+    transition: all 0.3s ease;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 15px;
+}
+
+nav ul {
+    list-style-type: none;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav li {
+    margin-right: 12px;
+    margin-left: 12px;
+    text-decoration: none;
+    transition: all 0.3 ease;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.1rem;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: var(--tcolor, #fff);
+    display: inline;
+    position: relative;
+    overflow: hidden;
+}
+
+.nav-link:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    width: 0;
+    bottom: -2px;
+    height: 2px;
+    background-color: var(--bcolor, #fff);
+    transition: width 0.3s ease-out;
+}
+
+.nav-link:focus {
+    outline: none;
+}
+
+.current-page {
+    font-weight: bold;
+}
+.current-page:after {
+    left: 0;
+    right: auto;
+    width: 100%;
+}
+
+.nav-link:hover:after,
+.nav-link:focus:after,
+.nav-link:active:after {
+    left: 0;
+    right: auto;
+    width: 100%;
+}
+
+#early-access {
+    padding: 6px 10px;
+    border-radius: 20px;
+    color: #fff;
+    background-color: #ec3096;
+    border: 0.15rem solid #ec3096;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+#early-access:hover {
+    background-color: #fbd0e8;
+    color: #ec3096;
+    cursor: pointer;
+}
+
+#early-access.current-page {
+    font-weight: normal;
+    background-color: #fbd0e8;
+    color: #ec3096;
+}
+
+#home {
+    height: 100%;
+}
+
+header img {
+    height: 95%;
+    margin-left: 20px;
+}
+
+#early-access.scrolled {
+    background-color: #7f3f98;
+    color: #fff;
+    border: 0.15rem solid #7f3f98;
+}
+
+#early-access.scrolled:hover {
+    background-color: #e0c9e8;
+    color: #7f3f98;
+}
+
+/* ---------- MAIN STYLING ---------- */
+main {
+    height: 100%;
+    width: 100%;
+    overflow-y: scroll;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+
+main div {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+}
+
+.intro-content {
+    background-image: linear-gradient(90deg, #e5287e 0%, #7f3f98 100%);
+    color: #fff;
+    width: 100%;
+}
+
+.secondary-content.index {
+    background-image: url("./assets/possibility_neuron_background_a50.png");
+    background-origin: content-box;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: auto 140%;
+    background-position-y: 50%;
+}
+
+.secondary-content.about {
+    background-image: url("./assets/possibility_neuron_background_a50_bottom.png");
+    background-origin: content-box;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: auto 135%;
+}
+
+.secondary-content h1 {
+    color: #7f3f98;
+}
+
+.secondary-content h2 {
+    color: #7f3f98;
+}
+
+.secondary-content h3 {
+    color: #7f3f98;
+}
+
+.secondary-content arrow-icon {
+    fill: #7f3f98;
+    width: 7%;
+    margin: 0 3%;
+}
+
+#team .headshot {
+    height: 100%;
+    width: 21%;
+    margin-left: 1.5%;
+    margin-right: 1.5%;
+    background-color: #fff;
+    z-index: 5;
+    border: 0.1rem solid black;
+}
+
+#team .overlay {
+    z-index: 3;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(236, 48, 150, 0.2);
+    color: #ec3096;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+#team .overlay .top {
+    width: 100%;
+    height: 15%;
+    margin-top: 2%;
+}
+
+#team .overlay .middle {
+    width: 100%;
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#team .overlay .bottom {
+    width: 100%;
+    height: 15%;
+    margin-bottom: 2%;
+    fill: #ec3096;
+}
+
+#team a {
+    width: 25px;
+    height: 25px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+#partners img {
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+#contact-content .overlay {
+    width: 100%;
+    height: 100%;
+    background-image: url("./assets/possibility_neuron_background_a30_white.png");
+    background-origin: content-box;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: auto 130%;
+    background-position-y: 50%;
+}
+
+#mailing-list {
+    padding: 8px 16px;
+    border-radius: 26px;
+    color: #fff;
+    background-color: #7f3f98;
+    border: 0.2rem solid #7f3f98;
+    transition: all 0.3s ease;
+    font-size: 1.4rem;
+    font-family: "Poppins", sans-serif;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#mailing-list:hover {
+    background-color: #e0c9e8;
+    color: #7f3f98;
+}
+
+#contact-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    height: 100%;
+    width: 35%;
+    margin-left: 10%;
+}
+
+#contact-info div {
+    height: 15%;
+    width: 60%;
+    align-items: flex-start;
+}
+
+#contact-info .thin-header {
+    font-family: "Lato", sans-serif;
+    font-weight: 200;
+    font-size: 1rem;
+    margin-bottom: 8px;
+}
+
+#contact-info .email {
+    color: #fff;
+    text-decoration: underline;
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-size: 1.4rem;
+}
+
+#contact-info .location {
+    font-weight: 300;
+    font-size: 1.4rem;
+}
+
+#contact-info .socials {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    fill: #fff;
+    height: 25px;
+    margin-top: 5px;
+}
+
+#contact-info .socials a {
+    height: 25px;
+    width: 25px;
+    margin-right: 10px;
+}
+
+#application-form {
+    padding: 8px 16px;
+    border-radius: 26px;
+    color: #fff;
+    background-color: #7f3f98;
+    border: 0.2rem solid #7f3f98;
+    transition: all 0.3s ease;
+    font-size: 1.4rem;
+    font-family: "Poppins", sans-serif;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#application-form:hover {
+    background-color: #e0c9e8;
+    color: #7f3f98;
+}
+
+/* ---------- FOOTER SYTLING ---------- */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 10%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    background: transparent;
+    transition: all 0.3s ease;
+    fill: #fff;
+    color: #fff;
+}
+
+footer.scrolled {
+    fill: #7f3f98;
+    color: #7f3f98;
+}
+
+footer .socials {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 15px;
+    margin-bottom: 10px;
+    height: 50%;
+}
+
+footer a {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .copyright {
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+footer span {
+    font-size: 0.9rem;
+    font-family: "Lato", sans-serif;
+}
