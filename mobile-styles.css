@@ -100,6 +100,10 @@
         margin-bottom: 30px;
     }
 
+    .current-page {
+        text-decoration: underline;
+    }
+
     nav .early-access {
         font-size: 1.1rem;
         padding: 4px 10px;
