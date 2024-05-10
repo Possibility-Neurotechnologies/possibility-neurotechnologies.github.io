@@ -10,10 +10,12 @@
             href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
             rel="stylesheet" />
         <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="mobile-styles.css" media="(max-width: 480px)" />
         <script src="./components/socials.js" type="text/javascript" defer></script>
+        <script src="./components/icons.js" type="text/javascript" defer></script>
     </head>
     <body>
-        <header>
+        <header id="desktop-header">
             <a class="home-link" href="./index.html"><img src="./assets/possibility_logo_rgb.png" alt="Possibility Neurotechnologies" /></a>
             <nav>
                 <ul>
@@ -25,6 +27,43 @@
                 </ul>
             </nav>
         </header>
+
+        <header id="mobile-header">
+            <a class="home-link" href="./index.html" onclick="closeMobileMenu()">
+                <img id="mobile-logo" src="./assets/possibility_neuron_white.png" alt="Possibility Neurotechnologies Logo" />
+                <img id="mobile-menu-logo" src="./assets/possibility_logo_white.png" alt="Possibility Neurotechnologies Logo" style="display: none" />
+            </a>
+            <div class="row" style="justify-content: flex-end">
+                <a href="./trial.html" class="early-access mobile">Early Access</a>
+                <menu-icon onclick="openMobileMenu()"></menu-icon>
+                <close-icon onclick="closeMobileMenu()" style="display: none"></close-icon>
+            </div>
+        </header>
+
+        <div id="mobile-nav" style="display: none">
+            <div></div>
+            <nav>
+                <ul>
+                    <li><a href="./index.html#t2s-content" id="t2s-link" class="nav-link" onclick="closeMobileMenu()">Think2Switch&trade;</a></li>
+                    <li><a href="#about-content" id="about-link" class="current-page nav-link" onclick="closeMobileMenu()">About Us</a></li>
+                    <li><a href="./research.html" id="research-link" class="nav-link" onclick="closeMobileMenu()">Research</a></li>
+                    <li><a href="./contact.html" id="contact-link" class="nav-link" onclick="closeMobileMenu()">Contact</a></li>
+                    <li><a href="./trial.html" class="early-access mobile" onclick="closeMobileMenu()">Early Access</a></li>
+                </ul>
+            </nav>
+            <div id="mobile-nav-footer">
+                <div class="socials">
+                    <a href="https://www.facebook.com/profile.php?id=61551642523387" target="_blank"><facebook-icon></facebook-icon></a>
+                    <a href="https://x.com/PossNeuro" target="_blank"><x-icon></x-icon></a>
+                    <a href="https://www.instagram.com/possneuro/" target="_blank"><insta-icon></insta-icon></a>
+                    <a href="https://www.linkedin.com/company/possibility-neurotechnologies/" target="_blank"><linkedin-icon></linkedin-icon></a>
+                    <a href="mailto: info@possneuro.com"><email-icon style="margin-top: 3px"></email-icon></a>
+                </div>
+                <div class="copyright">
+                    <p>Copyright &copy; 2024 Possibility Neurotechnologies. <br />All rights reserved.</p>
+                </div>
+            </div>
+        </div>
 
         <main id="main-content">
             <div id="about-content" class="intro-content column">
@@ -114,6 +153,28 @@
                 <span>Copyright &copy; 2024 Possibility Neurotechnologies. All rights reserved.</span>
             </div>
         </footer>
+
+        <script>
+            function openMobileMenu() {
+                document.getElementById("mobile-nav").style.display = "flex";
+                document.getElementById("main-content").style.display = "none";
+                document.querySelector("menu-icon").style.display = "none";
+                document.querySelector("close-icon").style.display = "flex";
+                document.querySelector(".early-access.mobile").style.display = "none";
+                document.querySelector("#mobile-logo").style.display = "none";
+                document.querySelector("#mobile-menu-logo").style.display = "flex";
+            }
+
+            function closeMobileMenu() {
+                document.getElementById("mobile-nav").style.display = "none";
+                document.getElementById("main-content").style.display = "block";
+                document.querySelector("menu-icon").style.display = "flex";
+                document.querySelector("close-icon").style.display = "none";
+                document.querySelector(".early-access.mobile").style.display = "flex";
+                document.querySelector("#mobile-logo").style.display = "flex";
+                document.querySelector("#mobile-menu-logo").style.display = "none";
+            }
+        </script>
 
         <script src="script.js"></script>
     </body>
