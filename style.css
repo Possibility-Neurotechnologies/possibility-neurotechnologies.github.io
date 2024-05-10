@@ -22,7 +22,9 @@ h2 {
     font-family: "Poppins", sans-serif;
     font-weight: 700;
     font-size: 3.1rem;
+    margin-top: 15px;
     margin-bottom: 0;
+    text-align: left;
 }
 
 h3 {
@@ -38,6 +40,11 @@ p {
     font-size: 1.7rem;
     line-height: 1.3;
     text-align: justify;
+}
+
+a {
+    font-family: "Poppins", sans-serif;
+    font-weight: normal;
 }
 
 .column {
@@ -80,6 +87,15 @@ header {
     width: 100%;
     background: transparent;
     transition: all 0.3s ease;
+}
+
+.home-link {
+    height: 70%;
+    margin-left: 15px;
+}
+
+header img {
+    height: 90%;
 }
 
 nav {
@@ -149,7 +165,7 @@ nav li {
     width: 100%;
 }
 
-#early-access {
+.early-access {
     padding: 6px 10px;
     border-radius: 20px;
     color: #fff;
@@ -159,34 +175,25 @@ nav li {
     transition: all 0.3s ease;
 }
 
-#early-access:hover {
+.early-access:hover {
     background-color: #fbd0e8;
     color: #ec3096;
     cursor: pointer;
 }
 
-#early-access.current-page {
+.early-access.current-page {
     font-weight: normal;
     background-color: #fbd0e8;
     color: #ec3096;
 }
 
-#home {
-    height: 100%;
-}
-
-header img {
-    height: 95%;
-    margin-left: 20px;
-}
-
-#early-access.scrolled {
+.early-access.scrolled {
     background-color: #7f3f98;
     color: #fff;
     border: 0.15rem solid #7f3f98;
 }
 
-#early-access.scrolled:hover {
+.early-access.scrolled:hover {
     background-color: #e0c9e8;
     color: #7f3f98;
 }
@@ -195,7 +202,7 @@ header img {
 main {
     height: 100%;
     width: 100%;
-    overflow-y: scroll;
+    overflow-y: overlay;
     -ms-overflow-style: none; /* IE and Edge */
     scrollbar-width: none; /* Firefox */
 }
@@ -208,14 +215,37 @@ main div {
     align-items: center;
 }
 
+/* Chrome, Safari, Opera */
 main::-webkit-scrollbar {
-    display: none; /* Chrome, Safari, Opera */
+    display: none;
 }
 
 .intro-content {
     background-image: linear-gradient(90deg, #e5287e 0%, #7f3f98 100%);
     color: #fff;
     width: 100%;
+}
+
+#t2s-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#t2s-content .column {
+    width: 35%;
+}
+
+#t2s-content .text-content {
+    margin-right: 5%;
+}
+
+#t2s-content .img-content {
+    margin-left: 5%;
+}
+#t2s-content img {
+    width: 110%;
 }
 
 .secondary-content.index {
@@ -225,6 +255,28 @@ main::-webkit-scrollbar {
     background-attachment: fixed;
     background-size: auto 140%;
     background-position-y: 50%;
+}
+
+.secondary-content.index.page2 .column {
+    width: 65%;
+}
+
+.secondary-content.index.page2 h2 {
+    text-align: center;
+}
+
+.secondary-content.index.page2 .row {
+    height: 18%;
+    margin-top: 4%;
+}
+
+.secondary-content.index.page3 .column {
+    width: 65%;
+}
+
+.secondary-content.index.page3 iframe {
+    width: 100%;
+    height: 60%;
 }
 
 .secondary-content.about {
@@ -459,4 +511,13 @@ footer .copyright {
 footer span {
     font-size: 0.9rem;
     font-family: "Lato", sans-serif;
+}
+
+@media (min-width: 480px) {
+    #desktop-header {
+        display: flex;
+    }
+    #mobile-header {
+        display: none;
+    }
 }
