@@ -22,7 +22,7 @@ h1 {
 h2 {
     font-family: "Poppins", sans-serif;
     font-weight: 700;
-    font-size: 3.1rem;
+    font-size: 3rem;
     margin-top: 15px;
     margin-bottom: 0;
     text-align: left;
@@ -240,15 +240,15 @@ main::-webkit-scrollbar {
 }
 
 #t2s-content .column {
-    width: 35%;
+    width: 40%;
 }
 
 #t2s-content .text-content {
-    margin-right: 5%;
+    margin-right: 3%;
 }
 
 #t2s-content .img-content {
-    margin-left: 5%;
+    margin-left: 3%;
 }
 #t2s-content img {
     width: 110%;
@@ -264,7 +264,7 @@ main::-webkit-scrollbar {
 }
 
 .secondary-content.index.page2 .column {
-    width: 65%;
+    width: 70%;
 }
 
 .secondary-content.index.page2 h2 {
@@ -277,11 +277,15 @@ main::-webkit-scrollbar {
 }
 
 .secondary-content.index.page3 .column {
-    width: 65%;
+    width: 70%;
+}
+
+.secondary-content.index.page3 p {
+    margin: 15px 0;
 }
 
 .secondary-content.index.page3 iframe {
-    width: 100%;
+    width: 90%;
     height: 60%;
 }
 
@@ -398,6 +402,12 @@ main::-webkit-scrollbar {
 
 #erica-headshot {
     background-image: url("./assets/headshots/erica_headshot.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#adam-headshot {
+    background-image: url("./assets/headshots/adam_headshot.png");
     background-repeat: no-repeat;
     background-size: contain;
 }

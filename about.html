@@ -14,6 +14,17 @@
         <script src="./components/socials.js" type="text/javascript" defer></script>
         <script src="./components/icons.js" type="text/javascript" defer></script>
     </head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FRMEVRWQ5C"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
+
+        gtag("config", "G-FRMEVRWQ5C");
+    </script>
     <body>
         <header id="desktop-header">
             <a class="home-link" href="./index.html"><img src="./assets/possibility_logo_rgb.png" alt="Possibility Neurotechnologies" /></a>
@@ -100,7 +111,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="headshot">
+                    <div id="adam-headshot" class="headshot">
                         <div class="overlay">
                             <div class="top"></div>
                             <div class="middle">
