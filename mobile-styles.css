@@ -29,6 +29,7 @@
     header {
         height: 6%;
         margin-top: 6px;
+        z-index: 7;
     }
 
     .home-link {
@@ -172,6 +173,7 @@
     }
 
     /* MAIN */
+    /* T2S PAGE */
     #t2s-content {
         display: flex;
         flex-direction: column;
@@ -228,6 +230,77 @@
     .secondary-content.index.page3 iframe {
         width: 100%;
         height: 35%;
+    }
+
+    /* ABOUT PAGE */
+    #about-content .column {
+        width: 80%;
+    }
+
+    .secondary-content.about.page2 {
+        height: 250%;
+        justify-content: flex-start;
+    }
+
+    .secondary-content.about.page3 {
+        height: 160%;
+        justify-content: flex-start;
+    }
+
+    .secondary-content.about h1 {
+        margin-top: 60px;
+        margin-bottom: 40px;
+    }
+
+    #team {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    #team .headshot {
+        height: 250px;
+        width: 180px;
+        margin: 30px 0;
+    }
+
+    .team-name {
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+    .team-position {
+        font-size: 1rem;
+        font-weight: 300;
+    }
+
+    #partners {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    #partners img {
+        margin: 30px 0;
+    }
+
+    #remarkable-logo {
+        height: 120px;
+    }
+
+    #innovate-logo {
+        height: 90px;
+    }
+
+    #cdl-logo {
+        height: 80px;
+    }
+
+    #cp-logo {
+        height: 120px;
     }
 
     /* FOOTER */
