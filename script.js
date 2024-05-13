@@ -31,7 +31,7 @@ mainContent.addEventListener("scroll", function () {
     } else {
         scrollBarStyle.innerHTML = unscrolledScrollBar;
     } */
-    if (scrollPosition > 0.9 * screenHeight) {
+    if (scrollPosition > 0.9 * screenHeight && currentPageId !== "contact-link") {
         earlyAccessDesktop.classList.add("scrolled");
         earlyAccessMobile.classList.add("scrolled");
         mobileNav.classList.add("scrolled");

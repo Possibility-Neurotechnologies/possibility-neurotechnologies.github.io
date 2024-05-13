@@ -1,4 +1,5 @@
-/* ------- PAGE STYLING ------- */
+/* -------------------------------------------------------- */
+/* ---------------------- PAGE STYLING -------------------- */
 body {
     position: fixed;
     top: 0;
@@ -74,7 +75,8 @@ span {
     cursor: pointer;
 }
 
-/* -------- HEADER STYLING -------- */
+/* -------------------------------------------------------- */
+/* --------------------- HEADER STYLING ------------------- */
 header {
     position: fixed;
     top: 0;
@@ -199,7 +201,8 @@ nav li {
     color: #7f3f98;
 }
 
-/* ---------- MAIN STYLING ---------- */
+/* -------------------------------------------------------- */
+/* --------------------- MAIN STYLING --------------------- */
 main {
     height: 100%;
     width: 100%;
@@ -221,6 +224,7 @@ main::-webkit-scrollbar {
     display: none;
 }
 
+/* --------------------- Home Page --------------------- */
 .intro-content {
     background-image: linear-gradient(90deg, #e5287e 0%, #7f3f98 100%);
     color: #fff;
@@ -306,6 +310,7 @@ main::-webkit-scrollbar {
     margin: 0 3%;
 }
 
+/* --------------------- About Page --------------------- */
 #about-content .column {
     width: 40%;
 }
@@ -413,15 +418,32 @@ main::-webkit-scrollbar {
     height: 130px;
 }
 
+/* ------------------- Contact Page ------------------- */
+#contact-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
 #contact-content .overlay {
     width: 100%;
     height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     background-image: url("./assets/possibility_neuron_background_a30_white.png");
     background-origin: content-box;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: auto 130%;
     background-position-y: 50%;
+}
+
+#contact-descrip {
+    width: 35%;
+    margin-right: 4%;
 }
 
 #mailing-list {
@@ -512,7 +534,8 @@ main::-webkit-scrollbar {
     color: #7f3f98;
 }
 
-/* ---------- FOOTER SYTLING ---------- */
+/* -------------------------------------------------------- */
+/* ------------------- FOOTER SYTLING --------------------- */
 footer {
     position: fixed;
     bottom: 0;

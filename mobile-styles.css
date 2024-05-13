@@ -1,5 +1,6 @@
 @media (max-width: 480px) {
-    /* GENERAL */
+    /* -------------------------------------------------------- */
+    /* ---------------------- PAGE STYLING -------------------- */
     h1 {
         font-size: 2.2rem;
         text-align: center;
@@ -17,7 +18,8 @@
         font-size: 1rem;
     }
 
-    /* HEADER */
+    /* -------------------------------------------------------- */
+    /* --------------------- HEADER STYLING ------------------- */
     #desktop-header {
         display: none;
     }
@@ -82,7 +84,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
-        width: 60%;
+        width: 70%;
         height: 50%;
     }
 
@@ -172,8 +174,10 @@
         background-color: #fff;
     }
 
-    /* MAIN */
-    /* T2S PAGE */
+    /* -------------------------------------------------------- */
+    /* --------------------- MAIN STYLING --------------------- */
+
+    /* --------------------- Home Page --------------------- */
     #t2s-content {
         display: flex;
         flex-direction: column;
@@ -232,7 +236,7 @@
         height: 35%;
     }
 
-    /* ABOUT PAGE */
+    /* --------------------- About Page --------------------- */
     #about-content .column {
         width: 80%;
     }
@@ -301,6 +305,62 @@
 
     #cp-logo {
         height: 120px;
+    }
+
+    /* ------------------- Contact Page ------------------- */
+    #contact-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 200%;
+    }
+
+    #contact-content .overlay {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+
+    #contact-descrip {
+        width: 85%;
+        margin-right: 0;
+    }
+
+    #mailing-list {
+        font-size: 1.1rem;
+        padding: 6px 12px;
+        border-radius: 22px;
+        border: 0.15rem solid #7f3f98;
+    }
+
+    #contact-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: 60%;
+        margin-left: 0;
+    }
+
+    #contact-info div {
+        width: 100%;
+    }
+
+    #contact-info .email {
+        font-size: 1.2rem;
+    }
+
+    #contact-info .location {
+        font-size: 1.2rem;
+    }
+
+    #contact-info .socials a {
+        height: 22px;
+        width: 22px;
+        margin-right: 10px;
     }
 
     /* FOOTER */
