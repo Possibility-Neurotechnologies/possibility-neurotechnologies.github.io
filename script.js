@@ -109,6 +109,10 @@ if (headshots.length > 0) {
             makeOverlayOpaque(event.target.getElementsByClassName("overlay")[0]);
         });
 
+        headshots[i].addEventListener("touchend", (event) => {
+            makeOverlayTransparent(event.target.getElementsByClassName("overlay")[0]);
+        });
+
         headshots[i].addEventListener("mouseleave", (event) => {
             makeOverlayTransparent(event.target.getElementsByClassName("overlay")[0]);
         });
