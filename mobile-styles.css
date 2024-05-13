@@ -1,4 +1,4 @@
-@media (max-width: 480px) {
+@media (max-width: 800px) {
     /* -------------------------------------------------------- */
     /* ---------------------- PAGE STYLING -------------------- */
     h1 {
@@ -108,7 +108,7 @@
     }
 
     nav .early-access {
-        font-size: 1.1rem;
+        font-size: 1rem;
         padding: 4px 10px;
         background-color: #7f3f98;
         border: 0.15rem solid #7f3f98;
@@ -117,6 +117,13 @@
     nav .early-access:hover {
         background-color: #e0c9e8;
         color: #7f3f98;
+    }
+
+    nav .early-access.current-page {
+        font-weight: normal;
+        background-color: #e0c9e8;
+        color: #7f3f98;
+        text-decoration: none;
     }
 
     #mobile-nav-footer {
@@ -183,6 +190,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        height: 115%;
     }
 
     #t2s-content .column {
@@ -192,16 +200,17 @@
 
     #t2s-content .text-content {
         height: 40%;
-        margin-top: 15%;
+        /* margin-top: 15%; */
     }
 
     #t2s-content .img-content {
-        margin-top: 5%;
         height: 35%;
+        margin-left: 0;
     }
 
     #t2s-content img {
         width: 100%;
+        max-width: 430px;
     }
 
     .secondary-content.index {
@@ -265,8 +274,6 @@
     }
 
     #team .headshot {
-        height: 250px;
-        width: 180px;
         margin: 30px 0;
     }
 
@@ -361,6 +368,19 @@
         height: 22px;
         width: 22px;
         margin-right: 10px;
+    }
+
+    /* ----------------- Early Access Page ----------------- */
+    #trial-content div {
+        width: 85%;
+    }
+
+    #application-form {
+        margin-top: 15px;
+        font-size: 1.1rem;
+        padding: 6px 12px;
+        border-radius: 22px;
+        border: 0.15rem solid #7f3f98;
     }
 
     /* FOOTER */
