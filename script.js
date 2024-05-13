@@ -98,18 +98,34 @@ function getCurrentPageId() {
 // Mouse over event for Team page
 // -----------------------------------------------------------------------------------------------
 var headshots = document.getElementsByClassName("headshot");
-console.log(headshots.length);
 
 if (headshots.length > 0) {
     for (let i = 0; i < headshots.length; i++) {
         headshots[i].addEventListener("mouseenter", (event) => {
-            var overlay = event.target.getElementsByClassName("overlay")[0];
-            overlay.style.opacity = "1";
+            makeOverlayOpaque(event.target.getElementsByClassName("overlay")[0]);
         });
+        headshots[i].addEventListener("touchstart", (event) => {
+            makeAllOverlaysTransparent();
+            makeOverlayOpaque(event.target.getElementsByClassName("overlay")[0]);
+        });
+
         headshots[i].addEventListener("mouseleave", (event) => {
-            var overlay = event.target.getElementsByClassName("overlay")[0];
-            overlay.style.opacity = "0";
+            makeOverlayTransparent(event.target.getElementsByClassName("overlay")[0]);
         });
+    }
+}
+
+function makeOverlayOpaque(element) {
+    element.style.opacity = "1";
+}
+
+function makeOverlayTransparent(element) {
+    element.style.opacity = "0";
+}
+
+function makeAllOverlaysTransparent() {
+    for (let i = 0; i < headshots.length; i++) {
+        makeOverlayTransparent(headshots[i].getElementsByClassName("overlay")[0]);
     }
 }
 
