@@ -12,7 +12,9 @@
         <link rel="stylesheet" href="style.css" />
         <link rel="stylesheet" href="mobile-styles.css" />
         <script src="./components/socials.js" type="text/javascript" defer></script>
+        <script src="./components/partners.js" type="text/javascript" defer></script>
         <script src="./components/icons.js" type="text/javascript" defer></script>
+        <script src="./components/footer.js" type="text/javascript" defer></script>
     </head>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-FRMEVRWQ5C"></script>
@@ -139,27 +141,11 @@
             </div>
             <div class="secondary-content about column page3">
                 <h1>Our partners:</h1>
-                <div id="partners">
-                    <img id="remarkable-logo" src="./assets/partners/remarkable.jpeg" />
-                    <img id="innovate-logo" src="./assets/partners/innovate.png" />
-                    <img id="cdl-logo" src="./assets/partners/cdl.png" />
-                    <img id="cp-logo" src="./assets/partners/cp_alliance.png" />
-                </div>
+                <partner-element id="partners"></partner-element>
             </div>
         </main>
 
-        <footer>
-            <div class="socials">
-                <a href="https://www.facebook.com/profile.php?id=61551642523387" target="_blank"><facebook-icon></facebook-icon></a>
-                <a href="https://x.com/PossNeuro" target="_blank"><x-icon></x-icon></a>
-                <a href="https://www.instagram.com/possneuro/" target="_blank"><insta-icon></insta-icon></a>
-                <a href="https://www.linkedin.com/company/possibility-neurotechnologies/" target="_blank"><linkedin-icon></linkedin-icon></a>
-                <a href="mailto: info@possneuro.com"><email-icon style="margin-top: 3px"></email-icon></a>
-            </div>
-            <div class="copyright">
-                <span>Copyright &copy; 2024 Possibility Neurotechnologies. All rights reserved.</span>
-            </div>
-        </footer>
+        <footer-element id="footer"></footer-element>
 
         <script>
             function openMobileMenu() {

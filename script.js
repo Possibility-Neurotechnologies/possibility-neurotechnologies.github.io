@@ -16,15 +16,18 @@ mainContent.addEventListener("scroll", function () {
     var hamburgerMenu = document.querySelector("menu-icon");
     var closeIcon = document.querySelector("close-icon");
     var mobileNavFooter = document.querySelector("#mobile-nav-footer");
+    var footerSocials = document.querySelector("#footer").shadowRoot.querySelector(".socials");
+    var footerCopyright = document.querySelector("#footer").shadowRoot.querySelector(".copyright");
 
-    var footer = document.querySelector("footer");
     // var scrollBarStyle = document.querySelector("#scrollbar-style");
     var scrollPosition = mainContent.scrollTop;
 
     if (scrollPosition > 0.1 * screenHeight) {
-        footer.classList.add("scrolled");
+        footerSocials.classList.add("scrolled");
+        footerCopyright.classList.add("scrolled");
     } else {
-        footer.classList.remove("scrolled");
+        footerSocials.classList.remove("scrolled");
+        footerCopyright.classList.remove("scrolled");
     }
     /* if (scrollPosition > 0.5 * screenHeight) {
         scrollBarStyle.innerHTML = scrolledScrollBar;

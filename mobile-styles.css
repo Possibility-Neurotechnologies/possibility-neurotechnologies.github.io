@@ -384,7 +384,7 @@
     }
 
     /* FOOTER */
-    footer {
+    #footer {
         display: none;
     }
 }
