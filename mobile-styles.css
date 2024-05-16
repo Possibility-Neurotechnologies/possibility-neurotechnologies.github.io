@@ -28,15 +28,10 @@
         display: flex;
     }
 
-    header {
+    .header {
         height: 6%;
         margin-top: 6px;
         z-index: 7;
-    }
-
-    .home-link {
-        margin-left: 10px;
-        height: 100%;
     }
 
     .early-access {
@@ -44,28 +39,6 @@
         padding: 3px 8px;
         border-radius: 20px;
         margin-right: 15px;
-    }
-
-    menu-icon {
-        height: 20px;
-        width: 20px;
-        margin-right: 15px;
-        fill: #fff;
-    }
-
-    menu-icon.scrolled {
-        fill: #333;
-    }
-
-    close-icon {
-        height: 20px;
-        width: 20px;
-        margin-right: 15px;
-        fill: #fff;
-    }
-
-    close-icon.scrolled {
-        fill: #333;
     }
 
     /* NAV MENU */

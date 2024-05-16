@@ -7,44 +7,48 @@ const mainContent = document.getElementById("main-content");
 const currentPageId = getCurrentPageId();
 
 mainContent.addEventListener("scroll", function () {
-    var navLinks = document.querySelectorAll(".nav-link");
-    var earlyAccessDesktop = document.querySelector(".early-access.desktop");
-    var earlyAccessMobile = document.querySelector(".early-access.mobile");
-    var mobileLogo = document.querySelector("#mobile-logo");
-    var mobileMenuLogo = document.querySelector("#mobile-menu-logo");
-    var mobileNav = document.querySelector("#mobile-nav");
-    var hamburgerMenu = document.querySelector("menu-icon");
-    var closeIcon = document.querySelector("close-icon");
-    var mobileNavFooter = document.querySelector("#mobile-nav-footer");
-    var footerSocials = document.querySelector("#footer").shadowRoot.querySelector(".socials");
-    var footerCopyright = document.querySelector("#footer").shadowRoot.querySelector(".copyright");
-
-    // var scrollBarStyle = document.querySelector("#scrollbar-style");
     var scrollPosition = mainContent.scrollTop;
 
+    var mobileNav = document.querySelector("#mobile-nav");
+    var mobileNavFooter = document.querySelector("#mobile-nav-footer");
+
     if (scrollPosition > 0.1 * screenHeight) {
+        var footerSocials = document.querySelector("#footer").shadowRoot.querySelector(".socials");
         footerSocials.classList.add("scrolled");
+
+        var footerCopyright = document.querySelector("#footer").shadowRoot.querySelector(".copyright");
         footerCopyright.classList.add("scrolled");
     } else {
+        var footerSocials = document.querySelector("#footer").shadowRoot.querySelector(".socials");
         footerSocials.classList.remove("scrolled");
+
+        var footerCopyright = document.querySelector("#footer").shadowRoot.querySelector(".copyright");
         footerCopyright.classList.remove("scrolled");
     }
-    /* if (scrollPosition > 0.5 * screenHeight) {
-        scrollBarStyle.innerHTML = scrolledScrollBar;
-    } else {
-        scrollBarStyle.innerHTML = unscrolledScrollBar;
-    } */
+
     if (scrollPosition > 0.9 * screenHeight && currentPageId !== "contact-link") {
+        var earlyAccessDesktop = document.querySelector("#desktop-header").shadowRoot.querySelector(".early-access.desktop");
         earlyAccessDesktop.classList.add("scrolled");
+
+        var earlyAccessMobile = document.querySelector("#mobile-header").shadowRoot.querySelector(".early-access");
         earlyAccessMobile.classList.add("scrolled");
-        mobileNav.classList.add("scrolled");
-        hamburgerMenu.classList.add("scrolled");
+
+        var menuIcon = document.querySelector("#mobile-header").shadowRoot.querySelector("menu-icon");
+        menuIcon.classList.add("scrolled");
+
+        var closeIcon = document.querySelector("#mobile-header").shadowRoot.querySelector("close-icon");
         closeIcon.classList.add("scrolled");
+
+        var mobileLogoSmall = document.querySelector("#mobile-header").shadowRoot.querySelector("#mobile-logo-small");
+        mobileLogoSmall.setAttribute("src", "../assets/possibility_neuron_color.png");
+
+        var mobileLogoFull = document.querySelector("#mobile-header").shadowRoot.querySelector("#mobile-logo-full");
+        mobileLogoFull.setAttribute("src", "../assets/possibility_logo_rgb.png");
+
+        mobileNav.classList.add("scrolled");
         mobileNavFooter.classList.add("scrolled");
 
-        mobileLogo.setAttribute("src", "./assets/possibility_neuron_color.png");
-        mobileMenuLogo.setAttribute("src", "./assets/possibility_logo_rgb.png");
-
+        var navLinks = document.querySelector("#desktop-header").shadowRoot.querySelectorAll(".nav-link");
         for (i = 0; i < navLinks.length; i++) {
             if (navLinks[i].id == "t2s-link" && currentPageId == "t2s-link") {
                 navLinks[i].classList.add("current-page");
@@ -56,16 +60,28 @@ mainContent.addEventListener("scroll", function () {
             }
         }
     } else {
+        var earlyAccessDesktop = document.querySelector("#desktop-header").shadowRoot.querySelector(".early-access.desktop");
         earlyAccessDesktop.classList.remove("scrolled");
+
+        var earlyAccessMobile = document.querySelector("#mobile-header").shadowRoot.querySelector(".early-access");
         earlyAccessMobile.classList.remove("scrolled");
-        mobileNav.classList.remove("scrolled");
-        hamburgerMenu.classList.remove("scrolled");
+
+        var menuIcon = document.querySelector("#mobile-header").shadowRoot.querySelector("menu-icon");
+        menuIcon.classList.remove("scrolled");
+
+        var closeIcon = document.querySelector("#mobile-header").shadowRoot.querySelector("close-icon");
         closeIcon.classList.remove("scrolled");
+
+        var mobileLogoSmall = document.querySelector("#mobile-header").shadowRoot.querySelector("#mobile-logo-small");
+        mobileLogoSmall.setAttribute("src", "../assets/possibility_neuron_white.png");
+
+        var mobileLogoFull = document.querySelector("#mobile-header").shadowRoot.querySelector("#mobile-logo-full");
+        mobileLogoFull.setAttribute("src", "../assets/possibility_logo_white.png");
+
+        mobileNav.classList.remove("scrolled");
         mobileNavFooter.classList.remove("scrolled");
 
-        mobileLogo.setAttribute("src", "./assets/possibility_neuron_white.png");
-        mobileMenuLogo.setAttribute("src", "./assets/possibility_logo_white.png");
-
+        var navLinks = document.querySelector("#desktop-header").shadowRoot.querySelectorAll(".nav-link");
         for (i = 0; i < navLinks.length; i++) {
             if (navLinks[i].id == "t2s-link" && currentPageId == "t2s-link") {
                 navLinks[i].classList.remove("current-page");
@@ -96,7 +112,6 @@ function getCurrentPageId() {
     }
     return pageId;
 }
-
 // -----------------------------------------------------------------------------------------------
 // Mouse over event for Team page
 // -----------------------------------------------------------------------------------------------
@@ -137,37 +152,39 @@ function makeAllOverlaysTransparent() {
 }
 
 // -----------------------------------------------------------------------------------------------
-// Scrollbar
+// Mobile Menu
 // -----------------------------------------------------------------------------------------------
-const unscrolledScrollBar = `
-main::-webkit-scrollbar {
-    width: 8px;
+var menuIcon = document.querySelector("#mobile-header").shadowRoot.querySelector("menu-icon");
+menuIcon.addEventListener("click", (event) => {
+    openMobileMenu();
+});
+
+var closeIcon = document.querySelector("#mobile-header").shadowRoot.querySelector("close-icon");
+closeIcon.addEventListener("click", (event) => {
+    closeMobileMenu();
+});
+
+var homeLink = document.querySelector("#mobile-header").shadowRoot.querySelector(".home-link");
+homeLink.addEventListener("click", (event) => {
+    closeMobileMenu();
+});
+
+function openMobileMenu() {
+    document.getElementById("mobile-nav").style.display = "flex";
+    document.getElementById("main-content").style.display = "none";
+    document.querySelector("#mobile-header").shadowRoot.querySelector("menu-icon").style.display = "none";
+    document.querySelector("#mobile-header").shadowRoot.querySelector("close-icon").style.display = "flex";
+    document.querySelector("#mobile-header").shadowRoot.querySelector(".early-access").style.display = "none";
+    document.querySelector("#mobile-header").shadowRoot.querySelector("#mobile-logo-small").style.display = "none";
+    document.querySelector("#mobile-header").shadowRoot.querySelector("#mobile-logo-full").style.display = "flex";
 }
 
-main::-webkit-scrollbar-thumb {
-    background: #fff;
-    border-radius: 8px;
-    border: 2px solid #7f3f98;
-    height: 30px;
+function closeMobileMenu() {
+    document.getElementById("mobile-nav").style.display = "none";
+    document.getElementById("main-content").style.display = "block";
+    document.querySelector("#mobile-header").shadowRoot.querySelector("menu-icon").style.display = "flex";
+    document.querySelector("#mobile-header").shadowRoot.querySelector("close-icon").style.display = "none";
+    document.querySelector("#mobile-header").shadowRoot.querySelector(".early-access").style.display = "flex";
+    document.querySelector("#mobile-header").shadowRoot.querySelector("#mobile-logo-small").style.display = "flex";
+    document.querySelector("#mobile-header").shadowRoot.querySelector("#mobile-logo-full").style.display = "none";
 }
-
-main::-webkit-scrollbar-track {
-    background-color: #7f3f98;
-}`;
-
-const scrolledScrollBar = `
-main::-webkit-scrollbar {
-    width: 8px;
-    transition: all 0.3s ease;
-}
-
-main::-webkit-scrollbar-thumb {
-    background: #7f3f98;
-    border-radius: 8px;
-    border: 2px solid #fff;
-    height: 30px;
-}
-
-main::-webkit-scrollbar-track {
-    background-color: #fff;
-}`;
