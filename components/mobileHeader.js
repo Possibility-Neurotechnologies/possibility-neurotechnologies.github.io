@@ -1,8 +1,6 @@
 class MobileHeader extends HTMLElement {
     constructor() {
         super();
-
-        this.currentPage = this.getAttribute("currentPage") || "index";
     }
 
     connectedCallback() {

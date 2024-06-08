@@ -170,7 +170,7 @@ homeLink.addEventListener("click", (event) => {
 });
 
 function openMobileMenu() {
-    document.getElementById("mobile-nav").style.display = "flex";
+    document.querySelector("#mobile-nav").style.display = "flex";
     document.getElementById("main-content").style.display = "none";
     document.querySelector("#mobile-header").shadowRoot.querySelector("menu-icon").style.display = "none";
     document.querySelector("#mobile-header").shadowRoot.querySelector("close-icon").style.display = "flex";
@@ -180,7 +180,7 @@ function openMobileMenu() {
 }
 
 function closeMobileMenu() {
-    document.getElementById("mobile-nav").style.display = "none";
+    //  document.querySelector("#mobile-nav").style.display = "none";
     document.getElementById("main-content").style.display = "block";
     document.querySelector("#mobile-header").shadowRoot.querySelector("menu-icon").style.display = "flex";
     document.querySelector("#mobile-header").shadowRoot.querySelector("close-icon").style.display = "none";

@@ -199,4 +199,4 @@ class Header extends HTMLElement {
     }
 }
 
-customElements.define("header-element", Header);
+customElements.define("desktop-header", Header);

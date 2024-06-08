@@ -14,6 +14,7 @@
         <link rel="stylesheet" href="../mobile-styles.css" />
         <script src="../components/header.js" type="text/javascript" defer></script>
         <script src="../components/mobileHeader.js" type="text/javascript" defer></script>
+        <script src="../components/mobileNav.js" type="text/javascript" defer></script>
         <script src="../components/socials.js" type="text/javascript" defer></script>
         <script src="../components/icons.js" type="text/javascript" defer></script>
         <script src="../components/footer.js" type="text/javascript" defer></script>
@@ -30,10 +31,12 @@
         gtag("config", "G-FRMEVRWQ5C");
     </script>
     <body>
-        <header-element id="desktop-header" class="header" currentPage="t2s-link"></header-element>
+        <desktop-header id="desktop-header" class="header" currentPage="t2s-link"></desktop-header>
         <mobile-header id="mobile-header" class="header"></mobile-header>
 
-        <div id="mobile-nav" style="display: none">
+        <mobile-nav id="mobile-nav" currentPage="t2s-link" style="display: none"></mobile-nav>
+
+        <!-- <div id="mobile-nav" style="display: none">
             <div></div>
             <nav>
                 <ul>
@@ -56,7 +59,7 @@
                     <p>Copyright &copy; 2024 Possibility Neurotechnologies. <br />All rights reserved.</p>
                 </div>
             </div>
-        </div>
+        </div> -->
 
         <main id="main-content">
             <div id="home-content" class="intro-content column">
