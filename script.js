@@ -7,6 +7,7 @@ const mainContent = document.getElementById("main-content");
 const currentPageId = getCurrentPageId();
 
 mainContent.addEventListener("scroll", function () {
+    var headers = document.querySelectorAll("header");
     var navLinks = document.querySelectorAll(".nav-link");
     var earlyAccessDesktop = document.querySelector(".early-access.desktop");
     var earlyAccessMobile = document.querySelector(".early-access.mobile");
@@ -42,6 +43,10 @@ mainContent.addEventListener("scroll", function () {
         mobileLogo.setAttribute("src", "./assets/possibility_neuron_color.png");
         mobileMenuLogo.setAttribute("src", "./assets/possibility_logo_rgb.png");
 
+        for (i = 0; i < headers.length; i++) {
+            headers[i].style.backgroundColor = "#fff";
+        }
+
         for (i = 0; i < navLinks.length; i++) {
             if (navLinks[i].id == "t2s-link" && currentPageId == "t2s-link") {
                 navLinks[i].classList.add("current-page");
@@ -62,6 +67,10 @@ mainContent.addEventListener("scroll", function () {
 
         mobileLogo.setAttribute("src", "./assets/possibility_neuron_white.png");
         mobileMenuLogo.setAttribute("src", "./assets/possibility_logo_white.png");
+
+        for (i = 0; i < headers.length; i++) {
+            headers[i].style.backgroundColor = "transparent";
+        }
 
         for (i = 0; i < navLinks.length; i++) {
             if (navLinks[i].id == "t2s-link" && currentPageId == "t2s-link") {

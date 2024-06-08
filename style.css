@@ -447,6 +447,35 @@ main::-webkit-scrollbar {
     height: 130px;
 }
 
+/* ------------------- Research Page ------------------- */
+.research.page2 h2 {
+    font-size: 2.4rem;
+    color: #7f3f98;
+}
+
+.research.page2 p {
+    font-size: 1.5rem;
+}
+
+.research.page2 .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.research.page2 .text-content {
+    width: 40%;
+    margin-right: 5%;
+}
+
+.research.page2 iframe {
+    width: 45%;
+    height: 50%;
+}
+
 /* ------------------- Contact Page ------------------- */
 #contact-content {
     display: flex;

@@ -314,6 +314,41 @@
         height: 120px;
     }
 
+    /* ------------------- Research Page ------------------- */
+    .research.page2 {
+        height: 150%;
+    }
+
+    .research.page2 h2 {
+        font-size: 1.6rem;
+        color: #7f3f98;
+        text-align: center;
+    }
+
+    .research.page2 p {
+        font-size: 1rem;
+    }
+
+    .research.page2 .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+    }
+
+    .research.page2 .text-content {
+        width: 80%;
+        height: 70%;
+        margin-right: 0;
+    }
+
+    .research.page2 iframe {
+        width: 85%;
+        height: 25%;
+    }
+
     /* ------------------- Contact Page ------------------- */
     #contact-content {
         display: flex;
