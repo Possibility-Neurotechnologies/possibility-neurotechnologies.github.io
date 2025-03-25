@@ -31,7 +31,7 @@
             <nav>
                 <ul>
                     <li><a href="./index.html#t2s-content" id="t2s-link" class="nav-link">Think2Switch&trade;</a></li>
-                    <li><a href="#about-content" id="about-link" class="current-page nav-link">About Us</a></li>
+                    <li><a href="./about.html" id="about-link" class="nav-link">About Us</a></li>
                     <li><a href="./research.html" id="research-link" class="nav-link">Research</a></li>
                     <li><a href="./contact.html" id="contact-link" class="nav-link">Contact</a></li>
                     <li><a href="./trial.html" class="early-access desktop">Early Access</a></li>
@@ -45,7 +45,7 @@
                 <img id="mobile-menu-logo" src="./assets/possibility_logo_white.png" alt="Possibility Neurotechnologies Logo" style="display: none" />
             </a>
             <div class="row" style="justify-content: flex-end">
-                <a href="./trial.html" class="early-access mobile">Early Access</a>
+                <a href="./trial.html" class="early-access mobile current-page">Early Access</a>
                 <menu-icon onclick="openMobileMenu()"></menu-icon>
                 <close-icon onclick="closeMobileMenu()" style="display: none"></close-icon>
             </div>
@@ -56,7 +56,7 @@
             <nav>
                 <ul>
                     <li><a href="./index.html#t2s-content" id="t2s-link" class="nav-link" onclick="closeMobileMenu()">Think2Switch&trade;</a></li>
-                    <li><a href="#about-content" id="about-link" class="current-page nav-link" onclick="closeMobileMenu()">About Us</a></li>
+                    <li><a href="./about.html" id="about-link" class="nav-link" onclick="closeMobileMenu()">About Us</a></li>
                     <li><a href="./research.html" id="research-link" class="nav-link" onclick="closeMobileMenu()">Research</a></li>
                     <li><a href="./contact.html" id="contact-link" class="nav-link" onclick="closeMobileMenu()">Contact</a></li>
                     <li><a href="./trial.html" class="early-access mobile" onclick="closeMobileMenu()">Early Access</a></li>
@@ -77,73 +77,79 @@
         </div>
 
         <main id="main-content">
-            <div id="about-content" class="intro-content column">
+            <div id="privacy-content" class="intro-content column">
                 <div class="column">
-                    <h1 style="margin-bottom: 0">Our mission:</h1>
-                    <p>To bring brain-controlled technologies out of research labs and into the hands of people who could benefit the most from them.</p>
-                </div>
-            </div>
-            <div class="secondary-content about column page2">
-                <h1>Our team:</h1>
-                <div id="team">
-                    <div id="dion-headshot" class="headshot">
-                        <div class="overlay">
-                            <div class="top"></div>
-                            <div class="middle">
-                                <span class="team-name">Dion Kelly</span>
-                                <span class="team-position">Co-Founder & CEO</span>
+                    <h3 style="text-align: center">Privacy Policy</h2>
+                        <div id="privacy-text">
+                            <div class="privacy-section">
+                                <p><span>Last Updated</span>: March 2025</p>
                             </div>
-                            <div class="bottom row">
-                                <a><linkedin-icon></linkedin-icon></a>
+                            <div class="privacy-section">
+                                <p>
+                                    At Possibility Neurotechnologies ("we," "our," "us"), we are committed to protecting your privacy and ensuring the security of the data we collect. 
+                                    This policy describes what information we collect when you use the Think2Switch™ app, and how we use and share that data. 
+                                </p>
+                            </div>
+                            <div class="privacy-section">
+                                <span>1. Data We Collect</span>
+                                <p>We may collect and process the following types of information:</p>
+                                <ul>
+                                    <li>Usage Statistics: Information about how you interact with the device and its software, including but not limited to, feature usage, time spent on different functionalities, and error logs.</li>
+                                    <li>Electrical Brain (EEG) Data: The Think2Switch™ app records the electrical brain data streamed from your headset and saves this data to your device. This data is not automatically uploaded - you must elect to manually share this data with us.</li>
+                                </ul>
+                            </div>
+                            <div class="privacy-section">
+                                <span>2. How We Use Your Data</span>
+                                <p>We use your data for the following purposes:</p>
+                                <ul>
+                                    <li>Improve Product Performance: Analyze usage patterns to enhance the functionality and performance of the Think2Switch™. Electrical brain data will specifically be used to improve our brain-decoding algorithms, which will lead to more accurate and efficient control of end-devices.</li>
+                                    <li>Identify and Fix Bugs: Monitor and address software and hardware issues.</li>
+                                    <li>Enhance User Experience: Tailor and optimize our product and support services to better meet your needs and preferences.</li>
+                                    <li>Security and Compliance: Ensure the security of our services and comply with legal obligations.</li>
+                                </ul>
+                            </div>
+                            <div class="privacy-section">
+                                <span>3. Data Sharing & Disclosure</span>
+                                <p>We will not sell your personal information or data. However, we may share information in the following circumstances: </p>
+                                <ul>
+                                    <li>For Legal Compliance: If required to do so by law, in response to valid requests by verified public authorities (e.g., a court or government agency). </li>
+                                    <li>With Your Consent: If you explicitly agree to data sharing for specific purposes.</li>
+                                </ul>
+                            </div>
+                            <div class="privacy-section">
+                                <span>4. Data Storage & Security</span>
+                                <p>We implement a variety of security measures to protect your data from unauthorized access, use, or disclosure. These measures include:</p>
+                                <ul>
+                                    <li>Anonymization: We do not record any personal identifying information about you. All collected data will be anonymized.</li>
+                                    <li>Storage: All collected data will be stored on a secure, password-protected server.</li>
+                                    <li>Access Controls: Access to data is restricted to authorized personnel who need it to perform their job duties.</li>
+                                    <li>Regular Audits: We regularly review our data collection, storage, and processing practices to ensure compliance with industry standards and legal requirements.</li>
+                                </ul>
+                                <p>Note that it is extremely unlikely (likely impossible) that your personal identity could be revealed from your electrical brain (EEG) data. If you elect to share your brain data with us, it will be used for internal algorithm development only.</p>
+                            </div>
+                            <div class="privacy-section">
+                            <span>5. Your Privacy Choices</span>
+                                <p>You have the following rights regarding your data:</p>
+                                <ul>
+                                    <li>Access and Correction: You can request access to the data we hold about you and ask for corrections if it is inaccurate or incomplete.</li>
+                                    <li>Data Deletion: You can request the deletion of your data, subject to legal and contractual restrictions.</li>
+                                    <li>Opt-In: You must opt-in to share your brain signal data with us, we do not collect it automatically.</li>
+                                </ul>
+                            </div>
+                            <div class="privacy-section">
+                                <span>6. Changes to This Policy</span>
+                                <p>
+                                    We may update this Privacy Policy. 
+                                    Changes will be posted within the Think2Switch™ app and on our website, and the “Last Updated” date will reflect the latest version. 
+                                    In the event of any significant changes to the Privacy Policy, we will notify you directly.
+                                </p>
+                            </div>
+                            <div class="privacy-section">
+                                <span>7. Contact Us</span>
+                                <p>If you have any questions or concerns about this Privacy Policy or our data practices, please contact us at <a href="mailto:info@possneuro.com"><span>info@possneuro.com</span></a></p>
                             </div>
                         </div>
-                    </div>
 
-                    <div id="erica-headshot" class="headshot">
-                        <div class="overlay">
-                            <div class="top"></div>
-                            <div class="middle">
-                                <span class="team-name">Erica Floreani</span>
-                                <span class="team-position">Co-Founder & CTO</span>
-                            </div>
-                            <div class="bottom row">
-                                <a><linkedin-icon></linkedin-icon></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="adam-headshot" class="headshot">
-                        <div class="overlay">
-                            <div class="top"></div>
-                            <div class="middle">
-                                <span class="team-name">Adam Kirton</span>
-                                <span class="team-position">Co-Founder & CMO</span>
-                            </div>
-                            <div class="bottom row">
-                                <a><linkedin-icon></linkedin-icon></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="greg-headshot" class="headshot">
-                        <div class="overlay">
-                            <div class="top"></div>
-                            <div class="middle">
-                                <span class="team-name">Greg Wilding</span>
-                                <span class="team-position">Engineering Director</span>
-                            </div>
-                            <div class="bottom row">
-                                <a><linkedin-icon></linkedin-icon></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="secondary-content about column page3">
-                <h1>Our partners:</h1>
-                <div id="partners">
-                    <img id="remarkable-logo" src="./assets/partners/remarkable.jpeg" />
-                    <img id="innovate-logo" src="./assets/partners/innovate.png" />
-                    <img id="cdl-logo" src="./assets/partners/cdl.png" />
-                    <img id="cp-logo" src="./assets/partners/cp_alliance.png" />
                 </div>
             </div>
         </main>
