@@ -165,8 +165,23 @@
     }
 
     #mobile-nav-footer .copyright {
-        margin-right: 15px;
+        margin-right: 10px;
         margin-bottom: 10px;
+    }
+
+    #mobile-nav-footer .privacy {
+        margin-right: 10px;
+    }
+
+    #mobile-nav-footer .privacy a {
+        width: 100%;
+        color: inherit;
+    }
+
+    #mobile-nav-footer .privacy span {
+        font-size: 0.7rem;
+        font-family: "Lato", sans-serif;
+        text-align: right;
     }
 
     #mobile-nav-footer p {
@@ -416,6 +431,11 @@
         padding: 6px 12px;
         border-radius: 22px;
         border: 0.15rem solid #7f3f98;
+    }
+
+    /* ------------------- Privacy Policy Page ------------------- */
+    #privacy-content div {
+        width: 90%;
     }
 
     /* FOOTER */
