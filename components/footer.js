@@ -23,7 +23,7 @@ class Footer extends HTMLElement {
         copyrightDiv.className = "copyright";
 
         const copyrightText = document.createElement("span");
-        copyrightText.innerHTML = "Copyright &copy; 2024 Possibility Neurotechnologies. All rights reserved.";
+        copyrightText.innerHTML = "Copyright &copy; 2026 Possibility Neurotechnologies. All rights reserved.";
         copyrightDiv.appendChild(copyrightText);
 
         shadow.appendChild(socialsDiv);
