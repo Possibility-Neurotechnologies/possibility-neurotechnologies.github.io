@@ -408,12 +408,6 @@ main::-webkit-scrollbar {
     background-size: contain;
 }
 
-#erica-headshot {
-    background-image: url("./assets/headshots/erica_headshot.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-
 #adam-headshot {
     background-image: url("./assets/headshots/adam_headshot.png");
     background-repeat: no-repeat;
@@ -422,6 +416,12 @@ main::-webkit-scrollbar {
 
 #greg-headshot {
     background-image: url("./assets/headshots/greg_headshot.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#maya-headshot {
+    background-image: url("./assets/headshots/maya_headshot.png");
     background-repeat: no-repeat;
     background-size: contain;
 }
