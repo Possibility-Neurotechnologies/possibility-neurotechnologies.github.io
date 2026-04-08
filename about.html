@@ -1,193 +1,282 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Possibility Neurotechnologies</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-            rel="stylesheet" />
-        <link rel="stylesheet" href="style.css" />
-        <link rel="stylesheet" href="mobile-styles.css" />
-        <script src="./components/socials.js" type="text/javascript" defer></script>
-        <script src="./components/icons.js" type="text/javascript" defer></script>
-    </head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FRMEVRWQ5C"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag("js", new Date());
-
-        gtag("config", "G-FRMEVRWQ5C");
-    </script>
-    <body>
-        <header id="desktop-header">
-            <a class="home-link" href="./index.html"><img src="./assets/possibility_logo_rgb.png" alt="Possibility Neurotechnologies" /></a>
-            <nav>
-                <ul>
-                    <li><a href="./index.html#t2s-content" id="t2s-link" class="nav-link">Think2Switch&trade;</a></li>
-                    <li><a href="#about-content" id="about-link" class="current-page nav-link">About Us</a></li>
-                    <li><a href="./research.html" id="research-link" class="nav-link">Research</a></li>
-                    <li><a href="./contact.html" id="contact-link" class="nav-link">Contact</a></li>
-                    <li><a href="./trial.html" class="early-access desktop">Early Access</a></li>
-                </ul>
-            </nav>
-        </header>
-
-        <header id="mobile-header">
-            <a class="home-link" href="./index.html" onclick="closeMobileMenu()">
-                <img id="mobile-logo" src="./assets/possibility_neuron_white.png" alt="Possibility Neurotechnologies Logo" />
-                <img id="mobile-menu-logo" src="./assets/possibility_logo_white.png" alt="Possibility Neurotechnologies Logo" style="display: none" />
-            </a>
-            <div class="row" style="justify-content: flex-end">
-                <a href="./trial.html" class="early-access mobile">Early Access</a>
-                <menu-icon onclick="openMobileMenu()"></menu-icon>
-                <close-icon onclick="closeMobileMenu()" style="display: none"></close-icon>
-            </div>
-        </header>
-
-        <div id="mobile-nav" style="display: none">
-            <div></div>
-            <nav>
-                <ul>
-                    <li><a href="./index.html#t2s-content" id="t2s-link" class="nav-link" onclick="closeMobileMenu()">Think2Switch&trade;</a></li>
-                    <li><a href="#about-content" id="about-link" class="current-page nav-link" onclick="closeMobileMenu()">About Us</a></li>
-                    <li><a href="./research.html" id="research-link" class="nav-link" onclick="closeMobileMenu()">Research</a></li>
-                    <li><a href="./contact.html" id="contact-link" class="nav-link" onclick="closeMobileMenu()">Contact</a></li>
-                    <li><a href="./trial.html" class="early-access mobile" onclick="closeMobileMenu()">Early Access</a></li>
-                </ul>
-            </nav>
-            <div id="mobile-nav-footer">
-                <div class="socials">
-                    <a href="https://www.facebook.com/profile.php?id=61551642523387" target="_blank"><facebook-icon></facebook-icon></a>
-                    <a href="https://x.com/PossNeuro" target="_blank"><x-icon></x-icon></a>
-                    <a href="https://www.instagram.com/possneuro/" target="_blank"><insta-icon></insta-icon></a>
-                    <a href="https://www.linkedin.com/company/possibility-neurotechnologies/" target="_blank"><linkedin-icon></linkedin-icon></a>
-                    <a href="mailto: info@possneuro.com"><email-icon style="margin-top: 3px"></email-icon></a>
-                </div>
-                <div class="privacy">
-                    <a href="./privacy.html"><span>Privacy Policy</span></a>
-                </div>
-                <div class="copyright">
-                    <p>Copyright &copy; 2026 Possibility Neurotechnologies. <br />All rights reserved.</p>
-                </div>
-            </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us — Possibility Neurotechnologies</title>
+    <meta name="description" content="Meet the team behind Think2Switch — on a mission to bring brain-controlled technology out of research labs and into the hands of people who need it most." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mobile-styles.css" />
+    <link rel="stylesheet" href="enhancements.css" />
+    <script src="./components/socials.js" type="text/javascript" defer></script>
+    <script src="./components/icons.js" type="text/javascript" defer></script>
+    <style>
+      #about-content { background: #fff; }
+      .about-hero { display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center; padding:0 8%; }
+      .about-hero h1 { color:#7f3f98; font-size:clamp(2rem,4vw,3rem); max-width:700px; }
+      .about-hero p { font-size:1.2rem; max-width:620px; color:#5f5e58; margin-top:1rem; }
+      .about-values { display:grid; grid-template-columns:repeat(3,1fr); gap:1.5rem; width:85%; margin-top:3%; }
+      .value-card { background:#f7f7f5; border:1px solid #e2e1db; border-radius:14px; padding:1.5rem; text-align:left; }
+      .value-icon { width:44px;height:44px;border-radius:10px;background:linear-gradient(90deg,#e5287e 0%,#7f3f98 100%);display:flex;align-items:center;justify-content:center;margin-bottom:1rem; }
+      .value-icon svg { width:22px;height:22px;stroke:#fff;fill:none; }
+      .value-card h3 { font-size:1.1rem;color:#7f3f98;text-align:left;margin:0 0 0.5rem; }
+      .value-card p { font-size:0.9375rem;color:#5f5e58;line-height:1.6;text-align:left;margin:0; }
+      .team-section { background:#f7f7f5 !important; }
+      .team-inner { width:85%; display:flex;flex-direction:column;align-items:center;text-align:center; }
+      .team-inner h2 { color:#7f3f98; }
+      .team-grid-new { display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem;margin-top:3%;width:100%;text-align:left; }
+      .team-card-new { display:flex;flex-direction:column;gap:0.75rem; }
+      .team-photo { aspect-ratio:1;border-radius:14px;overflow:hidden;background:#e2e1db; }
+      .team-photo img { width:100%;height:100%;object-fit:cover; }
+      .team-initials { width:100%;height:100%;display:flex;align-items:center;justify-content:center;font-family:"Poppins",sans-serif;font-size:2.5rem;font-weight:700;color:#9c9a91;aspect-ratio:1; }
+      .team-name { font-family:"Poppins",sans-serif;font-size:1.0625rem;font-weight:700;color:#111; }
+      .team-role { font-family:"Lato",sans-serif;font-size:0.875rem;font-weight:600;color:#ec3096; }
+      .team-bio { font-family:"Lato",sans-serif;font-size:0.875rem;color:#5f5e58;line-height:1.6;margin-top:0.25rem; }
+      .team-linkedin { display:inline-flex;align-items:center;gap:0.4rem;font-size:0.8125rem;color:#7f3f98;font-family:"Poppins",sans-serif;font-weight:600;text-decoration:none;margin-top:0.25rem; }
+      .team-linkedin:hover { text-decoration:underline; }
+      .partners-section { background:#fff !important; }
+      .partners-inner { width:85%;display:flex;flex-direction:column;align-items:center;text-align:center; }
+      .partners-inner h2 { color:#7f3f98; }
+      .partner-grid-new { display:grid;grid-template-columns:repeat(4,1fr);gap:1.25rem;margin-top:3%;width:100%; }
+      .partner-card-new { background:#f7f7f5;border:1px solid #e2e1db;border-radius:14px;padding:1.5rem 1.25rem;display:flex;flex-direction:column;align-items:center;gap:0.875rem;text-align:center; }
+      .partner-card-new img { height:44px;object-fit:contain; }
+      .partner-name { font-family:"Poppins",sans-serif;font-size:0.875rem;font-weight:700;color:#111; }
+      .partner-desc { font-family:"Lato",sans-serif;font-size:0.8rem;color:#9c9a91; }
+      .about-cta { background:linear-gradient(90deg,#e5287e 0%,#7f3f98 100%) !important; }
+      .about-cta-inner { display:flex;flex-direction:column;align-items:center;text-align:center;width:60%; }
+      .about-cta-inner h2 { color:#fff; }
+      .about-cta-inner p { color:rgba(255,255,255,0.85);margin:1rem 0 2rem; }
+      @media(max-width:900px){
+        .about-values,.team-grid-new,.partner-grid-new{grid-template-columns:1fr 1fr;}
+        .about-hero,.team-inner,.partners-inner,.about-cta-inner{width:90%;}
+      }
+      @media(max-width:640px){
+        .team-grid-new,.partner-grid-new{grid-template-columns:1fr;}
+      }
+    </style>
+  </head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-FRMEVRWQ5C"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag("js", new Date());
+    gtag("config", "G-FRMEVRWQ5C");
+  </script>
+  <body>
+    <header id="desktop-header">
+      <a class="home-link" href="./index.html"><img src="./assets/possibility_logo_rgb.png" alt="Possibility Neurotechnologies Logo" /></a>
+      <nav><ul>
+        <li><a href="./think2switch.html" class="nav-link">Think2Switch&trade;</a></li>
+        <li><a href="./get-started.html" class="nav-link">Get Started</a></li>
+        <li><a href="./about.html" class="nav-link current-page">About Us</a></li>
+        <li><a href="./research.html" class="nav-link">Research</a></li>
+        <li><a href="./media.html" class="nav-link">Media</a></li>
+        <li><a href="./contact.html" class="nav-link">Contact</a></li>
+        <li><a href="./get-started.html" class="early-access desktop">Download Free</a></li>
+      </ul></nav>
+    </header>
+    <header id="mobile-header">
+      <a class="home-link" href="./index.html" onclick="closeMobileMenu()">
+        <img id="mobile-logo" src="./assets/possibility_neuron_white.png" alt="Possibility Neurotechnologies Logo" />
+        <img id="mobile-menu-logo" src="./assets/possibility_logo_white.png" alt="Possibility Neurotechnologies Logo" style="display:none" />
+      </a>
+      <div class="row" style="justify-content:flex-end">
+        <a href="./get-started.html" class="early-access mobile">Download Free</a>
+        <menu-icon onclick="openMobileMenu()"></menu-icon>
+        <close-icon onclick="closeMobileMenu()" style="display:none"></close-icon>
+      </div>
+    </header>
+    <div id="mobile-nav" style="display:none">
+      <div></div>
+      <nav><ul>
+        <li><a href="./think2switch.html" class="nav-link" onclick="closeMobileMenu()">Think2Switch&trade;</a></li>
+        <li><a href="./get-started.html" class="nav-link" onclick="closeMobileMenu()">Get Started</a></li>
+        <li><a href="./about.html" class="nav-link" onclick="closeMobileMenu()">About Us</a></li>
+        <li><a href="./research.html" class="nav-link" onclick="closeMobileMenu()">Research</a></li>
+        <li><a href="./media.html" class="nav-link" onclick="closeMobileMenu()">Media</a></li>
+        <li><a href="./contact.html" class="nav-link" onclick="closeMobileMenu()">Contact</a></li>
+        <li><a href="./get-started.html" class="early-access mobile" onclick="closeMobileMenu()">Download Free</a></li>
+      </ul></nav>
+      <div id="mobile-nav-footer">
+        <div class="socials">
+          <a href="https://www.facebook.com/profile.php?id=61551642523387" target="_blank"><facebook-icon></facebook-icon></a>
+          <a href="https://x.com/PossNeuro" target="_blank"><x-icon></x-icon></a>
+          <a href="https://www.instagram.com/possneuro/" target="_blank"><insta-icon></insta-icon></a>
+          <a href="https://www.linkedin.com/company/possibility-neurotechnologies/" target="_blank"><linkedin-icon></linkedin-icon></a>
+          <a href="mailto:info@possneuro.com"><email-icon style="margin-top:3px"></email-icon></a>
         </div>
+        <div class="privacy"><a href="./privacy.html"><span>Privacy Policy</span></a></div>
+        <div class="copyright"><p>Copyright &copy; 2026 Possibility Neurotechnologies.<br/>All rights reserved.</p></div>
+      </div>
+    </div>
+    <main id="main-content">
 
-        <main id="main-content">
-            <div id="about-content" class="intro-content column">
-                <div class="column">
-                    <h1 style="margin-bottom: 0">Our mission:</h1>
-                    <p>To bring brain-controlled technologies out of research labs and into the hands of people who could benefit the most from them.</p>
-                </div>
+      <!-- MISSION HERO -->
+      <div id="about-content" class="secondary-content about column">
+        <div class="about-hero">
+          <span class="section-eyebrow">Our mission</span>
+          <h1>To bring brain-controlled technology out of research labs — and into the hands of people who need it most.</h1>
+          <p>Brain-computer interface technology has existed in research labs for decades. We founded Possibility Neurotechnologies because too many people who could benefit from it have never had access to it. We're changing that — one connection at a time.</p>
+          <div class="about-values">
+            <div class="value-card">
+              <div class="value-icon"><svg viewBox="0 0 24 24" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+              <h3>Accessibility first</h3>
+              <p>We design for the people most often left out by mainstream technology. If it isn't accessible, we start over.</p>
             </div>
-            <div class="secondary-content about column page2">
-                <h1>Our team:</h1>
-                <div id="team">
-                    <div id="dion-headshot" class="headshot">
-                        <div class="overlay">
-                            <div class="top"></div>
-                            <div class="middle">
-                                <span class="team-name">Dion Kelly</span>
-                                <span class="team-position">Co-Founder & CEO</span>
-                            </div>
-                            <div class="bottom row">
-                                <a><linkedin-icon></linkedin-icon></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="adam-headshot" class="headshot">
-                        <div class="overlay">
-                            <div class="top"></div>
-                            <div class="middle">
-                                <span class="team-name">Adam Kirton</span>
-                                <span class="team-position">Co-Founder & CMO</span>
-                            </div>
-                            <div class="bottom row">
-                                <a><linkedin-icon></linkedin-icon></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="greg-headshot" class="headshot">
-                        <div class="overlay">
-                            <div class="top"></div>
-                            <div class="middle">
-                                <span class="team-name">Greg Wilding</span>
-                                <span class="team-position">Principal Engineer</span>
-                            </div>
-                            <div class="bottom row">
-                                <a><linkedin-icon></linkedin-icon></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="maya-headshot" class="headshot">
-                        <div class="overlay">
-                            <div class="top"></div>
-                            <div class="middle">
-                                <span class="team-name">Maya Pajevic</span>
-                                <span class="team-position">Human Centered Design Lead</span>
-                            </div>
-                            <div class="bottom row">
-                                <a><linkedin-icon></linkedin-icon></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="value-card">
+              <div class="value-icon"><svg viewBox="0 0 24 24" stroke-width="2"><path d="M9 3H5a2 2 0 0 0-2 2v4m6-6h10a2 2 0 0 1 2 2v4M9 3v18m0 0h10a2 2 0 0 0 2-2V9M9 21H5a2 2 0 0 1-2-2V9m0 0h18" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+              <h3>Grounded in science</h3>
+              <p>Think2Switch&trade; is built on peer-reviewed neuroscience. Every design decision is evidence-based.</p>
             </div>
-            <div class="secondary-content about column page3">
-                <h1>Our partners:</h1>
-                <div id="partners">
-                    <img id="remarkable-logo" src="./assets/partners/remarkable.jpeg" />
-                    <img id="innovate-logo" src="./assets/partners/innovate.png" />
-                    <img id="cdl-logo" src="./assets/partners/cdl.png" />
-                    <img id="cp-logo" src="./assets/partners/cp_alliance.png" />
-                </div>
+            <div class="value-card">
+              <div class="value-icon"><svg viewBox="0 0 24 24" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+              <h3>Human-centred design</h3>
+              <p>Users, families, and clinicians shape what we build. Every feature is co-designed with our community.</p>
             </div>
-        </main>
+          </div>
+        </div>
+      </div>
 
-        <footer>
-            <div class="socials">
-                <a href="https://www.facebook.com/profile.php?id=61551642523387" target="_blank"><facebook-icon></facebook-icon></a>
-                <a href="https://x.com/PossNeuro" target="_blank"><x-icon></x-icon></a>
-                <a href="https://www.instagram.com/possneuro/" target="_blank"><insta-icon></insta-icon></a>
-                <a href="https://www.linkedin.com/company/possibility-neurotechnologies/" target="_blank"><linkedin-icon></linkedin-icon></a>
-                <a href="mailto: info@possneuro.com"><email-icon style="margin-top: 3px"></email-icon></a>
-            </div>
-            <div class="privacy">
-                <a href="./privacy.html"><span>Privacy Policy</span></a>
-            </div>
-            <div class="copyright">
-                <span>Copyright &copy; 2026 Possibility Neurotechnologies. All rights reserved.</span>
-            </div>
-        </footer>
+      <!-- TEAM -->
+      <div class="secondary-content about team-section column">
+        <div class="team-inner">
+          <span class="section-eyebrow">Our team</span>
+          <h2>The people building the future of inclusive technology</h2>
+          <div class="team-grid-new">
 
-        <script>
-            function openMobileMenu() {
-                document.getElementById("mobile-nav").style.display = "flex";
-                document.getElementById("main-content").style.display = "none";
-                document.querySelector("menu-icon").style.display = "none";
-                document.querySelector("close-icon").style.display = "flex";
-                document.querySelector(".early-access.mobile").style.display = "none";
-                document.querySelector("#mobile-logo").style.display = "none";
-                document.querySelector("#mobile-menu-logo").style.display = "flex";
-            }
+            <div class="team-card-new">
+              <div class="team-photo">
+                <img src="./assets/headshots/dion_headshot.png" alt="Dion Kelly" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+                <div class="team-initials" style="display:none">DK</div>
+              </div>
+              <div class="team-name">Dion Kelly</div>
+              <div class="team-role">Co-Founder &amp; CEO</div>
+              <!-- TODO: Add 2–3 sentence bio for Dion. Include personal connection to the mission if applicable. -->
+              <p class="team-bio">Bio coming soon.</p>
+              <!-- TODO: Replace # with Dion's LinkedIn URL -->
+              <a href="#" class="team-linkedin" target="_blank" rel="noopener">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+                LinkedIn
+              </a>
+            </div>
 
-            function closeMobileMenu() {
-                document.getElementById("mobile-nav").style.display = "none";
-                document.getElementById("main-content").style.display = "block";
-                document.querySelector("menu-icon").style.display = "flex";
-                document.querySelector("close-icon").style.display = "none";
-                document.querySelector(".early-access.mobile").style.display = "flex";
-                document.querySelector("#mobile-logo").style.display = "flex";
-                document.querySelector("#mobile-menu-logo").style.display = "none";
-            }
-        </script>
+            <div class="team-card-new">
+              <div class="team-photo">
+                <img src="./assets/headshots/adam_headshot.png" alt="Adam Kirton" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+                <div class="team-initials" style="display:none">AK</div>
+              </div>
+              <div class="team-name">Adam Kirton</div>
+              <div class="team-role">Co-Founder &amp; CMO</div>
+              <!-- TODO: Add bio for Adam. Lead with clinical/medical credentials — critical trust signal for OTs and clinicians. -->
+              <p class="team-bio">Bio coming soon.</p>
+              <!-- TODO: Replace # with Adam's LinkedIn URL -->
+              <a href="#" class="team-linkedin" target="_blank" rel="noopener">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+                LinkedIn
+              </a>
+            </div>
 
-        <script src="script.js"></script>
-    </body>
+            <div class="team-card-new">
+              <div class="team-photo">
+                <img src="./assets/headshots/greg_headshot.png" alt="Greg Wilding" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+                <div class="team-initials" style="display:none">GW</div>
+              </div>
+              <div class="team-name">Greg Wilding</div>
+              <div class="team-role">Principal Engineer</div>
+              <!-- TODO: Add bio for Greg. -->
+              <p class="team-bio">Bio coming soon.</p>
+              <!-- TODO: Replace # with Greg's LinkedIn URL -->
+              <a href="#" class="team-linkedin" target="_blank" rel="noopener">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+                LinkedIn
+              </a>
+            </div>
+
+            <div class="team-card-new">
+              <div class="team-photo">
+                <img src="./assets/headshots/maya_headshot.png" alt="Maya Pajevic" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+                <div class="team-initials" style="display:none">MP</div>
+              </div>
+              <div class="team-name">Maya Pajevic</div>
+              <div class="team-role">Human Centred Design Lead</div>
+              <!-- TODO: Add bio for Maya. Highlight HCD background — reassures families that usability was central. -->
+              <p class="team-bio">Bio coming soon.</p>
+              <!-- TODO: Replace # with Maya's LinkedIn URL -->
+              <a href="#" class="team-linkedin" target="_blank" rel="noopener">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+                LinkedIn
+              </a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- PARTNERS -->
+      <div class="secondary-content about partners-section column">
+        <div class="partners-inner">
+          <span class="section-eyebrow">Our partners</span>
+          <h2>Backed by organisations that share our mission</h2>
+          <div class="partner-grid-new">
+            <div class="partner-card-new">
+              <img src="./assets/partners/remarkable.jpeg" alt="REMARKable" />
+              <div class="partner-name">REMARKable</div>
+              <div class="partner-desc">Assistive technology accelerator partner</div>
+            </div>
+            <div class="partner-card-new">
+              <img src="./assets/partners/innovate.png" alt="Innovate Edmonton" />
+              <div class="partner-name">Innovate Edmonton</div>
+              <div class="partner-desc">Innovation and commercialisation partner</div>
+            </div>
+            <div class="partner-card-new">
+              <img src="./assets/partners/cdl.png" alt="CDL Rockies" />
+              <div class="partner-name">CDL Rockies</div>
+              <div class="partner-desc">Health stream — Creative Destruction Lab</div>
+            </div>
+            <div class="partner-card-new">
+              <img src="./assets/partners/cp_alliance.png" alt="CP Alliance" />
+              <div class="partner-name">CP Alliance</div>
+              <div class="partner-desc">Community research and advocacy partner</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CTA -->
+      <div class="secondary-content about-cta column">
+        <div class="about-cta-inner">
+          <h2>Ready to experience Think2Switch&trade;?</h2>
+          <p>Download the app free and start exploring a new way to interact with the world.</p>
+          <div style="display:flex;flex-wrap:wrap;gap:1rem;justify-content:center;">
+            <a href="https://apps.apple.com/ca/app/think2switch/id6738101315" class="btn-appstore" target="_blank" rel="noopener">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+              <span class="btn-appstore-text"><span class="btn-appstore-sub">Free on the</span><span class="btn-appstore-main">App Store</span></span>
+            </a>
+            <a href="./contact.html" class="btn-outline-white">Get in touch</a>
+          </div>
+        </div>
+      </div>
+
+    </main>
+    <footer>
+      <div class="socials">
+        <a href="https://www.facebook.com/profile.php?id=61551642523387" target="_blank"><facebook-icon></facebook-icon></a>
+        <a href="https://x.com/PossNeuro" target="_blank"><x-icon></x-icon></a>
+        <a href="https://www.instagram.com/possneuro/" target="_blank"><insta-icon></insta-icon></a>
+        <a href="https://www.linkedin.com/company/possibility-neurotechnologies/" target="_blank"><linkedin-icon></linkedin-icon></a>
+        <a href="mailto:info@possneuro.com"><email-icon style="margin-top:3px"></email-icon></a>
+      </div>
+      <div class="privacy"><a href="./privacy.html"><span>Privacy Policy</span></a></div>
+      <div class="copyright"><span>Copyright &copy; 2026 Possibility Neurotechnologies. All rights reserved.</span></div>
+    </footer>
+    <script>
+      function openMobileMenu(){document.getElementById("mobile-nav").style.display="flex";document.getElementById("main-content").style.display="none";document.querySelector("menu-icon").style.display="none";document.querySelector("close-icon").style.display="flex";document.querySelector(".early-access.mobile").style.display="none";document.querySelector("#mobile-logo").style.display="none";document.querySelector("#mobile-menu-logo").style.display="flex";}
+      function closeMobileMenu(){document.getElementById("mobile-nav").style.display="none";document.getElementById("main-content").style.display="block";document.querySelector("menu-icon").style.display="flex";document.querySelector("close-icon").style.display="none";document.querySelector(".early-access.mobile").style.display="flex";document.querySelector("#mobile-logo").style.display="flex";document.querySelector("#mobile-menu-logo").style.display="none";}
+    </script>
+    <script src="script.js"></script>
+  </body>
 </html>
