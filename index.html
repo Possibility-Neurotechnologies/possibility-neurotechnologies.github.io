@@ -1,184 +1,251 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Possibility Neurotechnologies</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-            rel="stylesheet" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-        <link rel="stylesheet" href="style.css" />
-        <link rel="stylesheet" href="mobile-styles.css" />
-        <script src="./components/socials.js" type="text/javascript" defer></script>
-        <script src="./components/icons.js" type="text/javascript" defer></script>
-    </head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FRMEVRWQ5C"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag("js", new Date());
-
-        gtag("config", "G-FRMEVRWQ5C");
-    </script>
-    <body>
-        <header id="desktop-header">
-            <a class="home-link" href="#home-content"><img src="./assets/possibility_logo_rgb.png" alt="Possibility Neurotechnologies Logo" /></a>
-            <nav>
-                <ul>
-                    <li><a href="#t2s-content" id="t2s-link" class="nav-link">Think2Switch&trade;</a></li>
-                    <li><a href="./about.html" id="about-link" class="nav-link">About Us</a></li>
-                    <li><a href="./research.html" id="research-link" class="nav-link">Research</a></li>
-                    <li><a href="./contact.html" id="contact-link" class="nav-link">Contact</a></li>
-                    <li><a href="./trial.html" class="early-access desktop">Early Access</a></li>
-                </ul>
-            </nav>
-        </header>
-
-        <header id="mobile-header">
-            <a class="home-link" href="#home-content" onclick="closeMobileMenu()">
-                <img id="mobile-logo" src="./assets/possibility_neuron_white.png" alt="Possibility Neurotechnologies Logo" />
-                <img id="mobile-menu-logo" src="./assets/possibility_logo_white.png" alt="Possibility Neurotechnologies Logo" style="display: none" />
-            </a>
-            <div class="row" style="justify-content: flex-end">
-                <a href="./trial.html" class="early-access mobile">Early Access</a>
-                <menu-icon onclick="openMobileMenu()"></menu-icon>
-                <close-icon onclick="closeMobileMenu()" style="display: none"></close-icon>
-            </div>
-        </header>
-        <div id="mobile-nav" style="display: none">
-            <div></div>
-            <nav>
-                <ul>
-                    <li><a href="#t2s-content" id="t2s-link" class="nav-link" onclick="closeMobileMenu()">Think2Switch&trade;</a></li>
-                    <li><a href="./about.html" id="about-link" class="nav-link" onclick="closeMobileMenu()">About Us</a></li>
-                    <li><a href="./research.html" id="research-link" class="nav-link" onclick="closeMobileMenu()">Research</a></li>
-                    <li><a href="./contact.html" id="contact-link" class="nav-link" onclick="closeMobileMenu()">Contact</a></li>
-                    <li><a href="./trial.html" class="early-access mobile" onclick="closeMobileMenu()">Early Access</a></li>
-                </ul>
-            </nav>
-            <div id="mobile-nav-footer">
-                <div class="socials">
-                    <a href="https://www.facebook.com/profile.php?id=61551642523387" target="_blank"><facebook-icon></facebook-icon></a>
-                    <a href="https://x.com/PossNeuro" target="_blank"><x-icon></x-icon></a>
-                    <a href="https://www.instagram.com/possneuro/" target="_blank"><insta-icon></insta-icon></a>
-                    <a href="https://www.linkedin.com/company/possibility-neurotechnologies/" target="_blank"><linkedin-icon></linkedin-icon></a>
-                    <a href="mailto: info@possneuro.com"><email-icon style="margin-top: 3px"></email-icon></a>
-                </div>
-                <div class="privacy">
-                    <a href="./privacy.html"><span>Privacy Policy</span></a>
-                </div>
-                <div class="copyright">
-                    <p>Copyright &copy; 2026 Possibility Neurotechnologies. <br />All rights reserved.</p>
-                </div>
-            </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Possibility Neurotechnologies — Think2Switch™</title>
+    <meta name="description" content="Think2Switch™ lets people with cerebral palsy, ALS, and similar conditions control devices using only their thoughts. Free on the App Store." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mobile-styles.css" />
+    <link rel="stylesheet" href="enhancements.css" />
+    <script src="./components/socials.js" type="text/javascript" defer></script>
+    <script src="./components/icons.js" type="text/javascript" defer></script>
+  </head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-FRMEVRWQ5C"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag("js", new Date());
+    gtag("config", "G-FRMEVRWQ5C");
+  </script>
+  <body>
+    <header id="desktop-header">
+      <a class="home-link" href="#home-content"><img src="./assets/possibility_logo_rgb.png" alt="Possibility Neurotechnologies Logo" /></a>
+      <nav>
+        <ul>
+          <li><a href="./think2switch.html" class="nav-link">Think2Switch&trade;</a></li>
+          <li><a href="./get-started.html" class="nav-link">Get Started</a></li>
+          <li><a href="./about.html" id="about-link" class="nav-link">About Us</a></li>
+          <li><a href="./research.html" id="research-link" class="nav-link">Research</a></li>
+          <li><a href="./media.html" class="nav-link">Media</a></li>
+          <li><a href="./contact.html" id="contact-link" class="nav-link">Contact</a></li>
+          <li><a href="./get-started.html" class="early-access desktop">Download Free</a></li>
+        </ul>
+      </nav>
+    </header>
+    <header id="mobile-header">
+      <a class="home-link" href="#home-content" onclick="closeMobileMenu()">
+        <img id="mobile-logo" src="./assets/possibility_neuron_white.png" alt="Possibility Neurotechnologies Logo" />
+        <img id="mobile-menu-logo" src="./assets/possibility_logo_white.png" alt="Possibility Neurotechnologies Logo" style="display:none" />
+      </a>
+      <div class="row" style="justify-content:flex-end">
+        <a href="./get-started.html" class="early-access mobile">Download Free</a>
+        <menu-icon onclick="openMobileMenu()"></menu-icon>
+        <close-icon onclick="closeMobileMenu()" style="display:none"></close-icon>
+      </div>
+    </header>
+    <div id="mobile-nav" style="display:none">
+      <div></div>
+      <nav>
+        <ul>
+          <li><a href="./think2switch.html" class="nav-link" onclick="closeMobileMenu()">Think2Switch&trade;</a></li>
+          <li><a href="./get-started.html" class="nav-link" onclick="closeMobileMenu()">Get Started</a></li>
+          <li><a href="./about.html" class="nav-link" onclick="closeMobileMenu()">About Us</a></li>
+          <li><a href="./research.html" class="nav-link" onclick="closeMobileMenu()">Research</a></li>
+          <li><a href="./media.html" class="nav-link" onclick="closeMobileMenu()">Media</a></li>
+          <li><a href="./contact.html" class="nav-link" onclick="closeMobileMenu()">Contact</a></li>
+          <li><a href="./get-started.html" class="early-access mobile" onclick="closeMobileMenu()">Download Free</a></li>
+        </ul>
+      </nav>
+      <div id="mobile-nav-footer">
+        <div class="socials">
+          <a href="https://www.facebook.com/profile.php?id=61551642523387" target="_blank"><facebook-icon></facebook-icon></a>
+          <a href="https://x.com/PossNeuro" target="_blank"><x-icon></x-icon></a>
+          <a href="https://www.instagram.com/possneuro/" target="_blank"><insta-icon></insta-icon></a>
+          <a href="https://www.linkedin.com/company/possibility-neurotechnologies/" target="_blank"><linkedin-icon></linkedin-icon></a>
+          <a href="mailto:info@possneuro.com"><email-icon style="margin-top:3px"></email-icon></a>
         </div>
-
-        <main id="main-content">
-            <div id="home-content" class="intro-content column">
-                <h1>The future is inclusive.</h1>
+        <div class="privacy"><a href="./privacy.html"><span>Privacy Policy</span></a></div>
+        <div class="copyright"><p>Copyright &copy; 2026 Possibility Neurotechnologies.<br />All rights reserved.</p></div>
+      </div>
+    </div>
+    <main id="main-content">
+      <div id="home-content" class="intro-content column">
+        <div class="hero-inner">
+          <div class="hero-tag">Now available free on the App Store</div>
+          <h1>The future is inclusive.</h1>
+          <p class="hero-sub">Think2Switch&trade; lets people with cerebral palsy, ALS, and similar conditions control devices, play games, and communicate &mdash; using only their thoughts. No hands required.</p>
+          <div class="hero-actions">
+            <a href="https://apps.apple.com/ca/app/think2switch/id6738101315" class="btn-appstore" target="_blank" rel="noopener">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+              <span class="btn-appstore-text"><span class="btn-appstore-sub">Free on the</span><span class="btn-appstore-main">App Store</span></span>
+            </a>
+            <a href="./get-started.html" class="btn-secondary">How to get started &rarr;</a>
+          </div>
+          <p class="hero-footnote">Free app &middot; Subscription from $34.99/mo &middot; Requires Muse Athena headset</p>
+        </div>
+      </div>
+      <div class="trust-bar-section">
+        <span class="trust-bar-label">Supported by</span>
+        <div class="trust-bar-logos">
+          <img src="./assets/partners/remarkable.jpeg" alt="REMARKable" />
+          <img src="./assets/partners/innovate.png" alt="Innovate Edmonton" />
+          <img src="./assets/partners/cdl.png" alt="CDL Rockies" />
+          <img src="./assets/partners/cp_alliance.png" alt="CP Alliance" />
+        </div>
+      </div>
+      <div id="t2s-content" class="secondary-content index">
+        <div class="column text-content">
+          <span class="section-eyebrow">Think2Switch&trade;</span>
+          <h2>Designed for connection.<br>Powered by thought.</h2>
+          <p>Think2Switch&trade; translates your brain's natural electrical signals into real actions &mdash; letting you control devices, play games, and navigate the world. No surgery. No implants. Just a comfortable headset, an app, and your own mind.</p>
+          <div class="t2s-actions">
+            <a href="https://apps.apple.com/ca/app/think2switch/id6738101315" class="btn-appstore btn-appstore-dark" target="_blank" rel="noopener">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+              <span class="btn-appstore-text"><span class="btn-appstore-sub">Download free on the</span><span class="btn-appstore-main">App Store</span></span>
+            </a>
+            <a href="./think2switch.html" class="btn-outline-purple">See how it works</a>
+          </div>
+        </div>
+        <div class="column img-content">
+          <img src="./assets/iPhone-iPad-app-home.webp" alt="Think2Switch app on iPhone and iPad" />
+        </div>
+      </div>
+      <div class="secondary-content index column page2 how-it-works-section">
+        <div class="hiw-inner">
+          <span class="section-eyebrow">How it works</span>
+          <h2>Three steps. Then you're in control.</h2>
+          <p>No surgery. No implants. No clinic visit. Just put on the headset, calibrate once, and start controlling the world around you.</p>
+          <div class="steps-row">
+            <div class="step-card">
+              <div class="step-num">1</div>
+              <h3>Put on the headset</h3>
+              <p>The Muse Athena EEG headset sits comfortably on your head. Buy it at <a href="https://choosemuse.com/possneuro" target="_blank" rel="noopener">choosemuse.com/possneuro</a> for an exclusive 15% off.</p>
             </div>
-            <div id="t2s-content" class="secondary-content index">
-                <div class="column text-content">
-                    <h2>Designed for connection. Powered by thought.</h2>
-                    <p>Think2Switch&trade; translates brain signals into simple actions, allowing users to control connected devices and discover new ways to play, create, and connect.</p>
-                </div>
-                <div class="column img-content">
-                    <img src="./assets/iPhone-iPad-app-home.webp" />
-                </div>
+            <div class="step-card">
+              <div class="step-num">2</div>
+              <h3>Calibrate to your brain</h3>
+              <p>The app learns your unique brain signal in a short guided session. Think of a mental action and Think2Switch&trade; learns to recognise it.</p>
             </div>
-            <div class="secondary-content index column page2">
-                <div class="column">
-                    <h2>A new way to interact.</h2>
-                    <p>For curious minds of all ages, Think2Switch™ turns intent into action. Simple by design. Easy to use.</p>
-                    <div class="row">
-                        <img src="assets/icon_head.png" style="height: 100%" />
-                        <arrow-icon></arrow-icon>
-                        <img src="assets/icon_think2switch.png" style="height: 100%" />
-                        <arrow-icon></arrow-icon>
-                        <img src="assets/icon_computer.png" style="height: 100%" />
-                    </div>
-                </div>
+            <div class="step-card">
+              <div class="step-num">3</div>
+              <h3>Start controlling</h3>
+              <p>Use your mental command to play games, control smart home devices, navigate apps, and more. Most users succeed in their very first session.</p>
             </div>
-            <div class="secondary-content index column page3">
-                <div class="column">
-                    <h2>See it in action</h2>
-                    <p>Watch how Think2Switch&trade; creates new ways to interact and explore.</p>
-                    <iframe
-                        src="https://www.youtube.com/embed/5mBNBQ2paio"
-                        title="Think2Switch™"
-                        frameborder="0"
-                        allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin"
-                        style="height:100%"
-                        allowfullscreen>
-                    </iframe>
-                    <h1></h1>
-                </div>
-            </div>
-        </main>
-
-        <footer>
-            <div class="socials">
-                <a href="https://www.facebook.com/profile.php?id=61551642523387" target="_blank"><facebook-icon></facebook-icon></a>
-                <a href="https://x.com/PossNeuro" target="_blank"><x-icon></x-icon></a>
-                <a href="https://www.instagram.com/possneuro/" target="_blank"><insta-icon></insta-icon></a>
-                <a href="https://www.linkedin.com/company/possibility-neurotechnologies/" target="_blank"><linkedin-icon></linkedin-icon></a>
-                <a href="mailto: info@possneuro.com"><email-icon style="margin-top: 3px"></email-icon></a>
-            </div>
-            <div class="privacy">
-                <a href="./privacy.html"><span>Privacy Policy</span></a>
-            </div>
-            <div class="copyright">
-                <span>Copyright &copy; 2026 Possibility Neurotechnologies. All rights reserved.</span>
-            </div>
-        </footer>
-
-        <script>
-            function openMobileMenu() {
-                document.getElementById("mobile-nav").style.display = "flex";
-                document.getElementById("main-content").style.display = "none";
-                document.querySelector("menu-icon").style.display = "none";
-                document.querySelector("close-icon").style.display = "flex";
-                document.querySelector(".early-access.mobile").style.display = "none";
-                document.querySelector("#mobile-logo").style.display = "none";
-                document.querySelector("#mobile-menu-logo").style.display = "flex";
-            }
-
-            function closeMobileMenu() {
-                document.getElementById("mobile-nav").style.display = "none";
-                document.getElementById("main-content").style.display = "block";
-                document.querySelector("menu-icon").style.display = "flex";
-                document.querySelector("close-icon").style.display = "none";
-                document.querySelector(".early-access.mobile").style.display = "flex";
-                document.querySelector("#mobile-logo").style.display = "flex";
-                document.querySelector("#mobile-menu-logo").style.display = "none";
-            }
-        </script>
-
-        <!-- <style id="scrollbar-style">
-            main::-webkit-scrollbar {
-                width: 8px;
-                transition: all 0.3s ease;
-            }
-
-            main::-webkit-scrollbar-thumb {
-                background: #fff;
-                border-radius: 8px;
-                border: 2px solid #7f3f98;
-                height: 30px;
-            }
-
-            main::-webkit-scrollbar-track {
-                background-color: #7f3f98;
-            }
-        </style> -->
-
-        <script src="script.js"></script>
-    </body>
+          </div>
+          <div class="row" style="justify-content:center;margin-top:3%;gap:20px;">
+            <img src="assets/icon_head.png" style="height:80px;" alt="Brain" />
+            <arrow-icon></arrow-icon>
+            <img src="assets/icon_think2switch.png" style="height:80px;" alt="Think2Switch" />
+            <arrow-icon></arrow-icon>
+            <img src="assets/icon_computer.png" style="height:80px;" alt="Device" />
+          </div>
+        </div>
+      </div>
+      <div class="secondary-content index column page2 capabilities-section">
+        <div class="cap-inner">
+          <span class="section-eyebrow">What you can do</span>
+          <h2>One thought. Endless possibility.</h2>
+          <div class="capability-grid">
+            <div class="capability-card"><div class="cap-icon">&#127918;</div><h3>Play games</h3><p>Built-in accessible games and external game control via keyboard emulation. Play with a single mental command.</p></div>
+            <div class="capability-card"><div class="cap-icon">&#127968;</div><h3>Smart home control</h3><p>Control Apple HomeKit lights, locks, fans, and TVs using only your thoughts.</p></div>
+            <div class="capability-card"><div class="cap-icon">&#128241;</div><h3>Navigate any app</h3><p>Keyboard emulation lets your mental command act as a keypress in any iOS app.</p></div>
+            <div class="capability-card"><div class="cap-icon">&#128172;</div><h3>Communicate</h3><p>Use scanning and switch access to make choices and participate. One thought becomes a voice.</p></div>
+            <div class="capability-card"><div class="cap-icon">&#9889;</div><h3>Custom scenes</h3><p>Chain multiple actions into a single mental trigger. (Subscription required.)</p></div>
+            <div class="capability-card"><div class="cap-icon">&#129504;</div><h3>Two mental commands</h3><p>Unlock a second distinct command for more nuanced control. (Subscription required.)</p></div>
+          </div>
+          <a href="./think2switch.html" class="btn-outline-purple" style="margin-top:4%;">See full capabilities &rarr;</a>
+        </div>
+      </div>
+      <div class="secondary-content index column page3">
+        <div class="column" style="width:70%;">
+          <span class="section-eyebrow">See it in action</span>
+          <h2>Watch Think2Switch&trade; work</h2>
+          <p style="margin:15px 0;">Watch a real user control devices using only their thoughts.</p>
+          <iframe src="https://www.youtube.com/embed/5mBNBQ2paio" title="Think2Switch" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="height:60%;width:90%;" allowfullscreen></iframe>
+        </div>
+      </div>
+      <div class="secondary-content index column page2 testimonials-section">
+        <div class="test-inner">
+          <span class="section-eyebrow">From our community</span>
+          <h2>Real people. Real control.</h2>
+          <div class="testimonial-grid">
+            <div class="testimonial-card"><p class="testimonial-quote">"Add your first real user quote here — a parent's words carry more weight than any headline."</p><div class="testimonial-author"><div class="testimonial-avatar">?</div><div><div class="testimonial-name">Name, Role</div><div class="testimonial-role">Early access participant</div></div></div></div>
+            <div class="testimonial-card"><p class="testimonial-quote">"Add a second quote here — ideally from a parent of a child with CP or an OT who has used Think2Switch with patients."</p><div class="testimonial-author"><div class="testimonial-avatar">?</div><div><div class="testimonial-name">Name, Role</div><div class="testimonial-role">Occupational therapist</div></div></div></div>
+            <div class="testimonial-card"><p class="testimonial-quote">"Add a third quote here. These placeholders will be replaced as soon as you have real quotes from your community."</p><div class="testimonial-author"><div class="testimonial-avatar">?</div><div><div class="testimonial-name">Name, Role</div><div class="testimonial-role">Person with ALS</div></div></div></div>
+          </div>
+          <p style="font-size:1rem;color:#888;margin-top:3%;font-family:'Lato',sans-serif;">Want to share your story? <a href="./contact.html" style="color:#7f3f98;">Get in touch &rarr;</a></p>
+        </div>
+      </div>
+      <div class="secondary-content index column page2 faq-section">
+        <div class="faq-inner">
+          <span class="section-eyebrow">Common questions</span>
+          <h2>You have questions. We have answers.</h2>
+          <div class="faq-list">
+            <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Is Think2Switch&trade; safe? Does it involve surgery or implants?<span class="faq-icon">+</span></button><div class="faq-a">Completely non-invasive. The Muse Athena headset rests on your head like headphones. No surgery, no implants, no medical procedures. EEG technology has been used safely for decades.</div></div>
+            <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">What hardware do I need and where do I get it?<span class="faq-icon">+</span></button><div class="faq-a">You need the <strong>Muse Athena EEG headset</strong> and an iPhone or iPad running iOS 18+. Get 15% off at <a href="https://choosemuse.com/possneuro" target="_blank" rel="noopener">choosemuse.com/possneuro</a>. The app is free to download.</div></div>
+            <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">How much does it cost?<span class="faq-icon">+</span></button><div class="faq-a">The app is <strong>free to download</strong> with one mental command. Full subscription is $34.99/month or $349.99/year — unlocking two commands, HomeKit control, keyboard emulation, and custom scenes. HSA/FSA funds may be eligible for the headset.</div></div>
+            <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">What age is Think2Switch&trade; suitable for?<span class="faq-icon">+</span></button><div class="faq-a">Designed for users as young as 2. The only requirement is understanding basic cause and effect — not physical ability. No upper age limit.</div></div>
+            <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Can it be covered by insurance or assistive technology funding?<span class="faq-icon">+</span></button><div class="faq-a">The Muse Athena headset is eligible for <strong>HSA and FSA funds</strong> in the US, and available through <a href="https://www.truemed.com/shop/partners/muse" target="_blank" rel="noopener">Truemed</a>. We can provide a letter of medical necessity — <a href="./contact.html">contact us</a>.</div></div>
+          </div>
+          <a href="./think2switch.html#faq" class="btn-outline-purple" style="margin-top:4%;">See all FAQs &rarr;</a>
+        </div>
+      </div>
+      <div class="secondary-content index column cta-section">
+        <div class="cta-inner">
+          <h2 style="color:#fff;">Ready to try Think2Switch&trade;?</h2>
+          <p style="color:rgba(255,255,255,0.85);margin:20px 0;">Download the app free. Order your headset with 15% off. Start your first session today.</p>
+          <div class="cta-actions">
+            <a href="https://apps.apple.com/ca/app/think2switch/id6738101315" class="btn-appstore" target="_blank" rel="noopener">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+              <span class="btn-appstore-text"><span class="btn-appstore-sub">Download on the</span><span class="btn-appstore-main">App Store</span></span>
+            </a>
+            <a href="./get-started.html" class="btn-outline-white">Full setup guide &rarr;</a>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="socials">
+        <a href="https://www.facebook.com/profile.php?id=61551642523387" target="_blank"><facebook-icon></facebook-icon></a>
+        <a href="https://x.com/PossNeuro" target="_blank"><x-icon></x-icon></a>
+        <a href="https://www.instagram.com/possneuro/" target="_blank"><insta-icon></insta-icon></a>
+        <a href="https://www.linkedin.com/company/possibility-neurotechnologies/" target="_blank"><linkedin-icon></linkedin-icon></a>
+        <a href="mailto:info@possneuro.com"><email-icon style="margin-top:3px"></email-icon></a>
+      </div>
+      <div class="privacy"><a href="./privacy.html"><span>Privacy Policy</span></a></div>
+      <div class="copyright"><span>Copyright &copy; 2026 Possibility Neurotechnologies. All rights reserved.</span></div>
+    </footer>
+    <script>
+      function openMobileMenu() {
+        document.getElementById("mobile-nav").style.display = "flex";
+        document.getElementById("main-content").style.display = "none";
+        document.querySelector("menu-icon").style.display = "none";
+        document.querySelector("close-icon").style.display = "flex";
+        document.querySelector(".early-access.mobile").style.display = "none";
+        document.querySelector("#mobile-logo").style.display = "none";
+        document.querySelector("#mobile-menu-logo").style.display = "flex";
+      }
+      function closeMobileMenu() {
+        document.getElementById("mobile-nav").style.display = "none";
+        document.getElementById("main-content").style.display = "block";
+        document.querySelector("menu-icon").style.display = "flex";
+        document.querySelector("close-icon").style.display = "none";
+        document.querySelector(".early-access.mobile").style.display = "flex";
+        document.querySelector("#mobile-logo").style.display = "flex";
+        document.querySelector("#mobile-menu-logo").style.display = "none";
+      }
+      function toggleFaq(btn) {
+        const item = btn.closest('.faq-item');
+        const isOpen = item.classList.contains('open');
+        document.querySelectorAll('.faq-item.open').forEach(el => el.classList.remove('open'));
+        if (!isOpen) item.classList.add('open');
+      }
+    </script>
+    <script src="script.js"></script>
+  </body>
 </html>
