@@ -95,7 +95,7 @@ function getCurrentPageId() {
         pageId = "t2s-link";
     } else if (page == "about") {
         pageId = "about-link";
-    } else if (page == "research") {
+    } else if (page == "concept") {
         pageId = "research-link";
     } else if (page == "contact") {
         pageId = "contact-link";
