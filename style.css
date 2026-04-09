@@ -176,7 +176,7 @@ nav li {
     width: 100%;
 }
 
-.early-access {
+.start-nav {
     padding: 6px 10px;
     border-radius: 20px;
     color: #fff;
@@ -186,26 +186,26 @@ nav li {
     transition: all 0.3s ease;
 }
 
-.early-access:hover {
+.start-nav:hover {
     background-color: #fbd0e8;
     color: #ec3096;
     cursor: pointer;
 }
 
-.early-access.current-page {
+.start-nav.current-page {
     font-weight: normal;
     background-color: #fbd0e8;
     color: #ec3096;
     text-decoration: none;
 }
 
-.early-access.scrolled {
+.start-nav.scrolled {
     background-color: #7f3f98;
     color: #fff;
     border: 0.15rem solid #7f3f98;
 }
 
-.early-access.scrolled:hover {
+.start-nav.scrolled:hover {
     background-color: #e0c9e8;
     color: #7f3f98;
 }

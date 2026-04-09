@@ -34,7 +34,7 @@
                     <li><a href="./about.html" id="about-link" class="nav-link">About Us</a></li>
                     <li><a href="./research.html" id="research-link" class="nav-link">Research</a></li>
                     <li><a href="./contact.html" id="contact-link" class="nav-link">Contact</a></li>
-                    <li><a href="#start-content" id="early-access" class="early-access desktop current-page">Early Access</a></li>
+                    <li><a href="#start-content" id="start-nav" class="start-nav desktop current-page">Get Started</a></li>
                 </ul>
             </nav>
         </header>
@@ -45,7 +45,7 @@
                 <img id="mobile-menu-logo" src="./assets/possibility_logo_white.png" alt="Possibility Neurotechnologies Logo" style="display: none" />
             </a>
             <div class="row" style="justify-content: flex-end">
-                <a href="./start.html" class="early-access mobile current-page">Early Access</a>
+                <a href="./start.html" class="start-nav mobile current-page">Get Started</a>
                 <menu-icon onclick="openMobileMenu()"></menu-icon>
                 <close-icon onclick="closeMobileMenu()" style="display: none"></close-icon>
             </div>
@@ -59,7 +59,7 @@
                     <li><a href="./about.html" id="about-link" class="nav-link" onclick="closeMobileMenu()">About Us</a></li>
                     <li><a href="./research.html" id="research-link" class="nav-link" onclick="closeMobileMenu()">Research</a></li>
                     <li><a href="./contact.html" id="contact-link" class="nav-link" onclick="closeMobileMenu()">Contact</a></li>
-                    <li><a href="#start-content" class="early-access mobile current-page" onclick="closeMobileMenu()">Early Access</a></li>
+                    <li><a href="#start-content" class="start-nav mobile current-page" onclick="closeMobileMenu()">Get Started</a></li>
                 </ul>
             </nav>
             <div id="mobile-nav-footer">
@@ -115,7 +115,7 @@
                 document.getElementById("main-content").style.display = "none";
                 document.querySelector("menu-icon").style.display = "none";
                 document.querySelector("close-icon").style.display = "flex";
-                document.querySelector(".early-access.mobile").style.display = "none";
+                document.querySelector(".start-nav.mobile").style.display = "none";
                 document.querySelector("#mobile-logo").style.display = "none";
                 document.querySelector("#mobile-menu-logo").style.display = "flex";
             }
@@ -125,7 +125,7 @@
                 document.getElementById("main-content").style.display = "block";
                 document.querySelector("menu-icon").style.display = "flex";
                 document.querySelector("close-icon").style.display = "none";
-                document.querySelector(".early-access.mobile").style.display = "flex";
+                document.querySelector(".start-nav.mobile").style.display = "flex";
                 document.querySelector("#mobile-logo").style.display = "flex";
                 document.querySelector("#mobile-menu-logo").style.display = "none";
             }

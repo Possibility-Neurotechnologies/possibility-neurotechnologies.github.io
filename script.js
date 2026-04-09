@@ -9,8 +9,8 @@ const currentPageId = getCurrentPageId();
 mainContent.addEventListener("scroll", function () {
     var headers = document.querySelectorAll("header");
     var navLinks = document.querySelectorAll(".nav-link");
-    var earlyAccessDesktop = document.querySelector(".early-access.desktop");
-    var earlyAccessMobile = document.querySelector(".early-access.mobile");
+    var earlyAccessDesktop = document.querySelector(".start-nav.desktop");
+    var earlyAccessMobile = document.querySelector(".start-nav.mobile");
     var mobileLogo = document.querySelector("#mobile-logo");
     var mobileMenuLogo = document.querySelector("#mobile-menu-logo");
     var mobileNav = document.querySelector("#mobile-nav");

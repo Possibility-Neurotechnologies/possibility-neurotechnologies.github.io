@@ -39,7 +39,7 @@
         height: 100%;
     }
 
-    .early-access {
+    .start-nav {
         font-size: 0.9rem;
         padding: 3px 8px;
         border-radius: 20px;
@@ -107,19 +107,19 @@
         text-decoration: underline;
     }
 
-    nav .early-access {
+    nav .start-nav {
         font-size: 1rem;
         padding: 4px 10px;
         background-color: #7f3f98;
         border: 0.15rem solid #7f3f98;
     }
 
-    nav .early-access:hover {
+    nav .start-nav:hover {
         background-color: #e0c9e8;
         color: #7f3f98;
     }
 
-    nav .early-access.current-page {
+    nav .start-nav.current-page {
         font-weight: normal;
         background-color: #e0c9e8;
         color: #7f3f98;
