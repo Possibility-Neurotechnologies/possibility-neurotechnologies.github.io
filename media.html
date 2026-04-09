@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media &amp; Press — Possibility Neurotechnologies</title>
+    <meta name="description" content="News, interviews, and coverage from organisations recognising Possibility Neurotechnologies and Think2Switch." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mobile-styles.css" />
+    <link rel="stylesheet" href="enhancements.css" />
+    <script src="./components/socials.js" type="text/javascript" defer></script>
+    <script src="./components/icons.js" type="text/javascript" defer></script>
+    <style>
+      .media-page { background:#fff; }
+      .media-hero { display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:0 8%; }
+      .media-hero h1 { color:#7f3f98;max-width:620px; }
+      .media-hero p { font-size:1.1rem;max-width:520px;color:#5f5e58;margin-top:0.875rem;margin-bottom:1.5rem; }
+      .press-contact-badge { display:inline-flex;align-items:center;gap:0.5rem;font-family:"Lato",sans-serif;font-size:0.9rem;color:#5f5e58;padding:0.5rem 0.875rem;border:1px solid #e2e1db;border-radius:10px; }
+      .press-contact-badge svg { opacity:0.5;flex-shrink:0; }
+      .press-contact-badge a { color:#7f3f98;font-weight:700; }
+      .media-body { background:#f7f7f5 !important; }
+      .media-inner { width:80%;display:flex;flex-direction:column;align-items:flex-start; }
+      .filter-bar { display:flex;align-items:center;gap:0.5rem;flex-wrap:wrap;margin-bottom:2rem;width:100%; }
+      .filter-label { font-family:"Lato",sans-serif;font-size:0.75rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#9c9a91;margin-right:0.25rem; }
+      .filter-pill { font-family:"Poppins",sans-serif;font-size:0.75rem;font-weight:600;padding:0.3rem 0.875rem;border-radius:999px;border:1px solid #e2e1db;background:transparent;color:#5f5e58;cursor:pointer;transition:all 0.18s ease; }
+      .filter-pill:hover { border-color:#7f3f98;color:#7f3f98; }
+      .filter-pill.active { background:#7f3f98;color:#fff;border-color:#7f3f98; }
+      .filter-count { font-family:"Lato",sans-serif;font-size:0.75rem;color:#9c9a91;margin-left:auto; }
+      .featured-label { font-family:"Lato",sans-serif;font-size:0.6875rem;font-weight:700;letter-spacing:0.09em;text-transform:uppercase;color:#9c9a91;margin-bottom:1rem; }
+      .featured-card { display:flex;gap:1.5rem;background:#fff;border:1px solid #e2e1db;border-radius:14px;padding:1.375rem;cursor:pointer;transition:border-color 0.18s ease;text-decoration:none;color:inherit;margin-bottom:2rem; }
+      .featured-card:hover { border-color:#7f3f98; }
+      .featured-thumb { width:140px;min-width:140px;height:96px;border-radius:10px;display:flex;align-items:center;justify-content:center;flex-shrink:0; }
+      .thumb-press { background:#e8effe; }
+      .thumb-video { background:#fde8e8; }
+      .thumb-podcast { background:#fef3e2; }
+      .thumb-award { background:#e4f5ec; }
+      .thumb-research { background:#eeecfe; }
+      .featured-body { flex:1;min-width:0; }
+      .card-meta { display:flex;align-items:center;gap:0.5rem;margin-bottom:0.5rem;flex-wrap:wrap; }
+      .type-badge { font-family:"Poppins",sans-serif;font-size:0.6875rem;font-weight:700;padding:0.2rem 0.6rem;border-radius:999px; }
+      .badge-press { background:#e8effe;color:#1a3a9e; }
+      .badge-video { background:#fde8e8;color:#9e1a1a; }
+      .badge-podcast { background:#fef3e2;color:#7a4500; }
+      .badge-award { background:#e4f5ec;color:#1a6e3e; }
+      .badge-research { background:#eeecfe;color:#3b2ea0; }
+      .meta-dot,.meta-text { font-family:"Lato",sans-serif;font-size:0.75rem;color:#9c9a91; }
+      .featured-title { font-family:"Poppins",sans-serif;font-size:1.0625rem;font-weight:700;line-height:1.4;color:#111;margin-bottom:0.375rem; }
+      .featured-excerpt { font-family:"Lato",sans-serif;font-size:0.875rem;color:#5f5e58;line-height:1.55; }
+      .media-grid { display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1rem;width:100%; }
+      .media-card { display:flex;flex-direction:column;background:#fff;border:1px solid #e2e1db;border-radius:14px;padding:1.125rem;cursor:pointer;transition:border-color 0.18s ease;text-decoration:none;color:inherit; }
+      .media-card:hover { border-color:#7f3f98; }
+      .card-title { font-family:"Poppins",sans-serif;font-size:0.9375rem;font-weight:700;line-height:1.4;color:#111;margin:0.5rem 0 0.375rem; }
+      .card-excerpt { font-family:"Lato",sans-serif;font-size:0.8125rem;color:#5f5e58;line-height:1.55;flex:1; }
+      .card-footer { display:flex;align-items:center;justify-content:space-between;margin-top:0.875rem;padding-top:0.75rem;border-top:1px solid #f0efeb; }
+      .card-date { font-family:"Lato",sans-serif;font-size:0.75rem;color:#9c9a91; }
+      .card-link { font-family:"Poppins",sans-serif;font-size:0.75rem;color:#7f3f98;font-weight:600; }
+      .no-results { display:none;text-align:center;padding:3rem 1rem;color:#9c9a91;font-family:"Lato",sans-serif;font-size:0.9375rem;width:100%; }
+      .press-kit { background:#fff !important; }
+      .press-kit-inner { width:80%;display:flex;align-items:center;gap:1rem;flex-wrap:wrap;background:#f7f7f5;border:1px solid #e2e1db;border-radius:14px;padding:1.25rem 1.5rem; }
+      .pk-icon { width:40px;height:40px;border-radius:10px;background:#e2e1db;display:flex;align-items:center;justify-content:center;flex-shrink:0; }
+      .pk-text { flex:1;min-width:180px; }
+      .pk-title { font-family:"Poppins",sans-serif;font-size:0.9375rem;font-weight:700;color:#111; }
+      .pk-sub { font-family:"Lato",sans-serif;font-size:0.8125rem;color:#5f5e58;margin-top:0.125rem; }
+      .hidden { display:none !important; }
+      @media(max-width:900px){.media-inner,.press-kit-inner{width:90%;}.featured-card{flex-direction:column;}.featured-thumb{width:100%;min-width:unset;height:100px;}}
+      @media(max-width:640px){.media-grid{grid-template-columns:1fr;}}
+    </style>
+  </head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-FRMEVRWQ5C"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-FRMEVRWQ5C");</script>
+  <body>
+    <header id="desktop-header">
+      <a class="home-link" href="./index.html"><img src="./assets/possibility_logo_rgb.png" alt="Possibility Neurotechnologies Logo" /></a>
+      <nav><ul>
+        <li><a href="./think2switch.html" class="nav-link">Think2Switch&trade;</a></li>
+        <li><a href="./get-started.html" class="nav-link">Get Started</a></li>
+        <li><a href="./about.html" class="nav-link">About Us</a></li>
+        <li><a href="./research.html" class="nav-link">Research</a></li>
+        <li><a href="./media.html" class="nav-link current-page">Media</a></li>
+        <li><a href="./contact.html" class="nav-link">Contact</a></li>
+        <li><a href="https://apps.apple.com/ca/app/think2switch/id6738101315" class="early-access desktop" target="_blank" rel="noopener">Download Free</a></li>
+      </ul></nav>
+    </header>
+    <header id="mobile-header">
+      <a class="home-link" href="./index.html" onclick="closeMobileMenu()">
+        <img id="mobile-logo" src="./assets/possibility_neuron_white.png" alt="Possibility Neurotechnologies Logo" />
+        <img id="mobile-menu-logo" src="./assets/possibility_logo_white.png" alt="Possibility Neurotechnologies Logo" style="display:none" />
+      </a>
+      <div class="row" style="justify-content:flex-end">
+        <a href="https://apps.apple.com/ca/app/think2switch/id6738101315" class="early-access mobile" target="_blank" rel="noopener">Download Free</a>
+        <menu-icon onclick="openMobileMenu()"></menu-icon>
+        <close-icon onclick="closeMobileMenu()" style="display:none"></close-icon>
+      </div>
+    </header>
+    <div id="mobile-nav" style="display:none">
+      <div></div>
+      <nav><ul>
+        <li><a href="./think2switch.html" class="nav-link" onclick="closeMobileMenu()">Think2Switch&trade;</a></li>
+        <li><a href="./get-started.html" class="nav-link" onclick="closeMobileMenu()">Get Started</a></li>
+        <li><a href="./about.html" class="nav-link" onclick="closeMobileMenu()">About Us</a></li>
+        <li><a href="./research.html" class="nav-link" onclick="closeMobileMenu()">Research</a></li>
+        <li><a href="./media.html" class="nav-link" onclick="closeMobileMenu()">Media</a></li>
+        <li><a href="./contact.html" class="nav-link" onclick="closeMobileMenu()">Contact</a></li>
+        <li><a href="https://apps.apple.com/ca/app/think2switch/id6738101315" class="early-access mobile" onclick="closeMobileMenu()" target="_blank" rel="noopener">Download Free</a></li>
+      </ul></nav>
+      <div id="mobile-nav-footer">
+        <div class="socials">
+          <a href="https://www.facebook.com/profile.php?id=61551642523387" target="_blank"><facebook-icon></facebook-icon></a>
+          <a href="https://x.com/PossNeuro" target="_blank"><x-icon></x-icon></a>
+          <a href="https://www.instagram.com/possneuro/" target="_blank"><insta-icon></insta-icon></a>
+          <a href="https://www.linkedin.com/company/possibility-neurotechnologies/" target="_blank"><linkedin-icon></linkedin-icon></a>
+          <a href="mailto:info@possneuro.com"><email-icon style="margin-top:3px"></email-icon></a>
+        </div>
+        <div class="privacy"><a href="./privacy.html"><span>Privacy Policy</span></a></div>
+        <div class="copyright"><p>Copyright &copy; 2026 Possibility Neurotechnologies.<br/>All rights reserved.</p></div>
+      </div>
+    </div>
+    <main id="main-content">
+
+      <div class="secondary-content media-page column">
+        <div class="media-hero">
+          <span class="section-eyebrow">Possibility Neurotechnologies</span>
+          <h1>Media &amp; press</h1>
+          <p>News, interviews, and recognition from organisations covering our work in accessible brain-computer interface technology.</p>
+          <div class="press-contact-badge">
+            <svg width="15" height="15" viewBox="0 0 16 16" fill="none"><rect x="1.5" y="3.5" width="13" height="9" rx="1.5" stroke="currentColor" stroke-width="1.4"/><path d="M1.5 5.5l6.5 4.5 6.5-4.5" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg>
+            Press inquiries: <a href="mailto:info@possneuro.com">info@possneuro.com</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="secondary-content media-body column">
+        <div class="media-inner">
+
+          <div class="filter-bar">
+            <span class="filter-label">Show:</span>
+            <button class="filter-pill active" data-filter="all" onclick="filterMedia('all',this)">All</button>
+            <button class="filter-pill" data-filter="press" onclick="filterMedia('press',this)">Press</button>
+            <button class="filter-pill" data-filter="video" onclick="filterMedia('video',this)">Video</button>
+            <button class="filter-pill" data-filter="podcast" onclick="filterMedia('podcast',this)">Podcast</button>
+            <button class="filter-pill" data-filter="award" onclick="filterMedia('award',this)">Awards</button>
+            <button class="filter-pill" data-filter="research" onclick="filterMedia('research',this)">Research</button>
+            <span class="filter-count" id="filter-count">6 items</span>
+          </div>
+
+          <div id="featured-wrap">
+            <p class="featured-label">Featured</p>
+            <a class="featured-card" href="#" data-type="video" target="_blank" rel="noopener">
+              <div class="featured-thumb thumb-video">
+                <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
+                  <circle cx="18" cy="18" r="17" stroke="#c0404050" stroke-width="1.5"/>
+                  <polygon points="15,12 26,18 15,24" fill="#9e1a1a" opacity="0.7"/>
+                </svg>
+              </div>
+              <div class="featured-body">
+                <div class="card-meta">
+                  <span class="type-badge badge-video">Video</span>
+                  <span class="meta-dot">&middot;</span>
+                  <span class="meta-text">Add outlet name here</span>
+                  <span class="meta-dot">&middot;</span>
+                  <span class="meta-text">2026</span>
+                </div>
+                <p class="featured-title">Add your most impressive piece of coverage here &mdash; this is the first thing journalists and funders will see.</p>
+                <p class="featured-excerpt">Replace this with the excerpt or description of the featured coverage. Keep it to 1&ndash;2 sentences.</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="media-grid" id="media-grid">
+
+            <a class="media-card" href="#" data-type="press" target="_blank" rel="noopener">
+              <div class="card-meta"><span class="type-badge badge-press">Press</span><span class="meta-dot">&middot;</span><span class="meta-text">Outlet name</span></div>
+              <p class="card-title">Add your first press article headline here</p>
+              <p class="card-excerpt">Brief description of the article &mdash; 1&ndash;2 sentences on what it covers and why it matters.</p>
+              <div class="card-footer"><span class="card-date">2026</span><span class="card-link">Read &rarr;</span></div>
+            </a>
+
+            <a class="media-card" href="#" data-type="podcast" target="_blank" rel="noopener">
+              <div class="card-meta"><span class="type-badge badge-podcast">Podcast</span><span class="meta-dot">&middot;</span><span class="meta-text">Podcast name</span></div>
+              <p class="card-title">Add your podcast appearance headline here</p>
+              <p class="card-excerpt">Brief description of the episode &mdash; who was interviewed and what topics were covered.</p>
+              <div class="card-footer"><span class="card-date">2026</span><span class="card-link">Listen &rarr;</span></div>
+            </a>
+
+            <a class="media-card" href="#" data-type="award" target="_blank" rel="noopener">
+              <div class="card-meta"><span class="type-badge badge-award">Award</span><span class="meta-dot">&middot;</span><span class="meta-text">CDL Rockies</span></div>
+              <p class="card-title">Possibility Neurotechnologies named CDL Rockies Health stream finalist</p>
+              <p class="card-excerpt">Recognition from the Creative Destruction Lab for innovation in accessible health technology.</p>
+              <div class="card-footer"><span class="card-date">2025</span><span class="card-link">Read &rarr;</span></div>
+            </a>
+
+            <a class="media-card" href="#" data-type="research" target="_blank" rel="noopener">
+              <div class="card-meta"><span class="type-badge badge-research">Research</span><span class="meta-dot">&middot;</span><span class="meta-text">Add journal name</span></div>
+              <p class="card-title">Add published research or peer-reviewed citation title here</p>
+              <p class="card-excerpt">Brief description of the study, its methodology, and key findings relevant to Think2Switch.</p>
+              <div class="card-footer"><span class="card-date">2025</span><span class="card-link">Read paper &rarr;</span></div>
+            </a>
+
+            <a class="media-card" href="#" data-type="press" target="_blank" rel="noopener">
+              <div class="card-meta"><span class="type-badge badge-press">Press</span><span class="meta-dot">&middot;</span><span class="meta-text">Outlet name</span></div>
+              <p class="card-title">Add second press article headline here</p>
+              <p class="card-excerpt">Brief description of the article coverage.</p>
+              <div class="card-footer"><span class="card-date">2025</span><span class="card-link">Read &rarr;</span></div>
+            </a>
+
+            <a class="media-card" href="#" data-type="video" target="_blank" rel="noopener">
+              <div class="card-meta"><span class="type-badge badge-video">Video</span><span class="meta-dot">&middot;</span><span class="meta-text">Add outlet name</span></div>
+              <p class="card-title">Add video interview or presentation title here</p>
+              <p class="card-excerpt">Brief description of the video, speaker, and key topics covered.</p>
+              <div class="card-footer"><span class="card-date">2025</span><span class="card-link">Watch &rarr;</span></div>
+            </a>
+
+          </div>
+          <div class="no-results" id="no-results">No items in this category yet &mdash; check back soon.</div>
+
+        </div>
+      </div>
+
+      <div class="secondary-content press-kit column">
+        <div class="press-kit-inner">
+          <div class="pk-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#5f5e58" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 12h8M8 8h5M8 16h3"/></svg>
+          </div>
+          <div class="pk-text">
+            <p class="pk-title">Press kit</p>
+            <p class="pk-sub">Logos, product images, founder photos, and company fact sheet &mdash; everything you need to cover us.</p>
+          </div>
+          <a href="mailto:info@possneuro.com?subject=Press%20Kit%20Request" class="btn-outline-purple">Request press kit &rarr;</a>
+        </div>
+      </div>
+
+    </main>
+    <footer>
+      <div class="socials">
+        <a href="https://www.facebook.com/profile.php?id=61551642523387" target="_blank"><facebook-icon></facebook-icon></a>
+        <a href="https://x.com/PossNeuro" target="_blank"><x-icon></x-icon></a>
+        <a href="https://www.instagram.com/possneuro/" target="_blank"><insta-icon></insta-icon></a>
+        <a href="https://www.linkedin.com/company/possibility-neurotechnologies/" target="_blank"><linkedin-icon></linkedin-icon></a>
+        <a href="mailto:info@possneuro.com"><email-icon style="margin-top:3px"></email-icon></a>
+      </div>
+      <div class="privacy"><a href="./privacy.html"><span>Privacy Policy</span></a></div>
+      <div class="copyright"><span>Copyright &copy; 2026 Possibility Neurotechnologies. All rights reserved.</span></div>
+    </footer>
+    <script>
+      function openMobileMenu(){document.getElementById("mobile-nav").style.display="flex";document.getElementById("main-content").style.display="none";document.querySelector("menu-icon").style.display="none";document.querySelector("close-icon").style.display="flex";document.querySelector(".early-access.mobile").style.display="none";document.querySelector("#mobile-logo").style.display="none";document.querySelector("#mobile-menu-logo").style.display="flex";}
+      function closeMobileMenu(){document.getElementById("mobile-nav").style.display="none";document.getElementById("main-content").style.display="block";document.querySelector("menu-icon").style.display="flex";document.querySelector("close-icon").style.display="none";document.querySelector(".early-access.mobile").style.display="flex";document.querySelector("#mobile-logo").style.display="flex";document.querySelector("#mobile-menu-logo").style.display="none";}
+      function filterMedia(type, btn) {
+        document.querySelectorAll('.filter-pill').forEach(p => p.classList.remove('active'));
+        btn.classList.add('active');
+        var featured = document.getElementById('featured-wrap');
+        var cards = document.querySelectorAll('.media-card');
+        var visible = 0;
+        if (featured) featured.classList.toggle('hidden', type !== 'all' && type !== 'video');
+        cards.forEach(function(card) {
+          var match = type === 'all' || card.dataset.type === type;
+          card.classList.toggle('hidden', !match);
+          if (match) visible++;
+        });
+        document.getElementById('no-results').style.display = visible === 0 ? 'block' : 'none';
+        document.getElementById('filter-count').textContent = visible + (visible === 1 ? ' item' : ' items');
+      }
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>
