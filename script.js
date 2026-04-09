@@ -11,6 +11,7 @@ mainContent.addEventListener("scroll", function () {
     var navLinks = document.querySelectorAll(".nav-link");
     var startDesktop = document.querySelector(".start-nav.desktop");
     var startMobile = document.querySelector(".start-nav.mobile");
+    var desktopLogo = document.querySelector("#desktop-logo");
     var mobileLogo = document.querySelector("#mobile-logo");
     var mobileMenuLogo = document.querySelector("#mobile-menu-logo");
     var mobileNav = document.querySelector("#mobile-nav");
@@ -40,6 +41,7 @@ mainContent.addEventListener("scroll", function () {
         closeIcon.classList.add("scrolled");
         mobileNavFooter.classList.add("scrolled");
 
+        desktopLogo.setAttribute("src", "./assets/possibility_logo_rgb.png");
         mobileLogo.setAttribute("src", "./assets/possibility_neuron_color.png");
         mobileMenuLogo.setAttribute("src", "./assets/possibility_logo_rgb.png");
 
@@ -65,6 +67,7 @@ mainContent.addEventListener("scroll", function () {
         closeIcon.classList.remove("scrolled");
         mobileNavFooter.classList.remove("scrolled");
 
+        desktopLogo.setAttribute("src", "./assets/possibility_logo_white.png");
         mobileLogo.setAttribute("src", "./assets/possibility_neuron_white.png");
         mobileMenuLogo.setAttribute("src", "./assets/possibility_logo_white.png");
 
