@@ -288,17 +288,20 @@
         justify-content: flex-start;
     }
 
+    .team-member {
+        margin: 20px 0;
+    }
+
     #team .headshot {
-        margin: 30px 0;
+        margin: 0;
     }
 
     .team-name {
         font-size: 1.2rem;
-        font-weight: 500;
     }
+
     .team-position {
         font-size: 1rem;
-        font-weight: 300;
     }
 
     #partners {
