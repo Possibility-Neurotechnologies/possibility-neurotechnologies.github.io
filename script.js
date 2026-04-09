@@ -9,8 +9,8 @@ const currentPageId = getCurrentPageId();
 mainContent.addEventListener("scroll", function () {
     var headers = document.querySelectorAll("header");
     var navLinks = document.querySelectorAll(".nav-link");
-    var earlyAccessDesktop = document.querySelector(".start-nav.desktop");
-    var earlyAccessMobile = document.querySelector(".start-nav.mobile");
+    var startDesktop = document.querySelector(".start-nav.desktop");
+    var startMobile = document.querySelector(".start-nav.mobile");
     var mobileLogo = document.querySelector("#mobile-logo");
     var mobileMenuLogo = document.querySelector("#mobile-menu-logo");
     var mobileNav = document.querySelector("#mobile-nav");
@@ -33,8 +33,8 @@ mainContent.addEventListener("scroll", function () {
         scrollBarStyle.innerHTML = unscrolledScrollBar;
     } */
     if (scrollPosition > 0.9 * screenHeight && currentPageId !== "contact-link") {
-        earlyAccessDesktop.classList.add("scrolled");
-        earlyAccessMobile.classList.add("scrolled");
+        startDesktop.classList.add("scrolled");
+        startMobile.classList.add("scrolled");
         mobileNav.classList.add("scrolled");
         hamburgerMenu.classList.add("scrolled");
         closeIcon.classList.add("scrolled");
@@ -58,8 +58,8 @@ mainContent.addEventListener("scroll", function () {
             }
         }
     } else {
-        earlyAccessDesktop.classList.remove("scrolled");
-        earlyAccessMobile.classList.remove("scrolled");
+        startDesktop.classList.remove("scrolled");
+        startMobile.classList.remove("scrolled");
         mobileNav.classList.remove("scrolled");
         hamburgerMenu.classList.remove("scrolled");
         closeIcon.classList.remove("scrolled");
