@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Think2Switch™ — How It Works | Possibility Neurotechnologies</title>
+    <meta name="description" content="Think2Switch translates your brain signals into real-world control. Learn how it works, what it can do, pricing, and how to get started." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mobile-styles.css" />
+    <link rel="stylesheet" href="enhancements.css" />
+    <script src="./components/socials.js" type="text/javascript" defer></script>
+    <script src="./components/icons.js" type="text/javascript" defer></script>
+    <style>
+      .t2s-dark-hero { background:linear-gradient(90deg,#e5287e 0%,#7f3f98 100%) !important; }
+      .t2s-dark-inner { display:flex;flex-direction:column;align-items:center;text-align:center;padding:0 8%; }
+      .t2s-dark-inner h1 { color:#fff;max-width:740px; }
+      .t2s-dark-inner p { font-size:1.1rem;color:rgba(255,255,255,0.85);max-width:580px;margin-top:0.875rem;margin-bottom:1.75rem; }
+      .stats-row { display:flex;gap:3rem;flex-wrap:wrap;justify-content:center;margin-top:2.5rem;padding-top:2.5rem;border-top:1px solid rgba(255,255,255,0.2);width:100%;max-width:660px; }
+      .stat-item { display:flex;flex-direction:column;align-items:center;gap:0.25rem; }
+      .stat-num { font-family:"Poppins",sans-serif;font-size:2rem;font-weight:700;color:#fff; }
+      .stat-label { font-family:"Lato",sans-serif;font-size:0.8125rem;color:rgba(255,255,255,0.65); }
+      .t2s-section { background:#fff !important; }
+      .t2s-inner { width:78%;display:flex;flex-direction:column;align-items:flex-start; }
+      .t2s-inner h2 { color:#7f3f98;margin-bottom:1.25rem; }
+      .t2s-inner p { font-size:1rem;color:#5f5e58;line-height:1.75;margin-bottom:1rem; }
+      .bci-compare { display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin:1.5rem 0;width:100%; }
+      .bci-card { border-radius:12px;padding:1.25rem; }
+      .bci-card.invasive { background:#f7f7f5;border:1px solid #e2e1db; }
+      .bci-card.noninvasive { background:#fbd0e8;border:1px solid #f4a1ca; }
+      .bci-card h4 { font-family:"Poppins",sans-serif;font-size:1rem;font-weight:700;margin-bottom:0.5rem; }
+      .bci-card.noninvasive h4 { color:#7f3f98; }
+      .bci-card p { font-size:0.875rem;color:#5f5e58;line-height:1.6;margin:0; }
+      .pricing-grid-t2s { display:grid;grid-template-columns:1fr 1fr;gap:1.25rem;margin:1.5rem 0;width:100%; }
+      .pricing-card-t2s { background:#fff;border:1.5px solid #e2e1db;border-radius:16px;padding:2rem;display:flex;flex-direction:column;gap:1.25rem; }
+      .pricing-card-t2s.featured { border-color:#7f3f98;position:relative; }
+      .pricing-badge { position:absolute;top:1.25rem;right:1.25rem;font-family:"Poppins",sans-serif;font-size:0.6875rem;font-weight:700;padding:0.25rem 0.75rem;border-radius:999px;background:#fbd0e8;color:#7f3f98;letter-spacing:0.04em;text-transform:uppercase; }
+      .pricing-name { font-family:"Poppins",sans-serif;font-size:1.125rem;font-weight:700;color:#111; }
+      .pricing-amount { font-family:"Poppins",sans-serif;font-size:2.5rem;font-weight:700;letter-spacing:-0.03em;color:#111; }
+      .pricing-period { font-family:"Lato",sans-serif;font-size:0.875rem;color:#9c9a91; }
+      .pricing-desc { font-family:"Lato",sans-serif;font-size:0.9rem;color:#5f5e58;line-height:1.55; }
+      .pricing-features { list-style:none;display:flex;flex-direction:column;gap:0.625rem; }
+      .pricing-features li { display:flex;align-items:flex-start;gap:0.625rem;font-family:"Lato",sans-serif;font-size:0.9rem;line-height:1.4;color:#111; }
+      .pf-check { width:18px;height:18px;border-radius:50%;background:#7f3f98;display:inline-flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px; }
+      .pf-check svg { width:9px;height:9px;stroke:#fff;fill:none;stroke-width:2.5; }
+      .hsa-alert { display:flex;align-items:flex-start;gap:0.75rem;padding:1rem 1.25rem;border-radius:10px;background:#fbd0e8;color:#7f3f98;font-family:"Lato",sans-serif;font-size:0.9rem;line-height:1.55;width:100%;margin-top:0.5rem; }
+      .hsa-alert a { color:#7f3f98;font-weight:700;text-decoration:underline; }
+      .faq-section-t2s { background:#f7f7f5 !important; }
+      .faq-inner-t2s { width:72%;display:flex;flex-direction:column;align-items:center;text-align:center; }
+      .faq-inner-t2s h2 { color:#7f3f98; }
+      @media(max-width:900px){.t2s-inner,.faq-inner-t2s{width:90%;}.bci-compare,.pricing-grid-t2s{grid-template-columns:1fr;}}
+    </style>
+  </head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-FRMEVRWQ5C"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-FRMEVRWQ5C");</script>
+  <body>
+    <header id="desktop-header">
+      <a class="home-link" href="./index.html"><img src="./assets/possibility_logo_rgb.png" alt="Possibility Neurotechnologies Logo" /></a>
+      <nav><ul>
+        <li><a href="./think2switch.html" class="nav-link current-page">Think2Switch&trade;</a></li>
+        <li><a href="./get-started.html" class="nav-link">Get Started</a></li>
+        <li><a href="./about.html" class="nav-link">About Us</a></li>
+        <li><a href="./research.html" class="nav-link">Research</a></li>
+        <li><a href="./media.html" class="nav-link">Media</a></li>
+        <li><a href="./contact.html" class="nav-link">Contact</a></li>
+        <li><a href="https://apps.apple.com/ca/app/think2switch/id6738101315" class="early-access desktop" target="_blank" rel="noopener">Download Free</a></li>
+      </ul></nav>
+    </header>
+    <header id="mobile-header">
+      <a class="home-link" href="./index.html" onclick="closeMobileMenu()">
+        <img id="mobile-logo" src="./assets/possibility_neuron_white.png" alt="Possibility Neurotechnologies Logo" />
+        <img id="mobile-menu-logo" src="./assets/possibility_logo_white.png" alt="Possibility Neurotechnologies Logo" style="display:none" />
+      </a>
+      <div class="row" style="justify-content:flex-end">
+        <a href="https://apps.apple.com/ca/app/think2switch/id6738101315" class="early-access mobile" target="_blank" rel="noopener">Download Free</a>
+        <menu-icon onclick="openMobileMenu()"></menu-icon>
+        <close-icon onclick="closeMobileMenu()" style="display:none"></close-icon>
+      </div>
+    </header>
+    <div id="mobile-nav" style="display:none">
+      <div></div>
+      <nav><ul>
+        <li><a href="./think2switch.html" class="nav-link" onclick="closeMobileMenu()">Think2Switch&trade;</a></li>
+        <li><a href="./get-started.html" class="nav-link" onclick="closeMobileMenu()">Get Started</a></li>
+        <li><a href="./about.html" class="nav-link" onclick="closeMobileMenu()">About Us</a></li>
+        <li><a href="./research.html" class="nav-link" onclick="closeMobileMenu()">Research</a></li>
+        <li><a href="./media.html" class="nav-link" onclick="closeMobileMenu()">Media</a></li>
+        <li><a href="./contact.html" class="nav-link" onclick="closeMobileMenu()">Contact</a></li>
+        <li><a href="https://apps.apple.com/ca/app/think2switch/id6738101315" class="early-access mobile" onclick="closeMobileMenu()" target="_blank" rel="noopener">Download Free</a></li>
+      </ul></nav>
+      <div id="mobile-nav-footer">
+        <div class="socials">
+          <a href="https://www.facebook.com/profile.php?id=61551642523387" target="_blank"><facebook-icon></facebook-icon></a>
+          <a href="https://x.com/PossNeuro" target="_blank"><x-icon></x-icon></a>
+          <a href="https://www.instagram.com/possneuro/" target="_blank"><insta-icon></insta-icon></a>
+          <a href="https://www.linkedin.com/company/possibility-neurotechnologies/" target="_blank"><linkedin-icon></linkedin-icon></a>
+          <a href="mailto:info@possneuro.com"><email-icon style="margin-top:3px"></email-icon></a>
+        </div>
+        <div class="privacy"><a href="./privacy.html"><span>Privacy Policy</span></a></div>
+        <div class="copyright"><p>Copyright &copy; 2026 Possibility Neurotechnologies.<br/>All rights reserved.</p></div>
+      </div>
+    </div>
+    <main id="main-content">
+
+      <div class="secondary-content t2s-dark-hero column">
+        <div class="t2s-dark-inner">
+          <span class="section-eyebrow eyebrow-light" style="color:rgba(255,255,255,0.7);">Think2Switch&trade;</span>
+          <h1>Control the world around you &mdash; using only your thoughts.</h1>
+          <p>Think2Switch&trade; translates your brain's natural electrical signals into real switch actions &mdash; letting you play, connect, and navigate without hands, voice, or physical movement.</p>
+          <div style="display:flex;flex-wrap:wrap;gap:1rem;justify-content:center;">
+            <a href="https://apps.apple.com/ca/app/think2switch/id6738101315" class="btn-appstore" target="_blank" rel="noopener">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+              <span class="btn-appstore-text"><span class="btn-appstore-sub">Free on the</span><span class="btn-appstore-main">App Store</span></span>
+            </a>
+            <a href="./get-started.html" class="btn-secondary">Full setup guide &rarr;</a>
+          </div>
+          <div class="stats-row">
+            <div class="stat-item"><div class="stat-num">Free</div><div class="stat-label">to download</div></div>
+            <div class="stat-item"><div class="stat-num">2+</div><div class="stat-label">years old minimum</div></div>
+            <div class="stat-item"><div class="stat-num">iOS 18</div><div class="stat-label">required</div></div>
+            <div class="stat-item"><div class="stat-num">100%</div><div class="stat-label">non-invasive</div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="secondary-content t2s-section column">
+        <div class="t2s-inner">
+          <span class="section-eyebrow">The science, simply explained</span>
+          <h2>What is a brain-computer interface?</h2>
+          <p>A BCI reads the electrical signals your brain produces naturally and translates them into commands &mdash; without any physical movement. Think2Switch&trade; uses <strong>non-invasive EEG</strong>: sensors rest on your scalp, detect your brain's activity, and translate a chosen mental state into a switch action.</p>
+          <div class="bci-compare">
+            <div class="bci-card invasive"><h4>Invasive BCIs</h4><p>Require surgery to implant electrodes into brain tissue. High signal fidelity, significant medical risk. Not what Think2Switch&trade; uses.</p></div>
+            <div class="bci-card noninvasive"><h4>Non-invasive EEG &larr; Think2Switch&trade;</h4><p>Sensors rest on the scalp. Safe, painless, and used in consumer and clinical settings for over a decade. No surgery required.</p></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="secondary-content column page2 capabilities-section">
+        <div class="cap-inner">
+          <span class="section-eyebrow">Capabilities</span>
+          <h2>Everything Think2Switch&trade; can do</h2>
+          <div class="capability-grid">
+            <div class="capability-card"><div class="cap-icon">&#127918;</div><h3>In-app games</h3><p>Play accessible games built right into Think2Switch&trade;, designed for single-switch control. No subscription needed.</p></div>
+            <div class="capability-card"><div class="cap-icon">&#127968;</div><h3>Apple HomeKit control</h3><p>Control lights, locks, fans, TVs, and any HomeKit-compatible device using a mental command. (Subscription required.)</p></div>
+            <div class="capability-card"><div class="cap-icon">&#128241;</div><h3>Keyboard emulation</h3><p>Your mental command acts as a keypress in any iOS app &mdash; browse the web, use social media, navigate software. (Subscription required.)</p></div>
+            <div class="capability-card"><div class="cap-icon">&#128172;</div><h3>Choice making &amp; communication</h3><p>Use scanning to select answers, make choices, and participate in activities. One mental command becomes a voice.</p></div>
+            <div class="capability-card"><div class="cap-icon">&#9889;</div><h3>Custom scenes</h3><p>Chain multiple actions into one mental trigger &mdash; dim lights, play music, open an app, all at once. (Subscription required.)</p></div>
+            <div class="capability-card"><div class="cap-icon">&#129504;</div><h3>Two mental commands</h3><p>Unlock a second distinct command for more nuanced, flexible control of your devices. (Subscription required.)</p></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="secondary-content t2s-section column">
+        <div class="t2s-inner">
+          <span class="section-eyebrow">Pricing</span>
+          <h2>Start free. Unlock more when you're ready.</h2>
+          <p>Download Think2Switch&trade; for free and start with one mental command. Subscribe to unlock the full suite of features.</p>
+          <div class="pricing-grid-t2s">
+            <div class="pricing-card-t2s">
+              <div class="pricing-name">Free</div>
+              <div><span class="pricing-amount">$0</span> <span class="pricing-period">forever</span></div>
+              <div class="pricing-desc">Everything you need to explore brain-controlled switching.</div>
+              <ul class="pricing-features">
+                <li><span class="pf-check"><svg viewBox="0 0 10 10"><path d="M2 5l2 2 4-4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>1 mental command</li>
+                <li><span class="pf-check"><svg viewBox="0 0 10 10"><path d="M2 5l2 2 4-4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Built-in accessible games</li>
+                <li><span class="pf-check"><svg viewBox="0 0 10 10"><path d="M2 5l2 2 4-4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Switch access for iOS</li>
+                <li><span class="pf-check"><svg viewBox="0 0 10 10"><path d="M2 5l2 2 4-4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Choice making &amp; communication</li>
+              </ul>
+              <a href="https://apps.apple.com/ca/app/think2switch/id6738101315" class="btn-outline-purple" target="_blank" rel="noopener" style="text-align:center;">Download free</a>
+            </div>
+            <div class="pricing-card-t2s featured">
+              <span class="pricing-badge">Most popular</span>
+              <div class="pricing-name">Think2Switch&trade; Full</div>
+              <div><span class="pricing-amount">$34.99</span> <span class="pricing-period">/ month</span></div>
+              <div class="pricing-desc">Or $349.99/year (save ~17%). Unlock everything Think2Switch&trade; can do.</div>
+              <ul class="pricing-features">
+                <li><span class="pf-check"><svg viewBox="0 0 10 10"><path d="M2 5l2 2 4-4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Everything in Free</li>
+                <li><span class="pf-check"><svg viewBox="0 0 10 10"><path d="M2 5l2 2 4-4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>2 mental commands</li>
+                <li><span class="pf-check"><svg viewBox="0 0 10 10"><path d="M2 5l2 2 4-4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Apple HomeKit device control</li>
+                <li><span class="pf-check"><svg viewBox="0 0 10 10"><path d="M2 5l2 2 4-4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Keyboard emulation (any app)</li>
+                <li><span class="pf-check"><svg viewBox="0 0 10 10"><path d="M2 5l2 2 4-4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Custom scenes &amp; automation</li>
+              </ul>
+              <a href="https://apps.apple.com/ca/app/think2switch/id6738101315" class="btn-teal" target="_blank" rel="noopener" style="text-align:center;justify-content:center;">Start free trial</a>
+            </div>
+          </div>
+          <div class="hsa-alert">
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" style="flex-shrink:0;margin-top:2px;"><circle cx="9" cy="9" r="8" stroke="currentColor" stroke-width="1.5"/><path d="M9 8v5M9 6h.01" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+            The Muse Athena headset is eligible for HSA/FSA funds in the US, and available through <a href="https://www.truemed.com/shop/partners/muse" target="_blank" rel="noopener">Truemed</a>. Need a letter of medical necessity? <a href="./contact.html">Contact us.</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="secondary-content faq-section-t2s column" id="faq">
+        <div class="faq-inner-t2s">
+          <span class="section-eyebrow">FAQ</span>
+          <h2>Every question answered</h2>
+          <div class="faq-list" style="width:100%;text-align:left;margin-top:3%;">
+            <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Is it safe? Does it involve surgery?<span class="faq-icon">+</span></button><div class="faq-a">Completely non-invasive. The Muse Athena headset rests on your head like headphones. No surgery, no implants, no medical procedures. EEG technology has been used safely in consumer and clinical settings for over a decade.</div></div>
+            <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">What devices does Think2Switch require?<span class="faq-icon">+</span></button><div class="faq-a">You need the <strong>Muse Athena EEG headset</strong> (get 15% off at <a href="https://choosemuse.com/possneuro" target="_blank" rel="noopener">choosemuse.com/possneuro</a>) and an iPhone or iPad running iOS 18.0 or later.</div></div>
+            <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">How long does setup take?<span class="faq-icon">+</span></button><div class="faq-a">Most users complete their first successful switch in their very first session. The <a href="https://think2switch.gitbook.io/think2switch-knowledge-guide" target="_blank" rel="noopener">Knowledge Guide</a> walks you through connecting, calibrating, and controlling step by step.</div></div>
+            <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">What age is it suitable for?<span class="faq-icon">+</span></button><div class="faq-a">Think2Switch&trade; is designed for users as young as 2. The only requirement is the ability to understand basic cause and effect &mdash; not physical ability. There is no upper age limit.</div></div>
+            <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Does it work for someone with ALS whose condition is progressing?<span class="faq-icon">+</span></button><div class="faq-a">Yes. Think2Switch&trade; relies on brain activity, not physical movement. It remains usable even as motor function declines and can be recalibrated at any time to account for changes in your signal.</div></div>
+            <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Can it be covered by insurance or government funding?<span class="faq-icon">+</span></button><div class="faq-a">The Muse Athena is eligible for <strong>HSA and FSA funds</strong> in the US and available through <a href="https://www.truemed.com/shop/partners/muse" target="_blank" rel="noopener">Truemed</a>. We can provide a letter of medical necessity &mdash; <a href="./contact.html">contact us</a> for assistance.</div></div>
+            <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">I'm an OT. Can I recommend this to families?<span class="faq-icon">+</span></button><div class="faq-a">Yes. Think2Switch&trade; is designed for clinic or home use with no technical expertise required. We welcome clinical partnerships &mdash; <a href="./contact.html">get in touch</a> for evaluation support.</div></div>
+            <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">What if it doesn't work for me?<span class="faq-icon">+</span></button><div class="faq-a">The app is free to download &mdash; explore and calibrate before committing to a subscription. If you're struggling, our <a href="https://think2switch.gitbook.io/think2switch-knowledge-guide" target="_blank" rel="noopener">troubleshooting guide</a> and team are here to help. <a href="./contact.html">Reach out</a> &mdash; we support every user personally.</div></div>
+          </div>
+          <p style="margin-top:2rem;font-family:'Lato',sans-serif;font-size:1rem;color:#5f5e58;">Still have questions? <a href="./contact.html" style="color:#7f3f98;font-weight:700;">We're here to help &rarr;</a></p>
+        </div>
+      </div>
+
+      <div class="secondary-content column cta-section">
+        <div class="cta-inner">
+          <h2 style="color:#fff;">Try it free today.</h2>
+          <p style="color:rgba(255,255,255,0.85);margin:1rem 0 2rem;">Download the app, order your headset with 15% off, and start your first session. No commitment required.</p>
+          <div class="cta-actions">
+            <a href="https://apps.apple.com/ca/app/think2switch/id6738101315" class="btn-appstore" target="_blank" rel="noopener">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+              <span class="btn-appstore-text"><span class="btn-appstore-sub">Download on the</span><span class="btn-appstore-main">App Store</span></span>
+            </a>
+            <a href="./get-started.html" class="btn-outline-white">Full setup guide &rarr;</a>
+          </div>
+        </div>
+      </div>
+
+    </main>
+    <footer>
+      <div class="socials">
+        <a href="https://www.facebook.com/profile.php?id=61551642523387" target="_blank"><facebook-icon></facebook-icon></a>
+        <a href="https://x.com/PossNeuro" target="_blank"><x-icon></x-icon></a>
+        <a href="https://www.instagram.com/possneuro/" target="_blank"><insta-icon></insta-icon></a>
+        <a href="https://www.linkedin.com/company/possibility-neurotechnologies/" target="_blank"><linkedin-icon></linkedin-icon></a>
+        <a href="mailto:info@possneuro.com"><email-icon style="margin-top:3px"></email-icon></a>
+      </div>
+      <div class="privacy"><a href="./privacy.html"><span>Privacy Policy</span></a></div>
+      <div class="copyright"><span>Copyright &copy; 2026 Possibility Neurotechnologies. All rights reserved.</span></div>
+    </footer>
+    <script>
+      function openMobileMenu(){document.getElementById("mobile-nav").style.display="flex";document.getElementById("main-content").style.display="none";document.querySelector("menu-icon").style.display="none";document.querySelector("close-icon").style.display="flex";document.querySelector(".early-access.mobile").style.display="none";document.querySelector("#mobile-logo").style.display="none";document.querySelector("#mobile-menu-logo").style.display="flex";}
+      function closeMobileMenu(){document.getElementById("mobile-nav").style.display="none";document.getElementById("main-content").style.display="block";document.querySelector("menu-icon").style.display="flex";document.querySelector("close-icon").style.display="none";document.querySelector(".early-access.mobile").style.display="flex";document.querySelector("#mobile-logo").style.display="flex";document.querySelector("#mobile-menu-logo").style.display="none";}
+      function toggleFaq(btn){const item=btn.closest('.faq-item');const isOpen=item.classList.contains('open');document.querySelectorAll('.faq-item.open').forEach(el=>el.classList.remove('open'));if(!isOpen)item.classList.add('open');}
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>
