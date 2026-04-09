@@ -620,7 +620,7 @@ main::-webkit-scrollbar {
 .secondary-content.media-page {
     height: auto;
     min-height: 100%;
-    align-items: flex-start;
+    align-items: center;
     justify-content: flex-start;
     padding-bottom: 80px;
 }
