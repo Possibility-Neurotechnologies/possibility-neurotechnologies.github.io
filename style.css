@@ -616,6 +616,147 @@ main::-webkit-scrollbar {
     width: auto;
 }
 
+/* ------------------- Media Page ------------------- */
+.secondary-content.media-page {
+    height: auto;
+    min-height: 100%;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-bottom: 80px;
+}
+
+.media-inner {
+    height: auto;
+    width: 90%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 40px 0 20px;
+}
+
+.media-section {
+    height: auto;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.media-section h2 {
+    font-size: 1.6rem;
+    color: #7f3f98;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #fbd0e8;
+    padding-bottom: 10px;
+}
+
+.media-grid {
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    width: 100%;
+}
+
+.media-card {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: #fff;
+    border: 1px solid #e8e8e8;
+    border-radius: 10px;
+    padding: 20px;
+    text-decoration: none;
+    color: inherit;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+}
+
+.media-card:hover {
+    border-color: #ec3096;
+    box-shadow: 0 4px 16px rgba(236, 48, 150, 0.12);
+}
+
+.media-card-meta {
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.media-outlet {
+    font-family: "Lato", sans-serif;
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: #7f3f98;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    flex: 1;
+    margin-right: 8px;
+}
+
+.media-type {
+    font-family: "Lato", sans-serif;
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 3px 10px;
+    border-radius: 20px;
+    white-space: nowrap;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.type-news {
+    background-color: #fbd0e8;
+    color: #ec3096;
+}
+
+.type-broadcast {
+    background-color: #e0c9e8;
+    color: #7f3f98;
+}
+
+.type-podcast {
+    background-color: #fbd0e8;
+    color: #e5287e;
+}
+
+.type-award {
+    background-color: #e0c9e8;
+    color: #7f3f98;
+}
+
+.media-title {
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #222;
+    margin: 0 0 8px 0;
+    line-height: 1.4;
+    flex-grow: 1;
+}
+
+.media-description {
+    font-family: "Lato", sans-serif;
+    font-size: 0.9rem;
+    font-weight: 300;
+    color: #555;
+    margin: 0 0 12px 0;
+    line-height: 1.45;
+}
+
+.media-date {
+    font-family: "Lato", sans-serif;
+    font-size: 0.8rem;
+    color: #999;
+    margin-top: auto;
+}
+
 /* ------------------- Privacy Policy Page ------------------- */
 #privacy-text {
     max-height: 60%;

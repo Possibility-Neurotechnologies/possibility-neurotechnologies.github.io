@@ -433,6 +433,33 @@
         height: 44px;
     }
 
+    /* ------------------- Media Page ------------------- */
+    .secondary-content.media-page {
+        padding-bottom: 60px;
+    }
+
+    .media-inner {
+        width: 92%;
+        padding: 24px 0 16px;
+    }
+
+    .media-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .media-section h2 {
+        font-size: 1.3rem;
+    }
+
+    .media-title {
+        font-size: 0.95rem;
+    }
+
+    .media-description {
+        font-size: 0.85rem;
+    }
+
     /* ------------------- Privacy Policy Page ------------------- */
     #privacy-content div {
         width: 90%;

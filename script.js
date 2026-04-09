@@ -99,6 +99,8 @@ function getCurrentPageId() {
         pageId = "research-link";
     } else if (page == "contact") {
         pageId = "contact-link";
+    } else if (page == "media") {
+        pageId = "media-link";
     }
     return pageId;
 }
