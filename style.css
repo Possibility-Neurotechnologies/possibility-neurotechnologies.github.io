@@ -734,7 +734,7 @@ footer span {
     font-family: "Lato", sans-serif;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 1024px) {
     #desktop-header {
         display: flex;
     }
