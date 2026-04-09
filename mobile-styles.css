@@ -420,17 +420,17 @@
         margin-right: 10px;
     }
 
-    /* ----------------- Early Access Page ----------------- */
+    /* ----------------- Get Started Page ----------------- */
     #start-content div {
         width: 85%;
     }
 
-    #application-form {
-        margin-top: 15px;
-        font-size: 1.1rem;
-        padding: 6px 12px;
-        border-radius: 22px;
-        border: 0.15rem solid #7f3f98;
+    .start-steps {
+        font-size: 0.85rem;
+    }
+
+    #app-store-badge img {
+        height: 44px;
     }
 
     /* ------------------- Privacy Policy Page ------------------- */
