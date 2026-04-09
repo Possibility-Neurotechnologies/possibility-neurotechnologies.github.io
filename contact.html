@@ -1,154 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Possibility Neurotechnologies</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-            rel="stylesheet" />
-        <link rel="stylesheet" href="style.css" />
-        <link rel="stylesheet" href="mobile-styles.css" />
-        <script src="./components/socials.js" type="text/javascript" defer></script>
-        <script src="./components/icons.js" type="text/javascript" defer></script>
-    </head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FRMEVRWQ5C"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag("js", new Date());
-
-        gtag("config", "G-FRMEVRWQ5C");
-    </script>
-    <body>
-        <header id="desktop-header">
-            <a class="home-link" href="./index.html"><img src="./assets/possibility_logo_rgb.png" alt="Possibility Neurotechnologies" /></a>
-            <nav>
-                <ul>
-                    <li><a href="./index.html#t2s-content" id="t2s-link" class="nav-link">Think2Switch&trade;</a></li>
-                    <li><a href="./about.html" id="about-link" class="nav-link">About Us</a></li>
-                    <li><a href="./research.html" id="research-link" class="nav-link">Research</a></li>
-                    <li><a href="#contact-content" id="contact-link" class="current-page nav-link">Contact</a></li>
-                    <li><a href="./trial.html" class="early-access desktop">Early Access</a></li>
-                </ul>
-            </nav>
-        </header>
-
-        <header id="mobile-header">
-            <a class="home-link" href="./index.html" onclick="closeMobileMenu()">
-                <img id="mobile-logo" src="./assets/possibility_neuron_white.png" alt="Possibility Neurotechnologies Logo" />
-                <img id="mobile-menu-logo" src="./assets/possibility_logo_white.png" alt="Possibility Neurotechnologies Logo" style="display: none" />
-            </a>
-            <div class="row" style="justify-content: flex-end">
-                <a href="./trial.html" class="early-access mobile">Early Access</a>
-                <menu-icon onclick="openMobileMenu()"></menu-icon>
-                <close-icon onclick="closeMobileMenu()" style="display: none"></close-icon>
-            </div>
-        </header>
-
-        <div id="mobile-nav" style="display: none">
-            <div></div>
-            <nav>
-                <ul>
-                    <li><a href="./index.html#t2s-content" id="t2s-link" class="nav-link" onclick="closeMobileMenu()">Think2Switch&trade;</a></li>
-                    <li><a href="./about.html" id="about-link" class="nav-link" onclick="closeMobileMenu()">About Us</a></li>
-                    <li><a href="./research.html" id="research-link" class="nav-link" onclick="closeMobileMenu()">Research</a></li>
-                    <li><a href="#contact-content" id="contact-link" class="current-page nav-link" onclick="closeMobileMenu()">Contact</a></li>
-                    <li><a href="./trial.html" class="early-access mobile" onclick="closeMobileMenu()">Early Access</a></li>
-                </ul>
-            </nav>
-            <div id="mobile-nav-footer">
-                <div class="socials">
-                    <a href="https://www.facebook.com/profile.php?id=61551642523387" target="_blank"><facebook-icon></facebook-icon></a>
-                    <a href="https://x.com/PossNeuro" target="_blank"><x-icon></x-icon></a>
-                    <a href="https://www.instagram.com/possneuro/" target="_blank"><insta-icon></insta-icon></a>
-                    <a href="https://www.linkedin.com/company/possibility-neurotechnologies/" target="_blank"><linkedin-icon></linkedin-icon></a>
-                    <a href="mailto: info@possneuro.com"><email-icon style="margin-top: 3px"></email-icon></a>
-                </div>
-                <div class="privacy">
-                    <a href="./privacy.html"><span>Privacy Policy</span></a>
-                </div>
-                <div class="copyright">
-                    <p>Copyright &copy; 2026 Possibility Neurotechnologies. <br />All rights reserved.</p>
-                </div>
-            </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact — Possibility Neurotechnologies</title>
+    <meta name="description" content="Get in touch with the Possibility Neurotechnologies team. We respond to every message personally." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mobile-styles.css" />
+    <link rel="stylesheet" href="enhancements.css" />
+    <script src="./components/socials.js" type="text/javascript" defer></script>
+    <script src="./components/icons.js" type="text/javascript" defer></script>
+    <style>
+      #contact-content { background:#fff; }
+      .contact-hero { display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:0 8%; }
+      .contact-hero h1 { color:#7f3f98;max-width:600px; }
+      .contact-hero p { font-size:1.1rem;max-width:560px;color:#5f5e58;margin-top:0.75rem; }
+      .contact-body { display:grid;grid-template-columns:1fr 1fr;gap:3rem;width:80%;align-items:start;margin:0 auto; }
+      .contact-info-col { display:flex;flex-direction:column;gap:1.25rem; }
+      .contact-topic { background:#f7f7f5;border:1px solid #e2e1db;border-radius:12px;padding:1rem 1.25rem; }
+      .contact-topic-title { font-family:"Poppins",sans-serif;font-size:0.9375rem;font-weight:700;color:#111;margin-bottom:0.25rem; }
+      .contact-topic-desc { font-family:"Lato",sans-serif;font-size:0.875rem;color:#5f5e58;line-height:1.55; }
+      .contact-details { padding-top:1.25rem;border-top:1px solid #e2e1db;display:flex;flex-direction:column;gap:1rem; }
+      .contact-detail-label { font-family:"Lato",sans-serif;font-size:0.6875rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#9c9a91;margin-bottom:0.25rem; }
+      .contact-detail-val { font-family:"Poppins",sans-serif;font-size:1rem;font-weight:500;color:#111; }
+      .contact-detail-val a { color:#7f3f98; }
+      .contact-detail-val a:hover { text-decoration:underline; }
+      .contact-form-card { background:#f7f7f5;border:1px solid #e2e1db;border-radius:16px;padding:2rem; }
+      .contact-form-card h3 { font-size:1.25rem;color:#7f3f98;margin-bottom:0.375rem; }
+      .contact-form-card p { font-size:0.875rem;color:#5f5e58;margin-bottom:1.5rem; }
+      .form-row { display:grid;grid-template-columns:1fr 1fr;gap:0.75rem; }
+      .form-group { display:flex;flex-direction:column;gap:0.375rem;margin-bottom:1rem; }
+      .form-group label { font-family:"Poppins",sans-serif;font-size:0.8125rem;font-weight:600;color:#2e2d28; }
+      .form-group input,.form-group textarea,.form-group select { font-family:"Lato",sans-serif;font-size:0.9375rem;padding:0.7rem 0.875rem;border:1.5px solid #e2e1db;border-radius:10px;background:#fff;color:#111;transition:border-color 0.18s ease;outline:none;width:100%; }
+      .form-group input:focus,.form-group textarea:focus,.form-group select:focus { border-color:#7f3f98; }
+      .form-group textarea { resize:vertical;min-height:120px; }
+      .btn-submit { width:100%;display:flex;justify-content:center;align-items:center;gap:0.5rem;font-family:"Poppins",sans-serif;font-size:0.9375rem;font-weight:700;padding:0.85rem 1.5rem;border-radius:999px;border:none;background:linear-gradient(90deg,#e5287e 0%,#7f3f98 100%);color:#fff;cursor:pointer;transition:opacity 0.18s ease; }
+      .btn-submit:hover { opacity:0.88; }
+      .form-note { font-family:"Lato",sans-serif;font-size:0.8rem;color:#9c9a91;text-align:center;margin-top:1rem; }
+      .form-note a { color:#7f3f98; }
+      .quicklinks-section { background:#f7f7f5 !important; }
+      .quicklinks-inner { width:80%;display:flex;flex-direction:column;align-items:center;text-align:center; }
+      .quicklinks-inner h2 { color:#7f3f98; }
+      .quicklinks-grid { display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;margin-top:3%;width:100%;text-align:left; }
+      .quicklink-card { background:#fff;border:1px solid #e2e1db;border-radius:12px;padding:1.25rem;text-decoration:none;display:flex;flex-direction:column;gap:0.375rem;transition:border-color 0.18s ease; }
+      .quicklink-card:hover { border-color:#7f3f98; }
+      .quicklink-title { font-family:"Poppins",sans-serif;font-size:0.9375rem;font-weight:700;color:#111; }
+      .quicklink-desc { font-family:"Lato",sans-serif;font-size:0.8125rem;color:#5f5e58; }
+      @media(max-width:900px){.contact-body{grid-template-columns:1fr;width:90%;}.quicklinks-grid{grid-template-columns:1fr 1fr;}.quicklinks-inner{width:90%;}}
+      @media(max-width:640px){.quicklinks-grid{grid-template-columns:1fr;}.form-row{grid-template-columns:1fr;}}
+    </style>
+  </head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-FRMEVRWQ5C"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-FRMEVRWQ5C");</script>
+  <body>
+    <header id="desktop-header">
+      <a class="home-link" href="./index.html"><img src="./assets/possibility_logo_rgb.png" alt="Possibility Neurotechnologies Logo" /></a>
+      <nav><ul>
+        <li><a href="./think2switch.html" class="nav-link">Think2Switch&trade;</a></li>
+        <li><a href="./get-started.html" class="nav-link">Get Started</a></li>
+        <li><a href="./about.html" class="nav-link">About Us</a></li>
+        <li><a href="./research.html" class="nav-link">Research</a></li>
+        <li><a href="./media.html" class="nav-link">Media</a></li>
+        <li><a href="./contact.html" class="nav-link current-page">Contact</a></li>
+        <li><a href="./get-started.html" class="early-access desktop">Download Free</a></li>
+      </ul></nav>
+    </header>
+    <header id="mobile-header">
+      <a class="home-link" href="./index.html" onclick="closeMobileMenu()">
+        <img id="mobile-logo" src="./assets/possibility_neuron_white.png" alt="Possibility Neurotechnologies Logo" />
+        <img id="mobile-menu-logo" src="./assets/possibility_logo_white.png" alt="Possibility Neurotechnologies Logo" style="display:none" />
+      </a>
+      <div class="row" style="justify-content:flex-end">
+        <a href="./get-started.html" class="early-access mobile">Download Free</a>
+        <menu-icon onclick="openMobileMenu()"></menu-icon>
+        <close-icon onclick="closeMobileMenu()" style="display:none"></close-icon>
+      </div>
+    </header>
+    <div id="mobile-nav" style="display:none">
+      <div></div>
+      <nav><ul>
+        <li><a href="./think2switch.html" class="nav-link" onclick="closeMobileMenu()">Think2Switch&trade;</a></li>
+        <li><a href="./get-started.html" class="nav-link" onclick="closeMobileMenu()">Get Started</a></li>
+        <li><a href="./about.html" class="nav-link" onclick="closeMobileMenu()">About Us</a></li>
+        <li><a href="./research.html" class="nav-link" onclick="closeMobileMenu()">Research</a></li>
+        <li><a href="./media.html" class="nav-link" onclick="closeMobileMenu()">Media</a></li>
+        <li><a href="./contact.html" class="nav-link" onclick="closeMobileMenu()">Contact</a></li>
+        <li><a href="./get-started.html" class="early-access mobile" onclick="closeMobileMenu()">Download Free</a></li>
+      </ul></nav>
+      <div id="mobile-nav-footer">
+        <div class="socials">
+          <a href="https://www.facebook.com/profile.php?id=61551642523387" target="_blank"><facebook-icon></facebook-icon></a>
+          <a href="https://x.com/PossNeuro" target="_blank"><x-icon></x-icon></a>
+          <a href="https://www.instagram.com/possneuro/" target="_blank"><insta-icon></insta-icon></a>
+          <a href="https://www.linkedin.com/company/possibility-neurotechnologies/" target="_blank"><linkedin-icon></linkedin-icon></a>
+          <a href="mailto:info@possneuro.com"><email-icon style="margin-top:3px"></email-icon></a>
         </div>
+        <div class="privacy"><a href="./privacy.html"><span>Privacy Policy</span></a></div>
+        <div class="copyright"><p>Copyright &copy; 2026 Possibility Neurotechnologies.<br/>All rights reserved.</p></div>
+      </div>
+    </div>
+    <main id="main-content">
 
-        <main id="main-content">
-            <div id="contact-content" class="intro-content">
-                <div class="overlay">
-                    <div id="contact-descrip" class="column">
-                        <h1 style="width: 100%; margin-bottom: 0; text-align: left">Get in touch</h1>
-                        <p style="margin-top: 10px; margin-bottom: 40px">
-                            We believe in making brain-computer interface technologies accessible to everyone, no matter your technical background.
-                            <br /><br />
-                            If you would like to learn more about BCIs, the Think2Switch&trade; and what we do, get in touch by email, our socials, or sign up for our mailing list here:
-                        </p>
-                        <a id="mailing-list" href="https://eepurl.com/iADVFk" target="_blank">Subscribe</a>
-                    </div>
-                    <div id="contact-info">
-                        <div>
-                            <span class="thin-header">EMAIL</span>
-                            <a class="email" href="mailto: info@possneuro.com">info@possneuro.com</a>
-                        </div>
-                        <div>
-                            <span class="thin-header">LOCATION</span>
-                            <span class="location">
-                                Calgary, AB
-                                <br />
-                                Canada
-                            </span>
-                        </div>
-                        <div>
-                            <span class="thin-header">SOCIAL MEDIA</span>
-                            <div class="socials">
-                                <a href="https://www.facebook.com/profile.php?id=61551642523387" target="_blank"><facebook-icon></facebook-icon></a>
-                                <a href="https://x.com/PossNeuro" target="_blank"><x-icon></x-icon></a>
-                                <a href="https://www.instagram.com/possneuro/" target="_blank"><insta-icon></insta-icon></a>
-                                <a href="https://www.linkedin.com/company/possibility-neurotechnologies/" target="_blank"><linkedin-icon></linkedin-icon></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+      <div id="contact-content" class="secondary-content column">
+        <div class="contact-hero">
+          <span class="section-eyebrow">Contact</span>
+          <h1>We're here for you.</h1>
+          <p>Whether you're a parent researching Think2Switch&trade; for your child, a clinician looking to refer patients, or just curious &mdash; we read and respond to every message personally.</p>
+        </div>
+        <div class="contact-body" style="margin-top:4%;padding-bottom:4%;">
+          <div class="contact-info-col">
+            <div class="contact-topic"><div class="contact-topic-title">Setting up Think2Switch&trade;</div><div class="contact-topic-desc">Questions about the headset, download, or calibration &mdash; we'll walk you through it step by step.</div></div>
+            <div class="contact-topic"><div class="contact-topic-title">Funding &amp; insurance support</div><div class="contact-topic-desc">We can provide a letter of medical necessity or assist with HSA/FSA documentation.</div></div>
+            <div class="contact-topic"><div class="contact-topic-title">Clinical &amp; OT inquiries</div><div class="contact-topic-desc">Looking to recommend Think2Switch&trade; to patients or collaborate clinically? We'd love to connect.</div></div>
+            <div class="contact-topic"><div class="contact-topic-title">Research &amp; media</div><div class="contact-topic-desc">Academic collaborations, press inquiries, and interview requests are all welcome.</div></div>
+            <div class="contact-details">
+              <div><div class="contact-detail-label">Email</div><div class="contact-detail-val"><a href="mailto:info@possneuro.com">info@possneuro.com</a></div></div>
+              <div><div class="contact-detail-label">Location</div><div class="contact-detail-val">Calgary, AB, Canada</div></div>
+              <div><div class="contact-detail-label">Mailing list</div><div class="contact-detail-val"><a href="https://eepurl.com/iADVFk" target="_blank" rel="noopener">Subscribe for updates &rarr;</a></div></div>
             </div>
-        </main>
-
-        <footer>
-            <div class="privacy">
-                <a href="./privacy.html"><span>Privacy Policy</span></a>
+          </div>
+          <div class="contact-form-card">
+            <h3>Send us a message</h3>
+            <p>We'll get back to you within 1&ndash;2 business days.</p>
+            <div class="form-row">
+              <div class="form-group"><label for="fname">First name</label><input type="text" id="fname" placeholder="Alex" /></div>
+              <div class="form-group"><label for="lname">Last name</label><input type="text" id="lname" placeholder="Smith" /></div>
             </div>
-            <div class="copyright">
-                <span>Copyright &copy; 2026 Possibility Neurotechnologies. All rights reserved.</span>
+            <div class="form-group"><label for="email">Email address</label><input type="email" id="email" placeholder="alex@example.com" /></div>
+            <div class="form-group">
+              <label for="reason">I'm reaching out as a&hellip;</label>
+              <select id="reason">
+                <option value="">Select one</option>
+                <option>Parent or caregiver</option>
+                <option>Person with a disability</option>
+                <option>Occupational therapist / clinician</option>
+                <option>Researcher or academic</option>
+                <option>Press or media</option>
+                <option>Other</option>
+              </select>
             </div>
-        </footer>
+            <div class="form-group"><label for="message">Message</label><textarea id="message" placeholder="Tell us how we can help&hellip;"></textarea></div>
+            <a href="mailto:info@possneuro.com" class="btn-submit">Send message &rarr;</a>
+            <p class="form-note">Or email us directly at <a href="mailto:info@possneuro.com">info@possneuro.com</a></p>
+          </div>
+        </div>
+      </div>
 
-        <script>
-            function openMobileMenu() {
-                document.getElementById("mobile-nav").style.display = "flex";
-                document.getElementById("main-content").style.display = "none";
-                document.querySelector("menu-icon").style.display = "none";
-                document.querySelector("close-icon").style.display = "flex";
-                document.querySelector(".early-access.mobile").style.display = "none";
-                document.querySelector("#mobile-logo").style.display = "none";
-                document.querySelector("#mobile-menu-logo").style.display = "flex";
-            }
+      <div class="secondary-content quicklinks-section column">
+        <div class="quicklinks-inner">
+          <span class="section-eyebrow">Self-service</span>
+          <h2>Looking for something specific?</h2>
+          <div class="quicklinks-grid">
+            <a href="https://think2switch.gitbook.io/think2switch-knowledge-guide" target="_blank" rel="noopener" class="quicklink-card"><div class="quicklink-title">Knowledge Guide</div><div class="quicklink-desc">Complete setup and usage documentation</div></a>
+            <a href="./think2switch.html#faq" class="quicklink-card"><div class="quicklink-title">FAQ</div><div class="quicklink-desc">Answers to the most common questions</div></a>
+            <a href="./get-started.html" class="quicklink-card"><div class="quicklink-title">Get Started</div><div class="quicklink-desc">Step-by-step guide to your first session</div></a>
+            <a href="./media.html" class="quicklink-card"><div class="quicklink-title">Media &amp; Press</div><div class="quicklink-desc">Coverage, logos, and press information</div></a>
+          </div>
+        </div>
+      </div>
 
-            function closeMobileMenu() {
-                document.getElementById("mobile-nav").style.display = "none";
-                document.getElementById("main-content").style.display = "block";
-                document.querySelector("menu-icon").style.display = "flex";
-                document.querySelector("close-icon").style.display = "none";
-                document.querySelector(".early-access.mobile").style.display = "flex";
-                document.querySelector("#mobile-logo").style.display = "flex";
-                document.querySelector("#mobile-menu-logo").style.display = "none";
-            }
-        </script>
-
-        <script src="script.js"></script>
-    </body>
+    </main>
+    <footer>
+      <div class="socials">
+        <a href="https://www.facebook.com/profile.php?id=61551642523387" target="_blank"><facebook-icon></facebook-icon></a>
+        <a href="https://x.com/PossNeuro" target="_blank"><x-icon></x-icon></a>
+        <a href="https://www.instagram.com/possneuro/" target="_blank"><insta-icon></insta-icon></a>
+        <a href="https://www.linkedin.com/company/possibility-neurotechnologies/" target="_blank"><linkedin-icon></linkedin-icon></a>
+        <a href="mailto:info@possneuro.com"><email-icon style="margin-top:3px"></email-icon></a>
+      </div>
+      <div class="privacy"><a href="./privacy.html"><span>Privacy Policy</span></a></div>
+      <div class="copyright"><span>Copyright &copy; 2026 Possibility Neurotechnologies. All rights reserved.</span></div>
+    </footer>
+    <script>
+      function openMobileMenu(){document.getElementById("mobile-nav").style.display="flex";document.getElementById("main-content").style.display="none";document.querySelector("menu-icon").style.display="none";document.querySelector("close-icon").style.display="flex";document.querySelector(".early-access.mobile").style.display="none";document.querySelector("#mobile-logo").style.display="none";document.querySelector("#mobile-menu-logo").style.display="flex";}
+      function closeMobileMenu(){document.getElementById("mobile-nav").style.display="none";document.getElementById("main-content").style.display="block";document.querySelector("menu-icon").style.display="flex";document.querySelector("close-icon").style.display="none";document.querySelector(".early-access.mobile").style.display="flex";document.querySelector("#mobile-logo").style.display="flex";document.querySelector("#mobile-menu-logo").style.display="none";}
+    </script>
+    <script src="script.js"></script>
+  </body>
 </html>
