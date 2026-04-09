@@ -583,7 +583,7 @@ main::-webkit-scrollbar {
 }
 
 /* ----------------- Early Access Page ----------------- */
-#trial-content div {
+#start-content div {
     width: 50%;
 }
 
