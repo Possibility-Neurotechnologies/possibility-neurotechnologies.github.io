@@ -369,23 +369,27 @@
 
     /* ------------------- Contact Page ------------------- */
     #contact-content {
-        display: flex;
+        /* display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
-        height: 200%;
+        height: auto;
+        min-height: 100%; */
     }
 
     #contact-content .overlay {
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
-        height: 100%;
+        height: auto;
+        width: 100%;
+        padding-top: 15%;
+        padding-bottom: 40px;
     }
 
     #contact-descrip {
-        width: 85%;
+        width: 60%;
         margin-right: 0;
     }
 
@@ -397,16 +401,11 @@
     }
 
     #contact-info {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-        width: 60%;
-        margin-left: 0;
+        flex-direction: row;
     }
 
     #contact-info div {
-        width: 100%;
+        width: auto;
     }
 
     #contact-info .email {
