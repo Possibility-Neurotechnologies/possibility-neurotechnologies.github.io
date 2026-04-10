@@ -434,8 +434,13 @@ main::-webkit-scrollbar {
     background-size: contain;
 }
 
+.secondary-content.about.page3 {
+    height: auto;
+    padding: 8% 0 10%;
+    justify-content: flex-start;
+}
+
 #partners {
-    height: 20%;
     display: flex;
     flex-direction: row;
     justify-content: center;
