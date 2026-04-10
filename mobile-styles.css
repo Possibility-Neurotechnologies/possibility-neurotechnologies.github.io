@@ -336,7 +336,7 @@
 
     /* ------------------- Concept Page ------------------- */
     .concept.page2 {
-        height: 150%;
+        height: auto;
     }
 
     .concept.page2 h2 {
@@ -354,19 +354,20 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 100%;
+        height: auto;
         width: 100%;
     }
 
     .concept.page2 .text-content {
         width: 80%;
-        height: 70%;
+        height: auto;
         margin-right: 0;
     }
 
     .concept.page2 iframe {
         width: 85%;
-        height: 25%;
+        height: auto;
+        aspect-ratio: 16 / 9;
     }
 
     /* ------------------- Contact Page ------------------- */
