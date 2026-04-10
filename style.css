@@ -400,6 +400,11 @@ main::-webkit-scrollbar {
     color: #7f3f98;
     margin-top: 12px;
     text-align: center;
+    text-decoration: none;
+}
+
+a.team-name:hover {
+    text-decoration: underline;
 }
 
 .team-position {
