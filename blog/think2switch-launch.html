@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>From Lab to Living Room: Think2Switch™ Lets Users Control Devices With Their Thoughts | Possibility Neurotechnologies</title>
+        <meta name="description" content="Calgary startup Possibility Neurotechnologies launches Think2Switch™ — a first-of-its-kind brain-computer interface app now available on the App Store. Already used by more than 150 families and clinics worldwide." />
+
+        <!-- Open Graph / Social sharing -->
+        <meta property="og:type" content="article" />
+        <meta property="og:title" content="From Lab to Living Room: Think2Switch™ Lets Users Control Devices With Their Thoughts" />
+        <meta property="og:description" content="Calgary startup launches groundbreaking brain-computer interface app that turns thoughts into actions. Already used by more than 150 families and clinics worldwide." />
+        <meta property="og:url" content="https://www.possneuro.com/blog/think2switch-launch.html" />
+        <meta property="og:image" content="https://www.possneuro.com/assets/possibility_logo_rgb.png" />
+        <meta property="og:site_name" content="Possibility Neurotechnologies" />
+
+        <!-- Twitter/X card -->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="From Lab to Living Room: Think2Switch™ Lets Users Control Devices With Their Thoughts" />
+        <meta name="twitter:description" content="Calgary startup launches groundbreaking brain-computer interface app that turns thoughts into actions." />
+        <meta name="twitter:image" content="https://www.possneuro.com/assets/possibility_logo_rgb.png" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet" />
+        <link rel="stylesheet" href="../style.css" />
+        <link rel="stylesheet" href="../mobile-styles.css" />
+        <script src="../components/socials.js" type="text/javascript" defer></script>
+        <script src="../components/icons.js" type="text/javascript" defer></script>
+
+        <style>
+            /* Blog post page overrides */
+            body {
+                position: static;
+                min-height: 100vh;
+                display: flex;
+                flex-direction: column;
+            }
+
+            main {
+                flex: 1;
+                height: auto;
+                overflow-y: auto;
+            }
+
+            main div {
+                height: auto;
+            }
+
+            /* Hero banner */
+            .blog-hero {
+                background: linear-gradient(90deg, #e5287e 0%, #7f3f98 100%);
+                color: #fff;
+                width: 100%;
+                padding: 8% 10% 6%;
+                box-sizing: border-box;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: flex-end;
+                min-height: 40vh;
+            }
+
+            .blog-hero .post-category {
+                font-family: "Lato", sans-serif;
+                font-size: 0.875rem;
+                font-weight: 700;
+                letter-spacing: 0.1em;
+                text-transform: uppercase;
+                color: rgba(255,255,255,0.75);
+                margin-bottom: 1rem;
+            }
+
+            .blog-hero h1 {
+                font-family: "Poppins", sans-serif;
+                font-weight: 700;
+                font-size: clamp(1.75rem, 4vw, 3rem);
+                line-height: 1.15;
+                color: #fff;
+                margin: 0 0 1rem;
+                max-width: 820px;
+            }
+
+            .blog-hero .post-subtitle {
+                font-family: "Lato", sans-serif;
+                font-size: clamp(1rem, 2vw, 1.25rem);
+                color: rgba(255,255,255,0.85);
+                margin: 0 0 1.5rem;
+                max-width: 680px;
+                line-height: 1.5;
+            }
+
+            .blog-hero .post-meta {
+                font-family: "Lato", sans-serif;
+                font-size: 0.9rem;
+                color: rgba(255,255,255,0.65);
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+                flex-wrap: wrap;
+            }
+
+            .blog-hero .post-meta .dot { opacity: 0.4; }
+
+            /* Article body */
+            .blog-body {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                padding: 4% 10% 6%;
+                box-sizing: border-box;
+                background: #fff;
+            }
+
+            .blog-content {
+                max-width: 740px;
+                width: 100%;
+            }
+
+            /* Key points strip */
+            .key-points {
+                background: #fbd0e8;
+                border-left: 4px solid #ec3096;
+                border-radius: 0 8px 8px 0;
+                padding: 1.25rem 1.5rem;
+                margin: 0 0 2.5rem;
+            }
+
+            .key-points ul {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                display: flex;
+                flex-direction: column;
+                gap: 0.625rem;
+            }
+
+            .key-points li {
+                font-family: "Lato", sans-serif;
+                font-size: 1rem;
+                color: #7f3f98;
+                line-height: 1.45;
+                display: flex;
+                align-items: flex-start;
+                gap: 0.625rem;
+            }
+
+            .key-points li::before {
+                content: "✦";
+                font-size: 0.625rem;
+                color: #ec3096;
+                margin-top: 0.4rem;
+                flex-shrink: 0;
+            }
+
+            /* Dateline */
+            .dateline {
+                font-family: "Lato", sans-serif;
+                font-size: 1rem;
+                font-weight: 700;
+                color: #111;
+                margin-bottom: 1rem;
+            }
+
+            /* Body copy */
+            .blog-content p {
+                font-family: "Lato", sans-serif;
+                font-size: 1.125rem;
+                line-height: 1.75;
+                color: #333;
+                margin: 0 0 1.5rem;
+                text-align: left;
+            }
+
+            /* Section headings */
+            .blog-content h2 {
+                font-family: "Poppins", sans-serif;
+                font-weight: 700;
+                font-size: 1.5rem;
+                color: #7f3f98;
+                margin: 2.5rem 0 1rem;
+                text-align: left;
+            }
+
+            /* Pull quote */
+            .pull-quote {
+                border-left: 4px solid #ec3096;
+                margin: 2rem 0;
+                padding: 1rem 1.5rem;
+                background: #f7f7f5;
+                border-radius: 0 8px 8px 0;
+            }
+
+            .pull-quote p {
+                font-family: "Poppins", sans-serif !important;
+                font-size: 1.25rem !important;
+                font-weight: 600 !important;
+                color: #111 !important;
+                font-style: italic;
+                line-height: 1.5 !important;
+                margin: 0 0 0.5rem !important;
+            }
+
+            .pull-quote cite {
+                font-family: "Lato", sans-serif;
+                font-size: 0.875rem;
+                color: #666;
+                font-style: normal;
+            }
+
+            /* About box */
+            .about-box {
+                background: #f7f7f5;
+                border-radius: 12px;
+                padding: 1.5rem 2rem;
+                margin: 2.5rem 0;
+            }
+
+            .about-box h3 {
+                font-family: "Poppins", sans-serif;
+                font-size: 0.75rem;
+                font-weight: 700;
+                letter-spacing: 0.1em;
+                text-transform: uppercase;
+                color: #9c9a91;
+                margin: 0 0 0.75rem;
+                text-align: left;
+            }
+
+            .about-box p {
+                font-size: 1rem !important;
+                color: #555 !important;
+                margin: 0 0 0.75rem !important;
+            }
+
+            .about-box p:last-child { margin-bottom: 0 !important; }
+
+            /* Media contact */
+            .media-contact {
+                border-top: 1px solid #e2e1db;
+                padding-top: 2rem;
+                margin-top: 2.5rem;
+            }
+
+            .media-contact h3 {
+                font-family: "Poppins", sans-serif;
+                font-size: 0.75rem;
+                font-weight: 700;
+                letter-spacing: 0.1em;
+                text-transform: uppercase;
+                color: #9c9a91;
+                margin: 0 0 0.75rem;
+                text-align: left;
+            }
+
+            .media-contact p {
+                font-size: 1rem !important;
+                color: #333 !important;
+                margin: 0 !important;
+                line-height: 1.6 !important;
+            }
+
+            .media-contact a {
+                color: #7f3f98;
+                text-decoration: underline;
+                font-family: "Lato", sans-serif;
+            }
+
+            /* Share bar */
+            .share-bar {
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+                padding: 1.5rem 0;
+                border-top: 1px solid #e2e1db;
+                border-bottom: 1px solid #e2e1db;
+                margin: 2.5rem 0;
+                flex-wrap: wrap;
+            }
+
+            .share-bar span {
+                font-family: "Poppins", sans-serif;
+                font-size: 0.875rem;
+                font-weight: 600;
+                color: #333;
+            }
+
+            .share-btn {
+                display: inline-flex;
+                align-items: center;
+                gap: 0.4rem;
+                font-family: "Poppins", sans-serif;
+                font-size: 0.8125rem;
+                font-weight: 600;
+                padding: 0.4rem 0.875rem;
+                border-radius: 999px;
+                text-decoration: none;
+                transition: opacity 0.18s ease;
+            }
+
+            .share-btn:hover { opacity: 0.8; }
+
+            .share-btn.linkedin { background: #0077b5; color: #fff; }
+            .share-btn.twitter  { background: #000;    color: #fff; }
+            .share-btn.copy     { background: #f0efeb; color: #333; cursor: pointer; border: none; font-family: "Poppins", sans-serif; }
+
+            /* Back link */
+            .back-link-wrap {
+                display: flex;
+                align-items: center;
+                gap: 0.5rem;
+                margin-bottom: 2rem;
+            }
+
+            .back-link {
+                font-family: "Poppins", sans-serif;
+                font-size: 0.875rem;
+                font-weight: 600;
+                color: #7f3f98;
+                text-decoration: none;
+                display: inline-flex;
+                align-items: center;
+                gap: 0.375rem;
+            }
+
+            .back-link:hover { text-decoration: underline; }
+
+            /* Footer override for static layout */
+            footer {
+                position: static;
+                height: auto;
+                padding: 2rem 4%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                flex-wrap: wrap;
+                gap: 1rem;
+            }
+
+            /* Mobile */
+            @media (max-width: 768px) {
+                .blog-hero { padding: 80px 6% 6%; min-height: 50vh; }
+                .blog-body { padding: 6% 6% 8%; }
+            }
+        </style>
+    </head>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FRMEVRWQ5C"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag("js", new Date());
+        gtag("config", "G-FRMEVRWQ5C");
+    </script>
+
+    <body>
+        <header id="desktop-header">
+            <a class="home-link" href="../index.html">
+                <img id="desktop-logo" src="../assets/possibility_logo_white.png" alt="Possibility Neurotechnologies" /></a>
+            <nav>
+                <ul>
+                    <li><a href="../index.html#t2s-content" id="t2s-link" class="nav-link">Think2Switch&trade;</a></li>
+                    <li><a href="../concept.html" id="research-link" class="nav-link">How It Works</a></li>
+                    <li><a href="../media.html" id="media-link" class="current-page nav-link">Media</a></li>
+                    <li><a href="../about.html" id="about-link" class="nav-link">About Us</a></li>
+                    <li><a href="../contact.html" id="contact-link" class="nav-link">Contact</a></li>
+                    <li><a href="../start.html" class="start-nav desktop">Get Started</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <header id="mobile-header">
+            <a class="home-link" href="../index.html" onclick="closeMobileMenu()">
+                <img id="mobile-logo" src="../assets/possibility_neuron_white.png" alt="Possibility Neurotechnologies Logo" />
+                <img id="mobile-menu-logo" src="../assets/possibility_logo_white.png" alt="Possibility Neurotechnologies Logo" style="display: none" />
+            </a>
+            <div class="row" style="justify-content: flex-end">
+                <a href="../start.html" class="start-nav mobile">Get Started</a>
+                <menu-icon onclick="openMobileMenu()"></menu-icon>
+                <close-icon onclick="closeMobileMenu()" style="display: none"></close-icon>
+            </div>
+        </header>
+
+        <div id="mobile-nav" style="display: none">
+            <div></div>
+            <nav>
+                <ul>
+                    <li><a href="../index.html#t2s-content" class="nav-link" onclick="closeMobileMenu()">Think2Switch&trade;</a></li>
+                    <li><a href="../concept.html" class="nav-link" onclick="closeMobileMenu()">How It Works</a></li>
+                    <li><a href="../media.html" class="current-page nav-link" onclick="closeMobileMenu()">Media</a></li>
+                    <li><a href="../about.html" class="nav-link" onclick="closeMobileMenu()">About Us</a></li>
+                    <li><a href="../contact.html" class="nav-link" onclick="closeMobileMenu()">Contact</a></li>
+                    <li><a href="../start.html" class="start-nav mobile" onclick="closeMobileMenu()">Get Started</a></li>
+                </ul>
+            </nav>
+            <div id="mobile-nav-footer">
+                <div class="socials">
+                    <a href="https://www.facebook.com/profile.php?id=61551642523387" target="_blank"><facebook-icon></facebook-icon></a>
+                    <a href="https://x.com/PossNeuro" target="_blank"><x-icon></x-icon></a>
+                    <a href="https://www.instagram.com/possneuro/" target="_blank"><insta-icon></insta-icon></a>
+                    <a href="https://www.linkedin.com/company/possibility-neurotechnologies/" target="_blank"><linkedin-icon></linkedin-icon></a>
+                    <a href="mailto:info@possneuro.com"><email-icon style="margin-top: 3px"></email-icon></a>
+                </div>
+                <div class="privacy"><a href="../privacy.html"><span>Privacy Policy</span></a></div>
+                <div class="copyright"><p>Copyright &copy; 2026 Possibility Neurotechnologies.</p></div>
+            </div>
+        </div>
+
+        <main id="main-content">
+
+            <!-- Hero -->
+            <div class="blog-hero">
+                <div class="post-category">Press Release &nbsp;&middot;&nbsp; April 13, 2026</div>
+                <h1>From Lab to Living Room: Think2Switch&trade; Lets Users Control Devices With Their Thoughts</h1>
+                <p class="post-subtitle">Calgary startup launches groundbreaking brain-computer interface app that turns thoughts into actions</p>
+                <div class="post-meta">
+                    <span>Possibility Neurotechnologies</span>
+                    <span class="dot">&bull;</span>
+                    <span>Calgary, AB</span>
+                    <span class="dot">&bull;</span>
+                    <span>April 13, 2026</span>
+                </div>
+            </div>
+
+            <!-- Article body -->
+            <div class="blog-body">
+                <article class="blog-content">
+
+                    <div class="back-link-wrap">
+                        <a href="../media.html" class="back-link">
+                            &larr; Back to Media
+                        </a>
+                    </div>
+
+                    <!-- Share bar (top) -->
+                    <div class="share-bar">
+                        <span>Share</span>
+                        <a class="share-btn linkedin"
+                           href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fwww.possneuro.com%2Fblog%2Fthink2switch-launch.html"
+                           target="_blank" rel="noopener">
+                            LinkedIn
+                        </a>
+                        <a class="share-btn twitter"
+                           href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fwww.possneuro.com%2Fblog%2Fthink2switch-launch.html&text=Think2Switch%E2%84%A2+lets+people+control+devices+using+only+their+thoughts+%E2%80%94+now+on+the+App+Store+%40PossNeuro"
+                           target="_blank" rel="noopener">
+                            X / Twitter
+                        </a>
+                        <button class="share-btn copy" onclick="copyLink()" id="copy-btn">Copy link</button>
+                    </div>
+
+                    <!-- Key points -->
+                    <div class="key-points">
+                        <ul>
+                            <li>Founded by Drs. Dion Kelly and Adam Kirton, building on clinical research in pediatric neurology</li>
+                            <li>First-of-its-kind brain-computer interface (BCI) mobile app designed for real-world use</li>
+                            <li>Already used by more than 150 families and clinics worldwide</li>
+                        </ul>
+                    </div>
+
+                    <p class="dateline"><strong>Calgary, April 13, 2026</strong> &mdash; Possibility Neurotechnologies today launched Think2Switch&trade;, a first-of-its-kind mobile app that enables people to control devices and interact with their environment using only their thoughts&mdash;no physical interaction or voice input required.</p>
+
+                    <p>Designed for use in everyday environments like homes, classrooms, and communities, Think2Switch opens new ways for anyone to engage with technology, while offering life-changing potential for individuals with physical disabilities who may have limited or no other means of interaction.</p>
+
+                    <p>Now available on the Apple App Store, the Calgary-based innovation uses affordable EEG headbands to turn brain signals into real-time actions&mdash;bringing brain-computer interface (BCI) technology out of the lab and into daily life.</p>
+
+                    <div class="pull-quote">
+                       <p>&ldquo;People can make choices, express themselves, and take part in everyday moments in ways that weren&rsquo;t possible before.&rdquo;</p>
+                        <cite>&mdash; Dr. Dion Kelly, Co-Founder &amp; CEO, Possibility Neurotechnologies</cite>
+                    </div>
+
+<p>&ldquo;This is everyday technology, designed so people can interact with the world using their thoughts. We&rsquo;ve developed it in partnership with children and individuals facing significant barriers to interaction, so that it works for everyone,&rdquo; says Dr. Dion Kelly, Co-Founder & CEO of Possibility Neurotechnologies.</p>
+
+                    <h2>How Think2Switch Works</h2>
+
+                    <p>Think2Switch pairs with consumer EEG headbands to detect and interpret brainwave signals in real time. The app translates these signals into simple commands, enabling users to interact with apps on Apple devices or control their environment through smart home integrations.</p>
+
+                    <p>Think2Switch can be set up and used independently by teachers, parents, caregivers, or peers, requiring no specialised training. By eliminating complex setup and the need for dedicated support, it enables consistent, self-directed use in situations where many existing solutions are difficult to implement.</p>
+
+                    <p>Claire has been using BCI technology since the age of three and is among more than 150 families worldwide who have been early adopters of Think2Switch. Claire, who cannot speak or move her arms and legs freely, brings her iPad and EEG headband to school each day, where her teacher sets up the Think2Switch system so she can choose library books, select colours for art projects, and make her own choices throughout the day. In some cases, even her classmates help set up the system.</p>
+
+                    <p>Her mother, Stephanie Sonnenberg, recalls the first time Claire used BCI technology in the lab:</p>
+                    
+                    <div class="pull-quote">
+                        <p>&ldquo;They told her to think, &lsquo;go,&rsquo; and she turned a light on. I just knew at that moment that a door had opened for Claire. It was something exciting that would change her life. For the first time, I thought of milestones instead of inch stones.&rdquo;</p>
+                        <cite>&mdash; Stephanie Sonnenberg, Claire&rsquo;s mother</cite>
+                    </div>
+
+                    <h2>Accessible Neurotechnologies</h2>
+
+                    <p>Think2Switch is available now for download on the Apple App Store. New users receive a free first month, followed by a $35/month subscription. The app currently works with select consumer EEG headbands, including the Muse Athena (available with an exclusive 15% discount at <a href="https://choosemuse.com/possneuro" target="_blank" rel="noopener">choosemuse.com/possneuro</a>), with additional device compatibility being added over time.</p>
+
+                    <h2>Unlimited Possibilities</h2>
+                    <p>The vision behind Think2Switch is illustrated in a <a href="https://www.youtube.com/watch?v=5mBNBQ2paio" target="_blank" rel="noopener">recently released video</a> that highlights how the technology is being used in everyday life. It follows 10-year-old Claire, who has cerebral palsy and uses a wheelchair, as she uses Think2Switch to create art with her brother, producing colourful splatters across a canvas using only her thoughts. More than the activity itself, the video captures moments of play, connection, and spontaneity: two siblings interacting, experimenting, and making a mess together like any other kids.</p>
+
+                    <!-- Share bar (bottom) -->
+                    <div class="share-bar">
+                        <span>Share this article</span>
+                        <a class="share-btn linkedin"
+                           href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fwww.possneuro.com%2Fblog%2Fthink2switch-launch.html"
+                           target="_blank" rel="noopener">
+                            LinkedIn
+                        </a>
+                        <a class="share-btn twitter"
+                           href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fwww.possneuro.com%2Fblog%2Fthink2switch-launch.html&text=Think2Switch%E2%84%A2+lets+people+control+devices+using+only+their+thoughts+%E2%80%94+now+on+the+App+Store+%40PossNeuro"
+                           target="_blank" rel="noopener">
+                            X / Twitter
+                        </a>
+                        <button class="share-btn copy" onclick="copyLink()" id="copy-btn-2">Copy link</button>
+                    </div>
+
+                    <!-- About -->
+                    <div class="about-box">
+                        <h3>About Possibility Neurotechnologies</h3>
+                        <p>Possibility Neurotechnologies is a Calgary, Alberta-based neurotechnology company co-founded by Drs. Dion Kelly and Adam Kirton. Building on Dr. Kirton&rsquo;s pediatric neurology research, including work conducted at the University of Calgary and Alberta Children&rsquo;s Hospital, the company develops brain-computer interface technology that enables people to interact with devices and their environment using only their thoughts.</p>
+                        <p>By focusing on children and individuals with significant physical disabilities&mdash;those who often face the greatest barriers to access&mdash;Possibility Neurotechnologies applies an inclusive design approach that prioritises usability from the outset, helping ensure its solutions can be adopted broadly across everyday environments.</p>
+                        <p>For more information, visit <a href="https://www.possneuro.com" target="_blank">www.possneuro.com</a>.</p>
+                    </div>
+
+                    <!-- Media contact -->
+                    <div class="media-contact">
+                        <h3>Media Contact</h3>
+                        <p>
+                            <strong>Dion Kelly</strong><br>
+                            Co-Founder &amp; Chief Executive Officer<br>
+                            Possibility Neurotechnologies<br>
+                            <a href="mailto:dkelly@possneuro.com">dkelly@possneuro.com</a>
+                        </p>
+                    </div>
+
+                </article>
+            </div>
+
+        </main>
+
+        <footer>
+            <div class="footer-info">
+                <div class="privacy"><a href="../privacy.html"><span>Privacy Policy</span></a></div>
+                <div class="copyright"><span>Copyright &copy; 2026 Possibility Neurotechnologies.</span></div>
+            </div>
+            <div class="socials">
+                <a href="https://www.facebook.com/profile.php?id=61551642523387" target="_blank"><facebook-icon></facebook-icon></a>
+                <a href="https://x.com/PossNeuro" target="_blank"><x-icon></x-icon></a>
+                <a href="https://www.instagram.com/possneuro/" target="_blank"><insta-icon></insta-icon></a>
+                <a href="https://www.linkedin.com/company/possibility-neurotechnologies/" target="_blank"><linkedin-icon></linkedin-icon></a>
+                <a href="mailto:info@possneuro.com"><email-icon style="margin-top: 3px"></email-icon></a>
+            </div>
+        </footer>
+
+        <script>
+            function openMobileMenu() {
+                document.getElementById("mobile-nav").style.display = "flex";
+                document.getElementById("main-content").style.display = "none";
+                document.querySelector("menu-icon").style.display = "none";
+                document.querySelector("close-icon").style.display = "flex";
+                document.querySelector(".start-nav.mobile").style.display = "none";
+                document.querySelector("#mobile-logo").style.display = "none";
+                document.querySelector("#mobile-menu-logo").style.display = "flex";
+            }
+
+            function closeMobileMenu() {
+                document.getElementById("mobile-nav").style.display = "none";
+                document.getElementById("main-content").style.display = "block";
+                document.querySelector("menu-icon").style.display = "flex";
+                document.querySelector("close-icon").style.display = "none";
+                document.querySelector(".start-nav.mobile").style.display = "flex";
+                document.querySelector("#mobile-logo").style.display = "flex";
+                document.querySelector("#mobile-menu-logo").style.display = "none";
+            }
+
+            function copyLink() {
+                navigator.clipboard.writeText("https://www.possneuro.com/blog/think2switch-launch.html").then(() => {
+                    document.getElementById("copy-btn").textContent = "Copied!";
+                    document.getElementById("copy-btn-2").textContent = "Copied!";
+                    setTimeout(() => {
+                        document.getElementById("copy-btn").textContent = "Copy link";
+                        document.getElementById("copy-btn-2").textContent = "Copy link";
+                    }, 2000);
+                });
+            }
+        </script>
+
+        <script src="../script.js"></script>
+    </body>
+</html>
