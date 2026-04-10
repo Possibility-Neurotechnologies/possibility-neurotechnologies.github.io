@@ -1,4 +1,4 @@
-@media (max-width: 800px) {
+@media (max-width: 1024px) {
     /* -------------------------------------------------------- */
     /* ---------------------- PAGE STYLING -------------------- */
     h1 {
@@ -39,7 +39,7 @@
         height: 100%;
     }
 
-    .early-access {
+    .start-nav {
         font-size: 0.9rem;
         padding: 3px 8px;
         border-radius: 20px;
@@ -107,19 +107,19 @@
         text-decoration: underline;
     }
 
-    nav .early-access {
+    nav .start-nav {
         font-size: 1rem;
         padding: 4px 10px;
         background-color: #7f3f98;
         border: 0.15rem solid #7f3f98;
     }
 
-    nav .early-access:hover {
+    nav .start-nav:hover {
         background-color: #e0c9e8;
         color: #7f3f98;
     }
 
-    nav .early-access.current-page {
+    nav .start-nav.current-page {
         font-weight: normal;
         background-color: #e0c9e8;
         color: #7f3f98;
@@ -262,21 +262,23 @@
 
     /* --------------------- About Page --------------------- */
     #about-content .column {
-        width: 80%;
+        width: 60%;
     }
 
     .secondary-content.about.page2 {
-        height: 250%;
+        height: auto;
+        padding: 12% 0 6%;
         justify-content: flex-start;
     }
 
     .secondary-content.about.page3 {
-        height: 160%;
+        height: auto;
+        padding: 10% 0 12%;
         justify-content: flex-start;
     }
 
     .secondary-content.about h1 {
-        margin-top: 60px;
+        margin-top: 0;
         margin-bottom: 40px;
     }
 
@@ -288,17 +290,20 @@
         justify-content: flex-start;
     }
 
+    .team-member {
+        margin: 20px 0;
+    }
+
     #team .headshot {
-        margin: 30px 0;
+        margin: 0;
     }
 
     .team-name {
         font-size: 1.2rem;
-        font-weight: 500;
     }
+
     .team-position {
         font-size: 1rem;
-        font-weight: 300;
     }
 
     #partners {
@@ -329,60 +334,65 @@
         height: 120px;
     }
 
-    /* ------------------- Research Page ------------------- */
-    .research.page2 {
-        height: 150%;
+    /* ------------------- Concept Page ------------------- */
+    .concept.page2 {
+        height: auto;
     }
 
-    .research.page2 h2 {
+    .concept.page2 h2 {
         font-size: 1.6rem;
         color: #7f3f98;
         text-align: center;
     }
 
-    .research.page2 p {
+    .concept.page2 p {
         font-size: 1rem;
     }
 
-    .research.page2 .container {
+    .concept.page2 .container {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 100%;
+        height: auto;
         width: 100%;
     }
 
-    .research.page2 .text-content {
+    .concept.page2 .text-content {
         width: 80%;
-        height: 70%;
+        height: auto;
         margin-right: 0;
     }
 
-    .research.page2 iframe {
+    .concept.page2 iframe {
         width: 85%;
-        height: 25%;
+        height: auto;
+        aspect-ratio: 16 / 9;
     }
 
     /* ------------------- Contact Page ------------------- */
     #contact-content {
-        display: flex;
+        /* display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
-        height: 200%;
+        height: auto;
+        min-height: 100%; */
     }
 
     #contact-content .overlay {
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
-        height: 100%;
+        height: auto;
+        width: 100%;
+        padding-top: 15%;
+        padding-bottom: 40px;
     }
 
     #contact-descrip {
-        width: 85%;
+        width: 60%;
         margin-right: 0;
     }
 
@@ -394,16 +404,11 @@
     }
 
     #contact-info {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-        width: 60%;
-        margin-left: 0;
+        flex-direction: row;
     }
 
     #contact-info div {
-        width: 100%;
+        width: auto;
     }
 
     #contact-info .email {
@@ -420,17 +425,44 @@
         margin-right: 10px;
     }
 
-    /* ----------------- Early Access Page ----------------- */
-    #trial-content div {
+    /* ----------------- Get Started Page ----------------- */
+    #start-content div {
         width: 85%;
     }
 
-    #application-form {
-        margin-top: 15px;
-        font-size: 1.1rem;
-        padding: 6px 12px;
-        border-radius: 22px;
-        border: 0.15rem solid #7f3f98;
+    .start-steps {
+        font-size: 0.85rem;
+    }
+
+    #app-store-badge img {
+        height: 44px;
+    }
+
+    /* ------------------- Media Page ------------------- */
+    .secondary-content.media-page {
+        padding-bottom: 60px;
+    }
+
+    .media-inner {
+        width: 92%;
+        padding: 24px 0 16px;
+    }
+
+    .media-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .media-section h2 {
+        font-size: 1.3rem;
+    }
+
+    .media-title {
+        font-size: 0.95rem;
+    }
+
+    .media-description {
+        font-size: 0.85rem;
     }
 
     /* ------------------- Privacy Policy Page ------------------- */

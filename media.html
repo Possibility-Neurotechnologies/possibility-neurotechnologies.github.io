@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Possibility Neurotechnologies</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+            rel="stylesheet" />
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="mobile-styles.css" />
+        <script src="./components/socials.js" type="text/javascript" defer></script>
+        <script src="./components/icons.js" type="text/javascript" defer></script>
+    </head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FRMEVRWQ5C"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
+
+        gtag("config", "G-FRMEVRWQ5C");
+    </script>
+    <body>
+        <header id="desktop-header">
+            <a class="home-link" href="./index.html">
+                <img id="desktop-logo" src="./assets/possibility_logo_white.png" alt="Possibility Neurotechnologies" /></a>
+            <nav>
+                <ul>
+                    <li><a href="./index.html#t2s-content" id="t2s-link" class="nav-link">Think2Switch&trade;</a></li>
+                    <li><a href="./concept.html" id="research-link" class="nav-link">How It Works</a></li>
+                    <li><a href="#media-content" id="media-link" class="current-page nav-link">Media</a></li>
+                    <li><a href="./about.html" id="about-link" class="nav-link">About Us</a></li>
+                    <li><a href="./contact.html" id="contact-link" class="nav-link">Contact</a></li>
+                    <li><a href="./start.html" class="start-nav desktop">Get Started</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <header id="mobile-header">
+            <a class="home-link" href="./index.html" onclick="closeMobileMenu()">
+                <img id="mobile-logo" src="./assets/possibility_neuron_white.png" alt="Possibility Neurotechnologies Logo" />
+                <img id="mobile-menu-logo" src="./assets/possibility_logo_white.png" alt="Possibility Neurotechnologies Logo" style="display: none" />
+            </a>
+            <div class="row" style="justify-content: flex-end">
+                <a href="./start.html" class="start-nav mobile">Get Started</a>
+                <menu-icon onclick="openMobileMenu()"></menu-icon>
+                <close-icon onclick="closeMobileMenu()" style="display: none"></close-icon>
+            </div>
+        </header>
+
+        <div id="mobile-nav" style="display: none">
+            <div></div>
+            <nav>
+                <ul>
+                    <li><a href="./index.html#t2s-content" id="t2s-link" class="nav-link" onclick="closeMobileMenu()">Think2Switch&trade;</a></li>
+                    <li><a href="./concept.html" id="research-link" class="nav-link" onclick="closeMobileMenu()">How It Works</a></li>
+                    <li><a href="#media-content" id="media-link" class="current-page nav-link" onclick="closeMobileMenu()">Media</a></li>
+                    <li><a href="./about.html" id="about-link" class="nav-link" onclick="closeMobileMenu()">About Us</a></li>
+                    <li><a href="./contact.html" id="contact-link" class="nav-link" onclick="closeMobileMenu()">Contact</a></li>
+                    <li><a href="./start.html" class="start-nav mobile" onclick="closeMobileMenu()">Get Started</a></li>
+                </ul>
+            </nav>
+            <div id="mobile-nav-footer">
+                <div class="socials">
+                    <a href="https://www.facebook.com/profile.php?id=61551642523387" target="_blank"><facebook-icon></facebook-icon></a>
+                    <a href="https://x.com/PossNeuro" target="_blank"><x-icon></x-icon></a>
+                    <a href="https://www.instagram.com/possneuro/" target="_blank"><insta-icon></insta-icon></a>
+                    <a href="https://www.linkedin.com/company/possibility-neurotechnologies/" target="_blank"><linkedin-icon></linkedin-icon></a>
+                    <a href="mailto: info@possneuro.com"><email-icon style="margin-top: 3px"></email-icon></a>
+                </div>
+                <div class="privacy">
+                    <a href="./privacy.html"><span>Privacy Policy</span></a>
+                </div>
+                <div class="copyright">
+                    <p>Copyright &copy; 2026 Possibility Neurotechnologies.</p>
+                </div>
+            </div>
+        </div>
+
+        <main id="main-content">
+            <div id="media-content" class="intro-content column">
+                <h1>Press &amp; Media</h1>
+                <div class="scroll-indicator" aria-hidden="true"></div>
+            </div>
+            <div class="secondary-content media-page">
+                <div class="media-inner">
+
+                    <div class="media-section">
+                        <h2>News &amp; Articles</h2>
+                        <div class="media-grid">
+
+                            <a class="media-card" href="https://www.marsdd.com/magazine/mind-over-matter-could-brain-computer-interfaces-lead-to-a-new-era-of-innovation-and-healing/" target="_blank" rel="noopener noreferrer">
+                                <div class="media-card-meta">
+                                    <span class="media-outlet">MaRS Discovery District</span>
+                                    <span class="media-type type-news">Feature</span>
+                                </div>
+                                <p class="media-title">Mind over matter: Could brain-computer interfaces lead to a new era of innovation and healing?</p>
+                                <p class="media-description">MaRS features Dion Kelly and Think2Switch in an in-depth look at how BCIs are changing healthcare and accessibility.</p>
+                                <span class="media-date">March 26, 2026</span>
+                            </a>
+
+                            <a class="media-card" href="https://calgary.tech/2026/01/06/calgary-startups-to-watch-in-2026/" target="_blank" rel="noopener noreferrer">
+                                <div class="media-card-meta">
+                                    <span class="media-outlet">Calgary.tech</span>
+                                    <span class="media-type type-news">Feature</span>
+                                </div>
+                                <p class="media-title">10 Homegrown Calgary Startups to Watch in 2026</p>
+                                <p class="media-description">Possibility Neurotechnologies recognized as a top Calgary startup to watch, with Think2Switch now deployed in clinics across six countries.</p>
+                                <span class="media-date">January 6, 2026</span>
+                            </a>
+
+                            <a class="media-card" href="https://betakit.com/calgary-tech-talks-about-a-different-kind-of-energy-at-innovation-week/" target="_blank" rel="noopener noreferrer">
+                                <div class="media-card-meta">
+                                    <span class="media-outlet">BetaKit</span>
+                                    <span class="media-type type-news">News</span>
+                                </div>
+                                <p class="media-title">Calgary tech talks about a different kind of energy at Innovation Week</p>
+                                <p class="media-description">BetaKit covers Calgary Innovation Week 2025, highlighting Possibility Neurotechnologies' standout pitch performance and win.</p>
+                                <span class="media-date">November 17, 2025</span>
+                            </a>
+
+                            <a class="media-card" href="https://ucalgary.ca/news/ucalgary-shines-innovation-week-2025" target="_blank" rel="noopener noreferrer">
+                                <div class="media-card-meta">
+                                    <span class="media-outlet">UCalgary News</span>
+                                    <span class="media-type type-news">News</span>
+                                </div>
+                                <p class="media-title">UCalgary shines at Innovation Week 2025</p>
+                                <p class="media-description">Possibility Neurotechnologies highlighted as UCalgary celebrates its startups' success at Calgary Innovation Week 2025.</p>
+                                <span class="media-date">November 13, 2025</span>
+                            </a>
+
+                            <a class="media-card" href="https://mashable.com/article/disability-tech-startup-innovation-remarkable-summit" target="_blank" rel="noopener noreferrer">
+                                <div class="media-card-meta">
+                                    <span class="media-outlet">Mashable</span>
+                                    <span class="media-type type-news">Feature</span>
+                                </div>
+                                <p class="media-title">9 startups changing disability tech</p>
+                                <p class="media-description">Mashable features Possibility Neurotechnologies among nine startups reshaping the disability tech landscape, profiled from the Remarkable Summit.</p>
+                                <span class="media-date">November 13, 2025</span>
+                            </a>
+
+                            <a class="media-card" href="https://www.digitaljournal.com/business/launch-party-caps-off-calgary-innovation-week-with-a-celebration-of-the-citys-top-startups/article" target="_blank" rel="noopener noreferrer">
+                                <div class="media-card-meta">
+                                    <span class="media-outlet">Digital Journal</span>
+                                    <span class="media-type type-news">News</span>
+                                </div>
+                                <p class="media-title">Launch Party caps off Calgary Innovation Week celebration of the city's top startups</p>
+                                <p class="media-description">Possibility Neurotechnologies wins the Alex Raczenko Pitch Award at the Calgary Innovation Week 2025 Launch Party.</p>
+                                <span class="media-date">November 6, 2025</span>
+                            </a>
+
+                            <a class="media-card" href="https://calgary.tech/2025/11/04/health-ai-and-accessibility-take-centre-stage-at-calgarys-2025-launch-party/" target="_blank" rel="noopener noreferrer">
+                                <div class="media-card-meta">
+                                    <span class="media-outlet">Calgary.tech</span>
+                                    <span class="media-type type-news">News</span>
+                                </div>
+                                <p class="media-title">Health, AI, Accessibility Take Centre Stage at Calgary's 2025 Launch Party</p>
+                                <p class="media-description">Calgary.tech reports on Possibility Neurotechnologies taking the spotlight at the 2025 Calgary Innovation Week Launch Party.</p>
+                                <span class="media-date">November 4, 2025</span>
+                            </a>
+
+                            <a class="media-card" href="https://www.remarkable.org/blog-posts/remarkable-showcase" target="_blank" rel="noopener noreferrer">
+                                <div class="media-card-meta">
+                                    <span class="media-outlet">Remarkable Tech</span>
+                                    <span class="media-type type-news">Feature</span>
+                                </div>
+                                <p class="media-title">Remarkable Showcase &mdash; Meet the founders leading Disability Tech innovation</p>
+                                <p class="media-description">Remarkable Showcase spotlights Dion Kelly among the founders at the forefront of global disability tech innovation.</p>
+                                <span class="media-date">October 31, 2025</span>
+                            </a>
+
+                            <a class="media-card" href="https://www.digitaljournal.com/tech-science/exclusive-calgarys-top-10-startups-revealed-ahead-of-innovation-week-2025/article" target="_blank" rel="noopener noreferrer">
+                                <div class="media-card-meta">
+                                    <span class="media-outlet">Digital Journal</span>
+                                    <span class="media-type type-news">News</span>
+                                </div>
+                                <p class="media-title">Exclusive: Calgary's Top 10 startups revealed ahead of Innovation Week 2025</p>
+                                <p class="media-description">Possibility Neurotechnologies named one of Calgary's top 10 startups ahead of Innovation Week 2025.</p>
+                                <span class="media-date">September 25, 2025</span>
+                            </a>
+
+                            <a class="media-card" href="https://calgary.tech/2025/10/27/local-startups-pitch-calgary-innovation-week-launch-party/" target="_blank" rel="noopener noreferrer">
+                                <div class="media-card-meta">
+                                    <span class="media-outlet">Calgary.tech</span>
+                                    <span class="media-type type-news">News</span>
+                                </div>
+                                <p class="media-title">Ten local startups to give their best pitch at Calgary Innovation Week Launch Party</p>
+                                <p class="media-description">Possibility Neurotechnologies named one of ten local startups selected to pitch at the Calgary Innovation Week 2025 Launch Party.</p>
+                                <span class="media-date">October 27, 2025</span>
+                            </a>
+
+                            <a class="media-card" href="https://www.remarkable.org/blog-posts/why-remarkable-invested-in-possibility-neurotechnologies-and-their-think2switch-tm-bci" target="_blank" rel="noopener noreferrer">
+                                <div class="media-card-meta">
+                                    <span class="media-outlet">Remarkable Tech</span>
+                                    <span class="media-type type-news">Feature</span>
+                                </div>
+                                <p class="media-title">Why Remarkable Invested in Possibility Neurotechnologies and Their Think2Switch&trade; BCI</p>
+                                <p class="media-description">Remarkable details its investment thesis for Think2Switch, exploring how BCI technology is transforming accessibility for people with motor impairments.</p>
+                                <span class="media-date">August 29, 2025</span>
+                            </a>
+
+                            <a class="media-card" href="https://braininstitute.ca/news-events/2024/propelling-neurotech-innovation-obi-awards-700k-in-entrepreneurial-funding-support" target="_blank" rel="noopener noreferrer">
+                                <div class="media-card-meta">
+                                    <span class="media-outlet">Ontario Brain Institute</span>
+                                    <span class="media-type type-news">News</span>
+                                </div>
+                                <p class="media-title">Propelling neurotech innovation: OBI awards $700K in entrepreneurial funding support</p>
+                                <p class="media-description">Possibility Neurotechnologies named a 2024 NERVE recipient, receiving $100,000 in non-dilutive funding from the Ontario Brain Institute.</p>
+                                <span class="media-date">October 31, 2024</span>
+                            </a>
+
+                            <a class="media-card" href="https://ucalgary.ca/news/now-innovating-exploring-possibility-neurotechnologies-and-cdl-rockies" target="_blank" rel="noopener noreferrer">
+                                <div class="media-card-meta">
+                                    <span class="media-outlet">UCalgary News</span>
+                                    <span class="media-type type-news">Feature</span>
+                                </div>
+                                <p class="media-title">Now Innovating: Exploring Possibility Neurotechnologies and CDL-Rockies</p>
+                                <p class="media-description">UCalgary covers Dion Kelly and Erica Floreani's journey from the university innovation ecosystem to the Creative Destruction Lab.</p>
+                                <span class="media-date">June 6, 2024</span>
+                            </a>
+
+                            <a class="media-card" href="https://ucalgary.ca/news/ucalgary-based-program-expands-province-wide-supporting-digital-health-researchers" target="_blank" rel="noopener noreferrer">
+                                <div class="media-card-meta">
+                                    <span class="media-outlet">UCalgary News</span>
+                                    <span class="media-type type-news">News</span>
+                                </div>
+                                <p class="media-title">UCalgary-based program expands province-wide supporting digital health researchers</p>
+                                <p class="media-description">Possibility Neurotechnologies featured as UCalgary's digital health support program expands province-wide to help researchers commercialize health innovations.</p>
+                                <span class="media-date">September 11, 2023</span>
+                            </a>
+
+                            <a class="media-card" href="https://www.caringsupport.com/news-feed/think2switch-device-changing-lives-of-kids-cerebral-palsy" target="_blank" rel="noopener noreferrer">
+                                <div class="media-card-meta">
+                                    <span class="media-outlet">Caring Support</span>
+                                    <span class="media-type type-news">Feature</span>
+                                </div>
+                                <p class="media-title">Alberta-made Think2Switch Device Changing the Lives of Kids with Cerebral Palsy</p>
+                                <p class="media-description">Profiles the real-world impact of Think2Switch on families, including a young girl named Claire who uses it to participate in everyday activities.</p>
+                                <span class="media-date">December 8, 2022</span>
+                            </a>
+
+                            <a class="media-card" href="https://www.ctvnews.ca/edmonton/article/new-technology-allows-people-with-motor-impairments-to-control-devices-with-their-minds/" target="_blank" rel="noopener noreferrer">
+                                <div class="media-card-meta">
+                                    <span class="media-outlet">CTV News</span>
+                                    <span class="media-type type-news">News</span>
+                                </div>
+                                <p class="media-title">New technology allows people with motor impairments to control devices with their minds</p>
+                                <p class="media-description">CTV News feature on Think2Switch and its potential to transform the lives of people with motor impairments.</p>
+                                <span class="media-date">November 28, 2022</span>
+                            </a>
+
+                            <a class="media-card" href="https://globalnews.ca/news/9310191/think2switch-brain-controlled-interface-accessibility/" target="_blank" rel="noopener noreferrer">
+                                <div class="media-card-meta">
+                                    <span class="media-outlet">Global News</span>
+                                    <span class="media-type type-news">News</span>
+                                </div>
+                                <p class="media-title">Alberta-developed device helps mobility-challenged kids turn thoughts into action</p>
+                                <p class="media-description">How Think2Switch enables children with mobility challenges to control switch-adapted devices using only their brain signals.</p>
+                                <span class="media-date">November 28, 2022</span>
+                            </a>
+
+                            <a class="media-card" href="https://research2reality.com/health-medicine/brain-computer-interface-kids-control-toys-minds-neurology/" target="_blank" rel="noopener noreferrer">
+                                <div class="media-card-meta">
+                                    <span class="media-outlet">Research2Reality</span>
+                                    <span class="media-type type-news">Feature</span>
+                                </div>
+                                <p class="media-title">Turning Brain-Computer Interfaces Into Child's Play</p>
+                                <p class="media-description">Canadian science media explores how children can control toys with their minds using Think2Switch and the BCI 4 Kids program.</p>
+                                <span class="media-date">January 6, 2022</span>
+                            </a>
+
+                            <a class="media-card" href="https://troymedia.com/technology/brain-computer-interface-invention-turns-thought-into-action/" target="_blank" rel="noopener noreferrer">
+                                <div class="media-card-meta">
+                                    <span class="media-outlet">Troy Media</span>
+                                    <span class="media-type type-news">News</span>
+                                </div>
+                                <p class="media-title">Brain-computer interface connect people with assistive technologies</p>
+                                <p class="media-description">How Think2Switch bridges the gap between BCIs and assistive devices for people with motor impairments.</p>
+                                <span class="media-date">November 26, 2021</span>
+                            </a>
+
+                            <a class="media-card" href="https://stinnovations.ca/invention-is-designed-to-switch-thoughts-into-action/" target="_blank" rel="noopener noreferrer">
+                                <div class="media-card-meta">
+                                    <span class="media-outlet">ST Innovations</span>
+                                    <span class="media-type type-news">News</span>
+                                </div>
+                                <p class="media-title">Invention is designed to switch thoughts into action</p>
+                                <p class="media-description">ST Innovations covers Think2Switch's win of their inaugural challenge, highlighting the technology's potential to help people with motor impairments.</p>
+                                <span class="media-date">November 24, 2021</span>
+                            </a>
+
+                            <a class="media-card" href="https://www.ualberta.ca/en/folio/2021/11/invention-is-designed-to-switch-thoughts-into-action.html" target="_blank" rel="noopener noreferrer">
+                                <div class="media-card-meta">
+                                    <span class="media-outlet">Folio &mdash; University of Alberta</span>
+                                    <span class="media-type type-news">Feature</span>
+                                </div>
+                                <p class="media-title">Invention is designed to switch thoughts into action</p>
+                                <p class="media-description">Think2Switch wins the inaugural ST Innovations Challenge, taking home $120,000 in prize funding plus $30,000 from Campus Alberta Neuroscience.</p>
+                                <span class="media-date">November 23, 2021</span>
+                            </a>
+
+                        </div>
+                    </div>
+
+                    <div class="media-section">
+                        <h2>Broadcast</h2>
+                        <div class="media-grid">
+
+                            <a class="media-card" href="https://www.cbc.ca/player/play/video/1.6668172" target="_blank" rel="noopener noreferrer">
+                                <div class="media-card-meta">
+                                    <span class="media-outlet">CBC News</span>
+                                    <span class="media-type type-broadcast">TV</span>
+                                </div>
+                                <p class="media-title">New technology empowering children with disabilities to control objects with their brain</p>
+                                <p class="media-description">CBC video feature on Think2Switch and how it gives children with disabilities new ways to interact with the world around them.</p>
+                                <span class="media-date">November 29, 2022</span>
+                            </a>
+
+                        </div>
+                    </div>
+
+                    <div class="media-section">
+                        <h2>Podcasts</h2>
+                        <div class="media-grid">
+
+                            <a class="media-card" href="https://podcasts.apple.com/us/podcast/mind-over-matter-could-brain-computer-interfaces-lead/id1629103299?i=1000757503987" target="_blank" rel="noopener noreferrer">
+                                <div class="media-card-meta">
+                                    <span class="media-outlet">Solve for X: Innovations to Change the World</span>
+                                    <span class="media-type type-podcast">Podcast</span>
+                                </div>
+                                <p class="media-title">Mind over matter: Could brain-computer interfaces lead to a new era of innovation and healing?</p>
+                                <p class="media-description">Host Manjula Selvarajah interviews Dion Kelly about BCI technology and Think2Switch, featuring user Claire and her family.</p>
+                                <span class="media-date">March 26, 2026</span>
+                            </a>
+
+                            <a class="media-card" href="https://podcasts.apple.com/us/podcast/now-innovating-exploring-possibility-neurotechnologies/id1586674118?i=1000658043742" target="_blank" rel="noopener noreferrer">
+                                <div class="media-card-meta">
+                                    <span class="media-outlet">Now Innovating &mdash; University of Calgary</span>
+                                    <span class="media-type type-podcast">Podcast</span>
+                                </div>
+                                <p class="media-title">Now Innovating: Exploring Possibility Neurotechnologies and CDL-Rockies</p>
+                                <p class="media-description">Season 5 finale of UCalgary's research-to-impact podcast featuring Dion Kelly, Erica Floreani, and a live Think2Switch demonstration.</p>
+                                <span class="media-date">June 6, 2024</span>
+                            </a>
+
+                            <a class="media-card" href="https://www.palcomp3.com.br/podcast/248031-now-with-dave-brown/270830199-think2switch-device/" target="_blank" rel="noopener noreferrer">
+                                <div class="media-card-meta">
+                                    <span class="media-outlet">NOW with Dave Brown</span>
+                                    <span class="media-type type-podcast">Podcast</span>
+                                </div>
+                                <p class="media-title">Think2Switch device</p>
+                                <p class="media-description">Think2Switch featured in a western regional report on NOW with Dave Brown, a show covering news through a disability lens.</p>
+                                <span class="media-date">November 29, 2021</span>
+                            </a>
+
+                        </div>
+                    </div>
+
+                    <div class="media-section">
+                        <h2>Awards &amp; Recognition</h2>
+                        <div class="media-grid">
+
+                            <a class="media-card" href="https://www.avenuecalgary.com/top-40-under-40/2023/dion-kelly-eli-kinney-lang/" target="_blank" rel="noopener noreferrer">
+                                <div class="media-card-meta">
+                                    <span class="media-outlet">Avenue Magazine</span>
+                                    <span class="media-type type-award">Award</span>
+                                </div>
+                                <p class="media-title">They create opportunities for children with severe neurological disorders through brain-computer interface technologies</p>
+                                <p class="media-description">Dion Kelly and Eli Kinney-Lang recognized in Avenue Calgary's Top 40 Under 40 for creating opportunities for children with severe neurological disorders through BCI technologies.</p>
+                                <span class="media-date">November 2, 2023</span>
+                            </a>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="footer-info">
+                <div class="privacy">
+                    <a href="./privacy.html"><span>Privacy Policy</span></a>
+                </div>
+                <div class="copyright">
+                    <span>Copyright &copy; 2026 Possibility Neurotechnologies.</span>
+                </div>
+            </div>
+            <div class="socials">
+                <a href="https://www.facebook.com/profile.php?id=61551642523387" target="_blank"><facebook-icon></facebook-icon></a>
+                <a href="https://x.com/PossNeuro" target="_blank"><x-icon></x-icon></a>
+                <a href="https://www.instagram.com/possneuro/" target="_blank"><insta-icon></insta-icon></a>
+                <a href="https://www.linkedin.com/company/possibility-neurotechnologies/" target="_blank"><linkedin-icon></linkedin-icon></a>
+                <a href="mailto: info@possneuro.com"><email-icon style="margin-top: 3px"></email-icon></a>
+            </div>
+        </footer>
+
+        <script>
+            function openMobileMenu() {
+                document.getElementById("mobile-nav").style.display = "flex";
+                document.getElementById("main-content").style.display = "none";
+                document.querySelector("menu-icon").style.display = "none";
+                document.querySelector("close-icon").style.display = "flex";
+                document.querySelector(".start-nav.mobile").style.display = "none";
+                document.querySelector("#mobile-logo").style.display = "none";
+                document.querySelector("#mobile-menu-logo").style.display = "flex";
+            }
+
+            function closeMobileMenu() {
+                document.getElementById("mobile-nav").style.display = "none";
+                document.getElementById("main-content").style.display = "block";
+                document.querySelector("menu-icon").style.display = "flex";
+                document.querySelector("close-icon").style.display = "none";
+                document.querySelector(".start-nav.mobile").style.display = "flex";
+                document.querySelector("#mobile-logo").style.display = "flex";
+                document.querySelector("#mobile-menu-logo").style.display = "none";
+            }
+        </script>
+
+        <script src="script.js"></script>
+    </body>
+</html>

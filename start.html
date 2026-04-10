@@ -27,14 +27,16 @@
     </script>
     <body>
         <header id="desktop-header">
-            <a class="home-link" href="./index.html"><img src="./assets/possibility_logo_rgb.png" alt="Possibility Neurotechnologies" /></a>
+            <a class="home-link" href="./index.html">
+                <img id="desktop-logo" src="./assets/possibility_logo_white.png" alt="Possibility Neurotechnologies" /></a>
             <nav>
                 <ul>
                     <li><a href="./index.html#t2s-content" id="t2s-link" class="nav-link">Think2Switch&trade;</a></li>
+                    <li><a href="./concept.html" id="research-link" class="nav-link">How It Works</a></li>
+                    <li><a href="./media.html" id="media-link" class="nav-link">Media</a></li>
                     <li><a href="./about.html" id="about-link" class="nav-link">About Us</a></li>
-                    <li><a href="#research-content" id="research-link" class="current-page nav-link">Research</a></li>
                     <li><a href="./contact.html" id="contact-link" class="nav-link">Contact</a></li>
-                    <li><a href="./trial.html" class="early-access desktop">Early Access</a></li>
+                    <li><a href="#start-content" id="start-nav" class="start-nav desktop current-page">Get Started</a></li>
                 </ul>
             </nav>
         </header>
@@ -45,7 +47,7 @@
                 <img id="mobile-menu-logo" src="./assets/possibility_logo_white.png" alt="Possibility Neurotechnologies Logo" style="display: none" />
             </a>
             <div class="row" style="justify-content: flex-end">
-                <a href="./trial.html" class="early-access mobile">Early Access</a>
+                <a href="./start.html" class="start-nav mobile current-page">Get Started</a>
                 <menu-icon onclick="openMobileMenu()"></menu-icon>
                 <close-icon onclick="closeMobileMenu()" style="display: none"></close-icon>
             </div>
@@ -56,10 +58,11 @@
             <nav>
                 <ul>
                     <li><a href="./index.html#t2s-content" id="t2s-link" class="nav-link" onclick="closeMobileMenu()">Think2Switch&trade;</a></li>
+                    <li><a href="./concept.html" id="research-link" class="nav-link" onclick="closeMobileMenu()">How It Works</a></li>
+                    <li><a href="./media.html" id="media-link" class="nav-link" onclick="closeMobileMenu()">Media</a></li>
                     <li><a href="./about.html" id="about-link" class="nav-link" onclick="closeMobileMenu()">About Us</a></li>
-                    <li><a href="#research-content" id="research-link" class="current-page nav-link" onclick="closeMobileMenu()">Research</a></li>
                     <li><a href="./contact.html" id="contact-link" class="nav-link" onclick="closeMobileMenu()">Contact</a></li>
-                    <li><a href="./trial.html" class="early-access mobile" onclick="closeMobileMenu()">Early Access</a></li>
+                    <li><a href="#start-content" class="start-nav mobile current-page" onclick="closeMobileMenu()">Get Started</a></li>
                 </ul>
             </nav>
             <div id="mobile-nav-footer">
@@ -74,49 +77,57 @@
                     <a href="./privacy.html"><span>Privacy Policy</span></a>
                 </div>
                 <div class="copyright">
-                    <p>Copyright &copy; 2026 Possibility Neurotechnologies. <br />All rights reserved.</p>
+                    <p>Copyright &copy; 2026 Possibility Neurotechnologies.</p>
                 </div>
             </div>
         </div>
 
         <main id="main-content">
-            <div id="research-content" class="intro-content column">
-                <h1>What is a brain-computer interface?</h1>
-            </div>
-            <div class="secondary-content column research page2">
-                <div class="container">
-                    <div class="text-content">
-                        <h2>Brain-computer interfaces (BCIs) let you control things using only your "thoughts".</h2>
-                        <p>
-                            They work by detecting and interpreting electrical signals from your brain, through special sensors placed on your head, and translating those signals into a command to
-                            control some output device, like a computer. BCIs can help people with physical limitations who may struggle to use other types of access methods like keyboards, mice,
-                            adaptive switches, etc.
-                        </p>
-                    </div>
-                    <iframe
-                        src="https://www.youtube-nocookie.com/embed/0PPTnDijx0E?si=oMJlVdU_MAeurcfk"
-                        title="YouTube video player"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin"
-                        allowfullscreen></iframe>
+            <div id="start-content" class="intro-content column">
+                <div class="column">
+                    <h1 style="text-align: center">Turn thoughts into action</h1>
+                    <p>
+                        Designed to be simple to set up and use—no technical experience required.
+                        Think2Switch™ works best for people who can follow simple instructions and understand cause and effect.
+                        Think2Switch™ can be set up independently, with most users up and running in minutes.
+                    </p>
+                    <ol class="start-steps">
+                        <li>
+                            <strong>Get your Muse Athena headset</strong>
+                            <p>Order your headset now.  Get 20% off at <a href="https://choosemuse.com/possneuro" target="_blank">choosemuse.com/possneuro</a></p>
+                            <p><i>HSA and FSA funds are eligible in the U.S.</i></p>
+                        </li>
+                        <li>
+                            <strong>Download the Think2Switch&trade; app</strong>
+                            <p>Start with a one-month free trial on the App Store.</p>
+                            <a href="https://apps.apple.com/ca/app/think2switch/id6738101315" target="_blank" id="app-store-badge">
+                                <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us" alt="Download on the App Store" />
+                            </a>
+                        </li>
+                        <li>
+                            <strong>Set up in minutes</strong>
+                            <p>Follow our step-by-step <a href="https://think2switch.gitbook.io/think2switch-knowledge-guide" target="_blank">Knowledge Guide</a> to connect your headset, tune it to your brain activity, and start interacting in minutes.</p>
+                        </li>
+                    </ol>
                 </div>
             </div>
         </main>
 
         <footer>
+            <div class="footer-info">
+                <div class="privacy">
+                    <a href="./privacy.html"><span>Privacy Policy</span></a>
+                </div>
+                <div class="copyright">
+                    <span>Copyright &copy; 2026 Possibility Neurotechnologies.</span>
+                </div>
+            </div>
             <div class="socials">
                 <a href="https://www.facebook.com/profile.php?id=61551642523387" target="_blank"><facebook-icon></facebook-icon></a>
                 <a href="https://x.com/PossNeuro" target="_blank"><x-icon></x-icon></a>
                 <a href="https://www.instagram.com/possneuro/" target="_blank"><insta-icon></insta-icon></a>
                 <a href="https://www.linkedin.com/company/possibility-neurotechnologies/" target="_blank"><linkedin-icon></linkedin-icon></a>
                 <a href="mailto: info@possneuro.com"><email-icon style="margin-top: 3px"></email-icon></a>
-            </div>
-            <div class="privacy">
-                <a href="./privacy.html"><span>Privacy Policy</span></a>
-            </div>
-            <div class="copyright">
-                <span>Copyright &copy; 2026 Possibility Neurotechnologies. All rights reserved.</span>
             </div>
         </footer>
 
@@ -126,7 +137,7 @@
                 document.getElementById("main-content").style.display = "none";
                 document.querySelector("menu-icon").style.display = "none";
                 document.querySelector("close-icon").style.display = "flex";
-                document.querySelector(".early-access.mobile").style.display = "none";
+                document.querySelector(".start-nav.mobile").style.display = "none";
                 document.querySelector("#mobile-logo").style.display = "none";
                 document.querySelector("#mobile-menu-logo").style.display = "flex";
             }
@@ -136,7 +147,7 @@
                 document.getElementById("main-content").style.display = "block";
                 document.querySelector("menu-icon").style.display = "flex";
                 document.querySelector("close-icon").style.display = "none";
-                document.querySelector(".early-access.mobile").style.display = "flex";
+                document.querySelector(".start-nav.mobile").style.display = "flex";
                 document.querySelector("#mobile-logo").style.display = "flex";
                 document.querySelector("#mobile-menu-logo").style.display = "none";
             }
