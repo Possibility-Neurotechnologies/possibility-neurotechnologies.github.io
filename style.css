@@ -236,6 +236,45 @@ main::-webkit-scrollbar {
     background-image: linear-gradient(90deg, #e5287e 0%, #7f3f98 100%);
     color: #fff;
     width: 100%;
+    position: relative;
+}
+
+/* --------------------- Scroll Indicator --------------------- */
+.scroll-indicator {
+    position: absolute;
+    bottom: 24px;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+    animation: scroll-bounce 1.8s ease-in-out infinite;
+    transition: opacity 0.4s ease;
+    z-index: 5;
+    /* Override the broad "main div" rule */
+    height: auto;
+    width: auto;
+    display: block;
+    justify-content: unset;
+    align-items: unset;
+}
+
+.scroll-indicator::before {
+    content: '';
+    display: block;
+    width: 14px;
+    height: 14px;
+    border-right: 2.5px solid rgba(255, 255, 255, 0.75);
+    border-bottom: 2.5px solid rgba(255, 255, 255, 0.75);
+    transform: rotate(45deg);
+}
+
+.scroll-indicator.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+@keyframes scroll-bounce {
+    0%, 100% { transform: translateX(-50%) translateY(0); }
+    50% { transform: translateX(-50%) translateY(8px); }
 }
 
 #t2s-content {

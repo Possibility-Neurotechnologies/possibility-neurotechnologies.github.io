@@ -6,7 +6,17 @@ const screenHeight = document.documentElement.clientHeight;
 const mainContent = document.getElementById("main-content");
 const currentPageId = getCurrentPageId();
 
+// Scroll indicator: hide once user scrolls past hero
+const scrollIndicator = document.querySelector(".scroll-indicator");
+
 mainContent.addEventListener("scroll", function () {
+    if (scrollIndicator) {
+        if (mainContent.scrollTop > 60) {
+            scrollIndicator.classList.add("hidden");
+        } else {
+            scrollIndicator.classList.remove("hidden");
+        }
+    }
     var headers = document.querySelectorAll("header");
     var navLinks = document.querySelectorAll(".nav-link");
     var startDesktop = document.querySelector(".start-nav.desktop");
