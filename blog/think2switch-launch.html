@@ -58,8 +58,9 @@
                 box-sizing: border-box;
                 display: flex;
                 flex-direction: column;
-                align-items: flex-start;
+                align-items: center;
                 justify-content: flex-end;
+                text-align: center;
                 min-height: 40vh;
             }
 
@@ -76,11 +77,10 @@
             .blog-hero h1 {
                 font-family: "Poppins", sans-serif;
                 font-weight: 700;
-                font-size: clamp(1.75rem, 4vw, 3rem);
+                font-size: 3.5rem;
                 line-height: 1.15;
                 color: #fff;
                 margin: 0 0 1rem;
-                max-width: 820px;
             }
 
             .blog-hero .post-subtitle {
@@ -88,7 +88,6 @@
                 font-size: clamp(1rem, 2vw, 1.25rem);
                 color: rgba(255,255,255,0.85);
                 margin: 0 0 1.5rem;
-                max-width: 680px;
                 line-height: 1.5;
             }
 
@@ -98,6 +97,7 @@
                 color: rgba(255,255,255,0.65);
                 display: flex;
                 align-items: center;
+                justify-content: center;
                 gap: 1rem;
                 flex-wrap: wrap;
             }
@@ -178,7 +178,7 @@
             .blog-content h2 {
                 font-family: "Poppins", sans-serif;
                 font-weight: 700;
-                font-size: 1.5rem;
+                font-size: 3rem;
                 color: #7f3f98;
                 margin: 2.5rem 0 1rem;
                 text-align: left;
@@ -271,6 +271,7 @@
             /* Share bar */
             .share-bar {
                 display: flex;
+                flex-direction: row;
                 align-items: center;
                 gap: 1rem;
                 padding: 1.5rem 0;
@@ -358,58 +359,6 @@
     </script>
 
     <body>
-        <header id="desktop-header">
-            <a class="home-link" href="../index.html">
-                <img id="desktop-logo" src="../assets/possibility_logo_white.png" alt="Possibility Neurotechnologies" /></a>
-            <nav>
-                <ul>
-                    <li><a href="../index.html#t2s-content" id="t2s-link" class="nav-link">Think2Switch&trade;</a></li>
-                    <li><a href="../concept.html" id="research-link" class="nav-link">How It Works</a></li>
-                    <li><a href="../media.html" id="media-link" class="current-page nav-link">Media</a></li>
-                    <li><a href="../about.html" id="about-link" class="nav-link">About Us</a></li>
-                    <li><a href="../contact.html" id="contact-link" class="nav-link">Contact</a></li>
-                    <li><a href="../start.html" class="start-nav desktop">Get Started</a></li>
-                </ul>
-            </nav>
-        </header>
-
-        <header id="mobile-header">
-            <a class="home-link" href="../index.html" onclick="closeMobileMenu()">
-                <img id="mobile-logo" src="../assets/possibility_neuron_white.png" alt="Possibility Neurotechnologies Logo" />
-                <img id="mobile-menu-logo" src="../assets/possibility_logo_white.png" alt="Possibility Neurotechnologies Logo" style="display: none" />
-            </a>
-            <div class="row" style="justify-content: flex-end">
-                <a href="../start.html" class="start-nav mobile">Get Started</a>
-                <menu-icon onclick="openMobileMenu()"></menu-icon>
-                <close-icon onclick="closeMobileMenu()" style="display: none"></close-icon>
-            </div>
-        </header>
-
-        <div id="mobile-nav" style="display: none">
-            <div></div>
-            <nav>
-                <ul>
-                    <li><a href="../index.html#t2s-content" class="nav-link" onclick="closeMobileMenu()">Think2Switch&trade;</a></li>
-                    <li><a href="../concept.html" class="nav-link" onclick="closeMobileMenu()">How It Works</a></li>
-                    <li><a href="../media.html" class="current-page nav-link" onclick="closeMobileMenu()">Media</a></li>
-                    <li><a href="../about.html" class="nav-link" onclick="closeMobileMenu()">About Us</a></li>
-                    <li><a href="../contact.html" class="nav-link" onclick="closeMobileMenu()">Contact</a></li>
-                    <li><a href="../start.html" class="start-nav mobile" onclick="closeMobileMenu()">Get Started</a></li>
-                </ul>
-            </nav>
-            <div id="mobile-nav-footer">
-                <div class="socials">
-                    <a href="https://www.facebook.com/profile.php?id=61551642523387" target="_blank"><facebook-icon></facebook-icon></a>
-                    <a href="https://x.com/PossNeuro" target="_blank"><x-icon></x-icon></a>
-                    <a href="https://www.instagram.com/possneuro/" target="_blank"><insta-icon></insta-icon></a>
-                    <a href="https://www.linkedin.com/company/possibility-neurotechnologies/" target="_blank"><linkedin-icon></linkedin-icon></a>
-                    <a href="mailto:info@possneuro.com"><email-icon style="margin-top: 3px"></email-icon></a>
-                </div>
-                <div class="privacy"><a href="../privacy.html"><span>Privacy Policy</span></a></div>
-                <div class="copyright"><p>Copyright &copy; 2026 Possibility Neurotechnologies.</p></div>
-            </div>
-        </div>
-
         <main id="main-content">
 
             <!-- Hero -->
@@ -419,10 +368,7 @@
                 <p class="post-subtitle">Calgary startup launches groundbreaking brain-computer interface app that turns thoughts into actions</p>
                 <div class="post-meta">
                     <span>Possibility Neurotechnologies</span>
-                    <span class="dot">&bull;</span>
                     <span>Calgary, AB</span>
-                    <span class="dot">&bull;</span>
-                    <span>April 13, 2026</span>
                 </div>
             </div>
 
@@ -438,7 +384,7 @@
 
                     <!-- Share bar (top) -->
                     <div class="share-bar">
-                        <span>Share</span>
+                        <span>Share this article</span>
                         <a class="share-btn linkedin"
                            href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fwww.possneuro.com%2Fblog%2Fthink2switch-launch.html"
                            target="_blank" rel="noopener">
