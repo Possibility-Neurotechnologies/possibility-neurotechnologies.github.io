@@ -498,11 +498,14 @@ main::-webkit-scrollbar {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    min-height: 100%;
+    height: auto;
 }
 
 #contact-content .overlay {
     width: 100%;
-    height: 100%;
+    min-height: 100%;
+    height: auto;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -518,6 +521,7 @@ main::-webkit-scrollbar {
 #contact-descrip {
     width: 60%;
     margin-right: 4%;
+    height: auto;
 }
 
 #mailing-list {
@@ -591,8 +595,14 @@ main::-webkit-scrollbar {
 }
 
 /* ----------------- Get Started Page ----------------- */
+#start-content {
+    min-height: 100%;
+    height: auto;
+}
+
 #start-content div {
     width: 50%;
+    height: auto;
 }
 
 .start-steps {
