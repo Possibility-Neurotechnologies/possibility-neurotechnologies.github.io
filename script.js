@@ -5,18 +5,9 @@ const screenHeight = document.documentElement.clientHeight;
 // -----------------------------------------------------------------------------------------------
 const mainContent = document.getElementById("main-content");
 const currentPageId = getCurrentPageId();
-
-// Scroll indicator: hide once user scrolls past hero
 const scrollIndicator = document.querySelector(".scroll-indicator");
 
 mainContent.addEventListener("scroll", function () {
-    if (scrollIndicator) {
-        if (mainContent.scrollTop > 60) {
-            scrollIndicator.classList.add("hidden");
-        } else {
-            scrollIndicator.classList.remove("hidden");
-        }
-    }
     var headers = document.querySelectorAll("header");
     var navLinks = document.querySelectorAll(".nav-link");
     var startDesktop = document.querySelector(".start-nav.desktop");
@@ -30,19 +21,22 @@ mainContent.addEventListener("scroll", function () {
     var mobileNavFooter = document.querySelector("#mobile-nav-footer");
 
     var footer = document.querySelector("footer");
-    // var scrollBarStyle = document.querySelector("#scrollbar-style");
     var scrollPosition = mainContent.scrollTop;
+
+    // Scroll indicator: hide once user scrolls past title / hero 
+    if (scrollIndicator) {
+        if (mainContent.scrollTop > 60) {
+            scrollIndicator.classList.add("hidden");
+        } else {
+            scrollIndicator.classList.remove("hidden");
+        }
+    }
 
     if (scrollPosition > 0.1 * screenHeight) {
         footer.classList.add("scrolled");
     } else {
         footer.classList.remove("scrolled");
     }
-    /* if (scrollPosition > 0.5 * screenHeight) {
-        scrollBarStyle.innerHTML = scrolledScrollBar;
-    } else {
-        scrollBarStyle.innerHTML = unscrolledScrollBar;
-    } */
     if (scrollPosition > 0.9 * screenHeight && currentPageId !== "contact-link") {
         startDesktop.classList.add("scrolled");
         startMobile.classList.add("scrolled");
@@ -94,6 +88,7 @@ mainContent.addEventListener("scroll", function () {
     }
 });
 
+
 // Sets the text color and underline color for a nav link
 function setNavColors(element, textColor, fillColor) {
     element.style.setProperty("--tcolor", textColor);
@@ -118,44 +113,6 @@ function getCurrentPageId() {
     return pageId;
 }
 
-// -----------------------------------------------------------------------------------------------
-// Mouse over event for Team page
-// -----------------------------------------------------------------------------------------------
-var headshots = document.getElementsByClassName("headshot");
-
-if (headshots.length > 0) {
-    for (let i = 0; i < headshots.length; i++) {
-        headshots[i].addEventListener("mouseenter", (event) => {
-            makeOverlayOpaque(event.target.getElementsByClassName("overlay")[0]);
-        });
-        headshots[i].addEventListener("touchstart", (event) => {
-            makeAllOverlaysTransparent();
-            makeOverlayOpaque(event.target.getElementsByClassName("overlay")[0]);
-        });
-
-        headshots[i].addEventListener("touchend", (event) => {
-            makeOverlayTransparent(event.target.getElementsByClassName("overlay")[0]);
-        });
-
-        headshots[i].addEventListener("mouseleave", (event) => {
-            makeOverlayTransparent(event.target.getElementsByClassName("overlay")[0]);
-        });
-    }
-}
-
-function makeOverlayOpaque(element) {
-    element.style.opacity = "1";
-}
-
-function makeOverlayTransparent(element) {
-    element.style.opacity = "0";
-}
-
-function makeAllOverlaysTransparent() {
-    for (let i = 0; i < headshots.length; i++) {
-        makeOverlayTransparent(headshots[i].getElementsByClassName("overlay")[0]);
-    }
-}
 
 // -----------------------------------------------------------------------------------------------
 // Scrollbar
