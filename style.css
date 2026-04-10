@@ -606,7 +606,7 @@ main::-webkit-scrollbar {
 }
 
 #start-content div {
-    width: 50%;
+    width: 70%;
     height: auto;
 }
 
@@ -618,6 +618,16 @@ main::-webkit-scrollbar {
 
 .start-steps li {
     margin-bottom: 1.5rem;
+}
+
+.start-steps li strong {
+    display: block;
+    margin-bottom: 0.4rem;
+}
+
+.start-steps li p {
+    margin: 0.2rem 0;
+    font-size: 1.2rem;
 }
 
 .start-steps a {
