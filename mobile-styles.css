@@ -372,12 +372,12 @@
 
     /* ------------------- Contact Page ------------------- */
     #contact-content {
-        /* display: flex;
+        display: flex;
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
         height: auto;
-        min-height: 100%; */
+        min-height: 100%;
     }
 
     #contact-content .overlay {
@@ -430,10 +430,6 @@
     /* ----------------- Get Started Page ----------------- */
     #start-content div {
         width: 85%;
-    }
-
-    .start-steps {
-        font-size: 0.85rem;
     }
 
     #app-store-badge img {
