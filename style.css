@@ -553,11 +553,11 @@ a.team-name:hover {
 
 #contact-info {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items: center;
     height: auto;
-    gap: 60px;
+    gap: 20px;
     margin-bottom: 10px;
 }
 
