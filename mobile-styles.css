@@ -392,7 +392,7 @@
     }
 
     #contact-descrip {
-        width: 60%;
+        width: 70%;
         margin-right: 0;
     }
 
@@ -404,7 +404,9 @@
     }
 
     #contact-info {
-        flex-direction: row;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
     }
 
     #contact-info div {
