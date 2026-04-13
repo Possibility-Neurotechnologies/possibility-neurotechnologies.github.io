@@ -605,7 +605,7 @@ a.team-name:hover {
 
 /* ----------------- Get Started Page ----------------- */
 #start-content {
-    min-height: 100%;
+    min-height: 120%;
     height: auto;
     padding-top: 4rem;
 }
