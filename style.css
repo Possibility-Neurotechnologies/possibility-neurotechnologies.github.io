@@ -452,7 +452,8 @@ a.team-name:hover {
     align-items: center;
 }
 
-#partners img {
+#partners a {
+    display: flex;
     margin-left: 3%;
     margin-right: 3%;
 }
