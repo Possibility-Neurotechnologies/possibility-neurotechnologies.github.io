@@ -427,6 +427,15 @@
     }
 
     /* ----------------- Get Started Page ----------------- */
+    #start-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        height: auto;
+        min-height: 100%;
+    }
+
     #start-content div {
         width: 85%;
     }
