@@ -84,3 +84,19 @@ class EMailSVG extends HTMLElement {
 }
 
 customElements.define("email-icon", EMailSVG);
+
+class YouTubeSVG extends HTMLElement {
+    constructor() {
+        super();
+    }
+
+    connectedCallback() {
+        this.innerHTML = `
+        <svg class="social-icon" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+            <path d="M43.2 33.9c-.4 2.7-2.8 4.8-5.6 5.1C34.2 39.4 29.2 40 24 40c-5.2 0-10.2-.6-13.6-1C7.8 38.7 5.4 36.6 5 33.9 4.4 30.4 4 26.8 4 24c0-2.8.4-6.4 1-9.9.4-2.7 2.8-4.8 5.6-5.1C14 8.6 19 8 24 8c5 0 10 .6 13.4 1 2.8.3 5.2 2.4 5.6 5.1.6 3.5 1 7.1 1 9.9 0 2.8-.4 6.4-1 9.9zM20 17v14l12-7-12-7z"/>
+        </svg>
+        `;
+    }
+}
+
+customElements.define("youtube-icon", YouTubeSVG);
