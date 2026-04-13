@@ -93,7 +93,7 @@ header {
     align-items: center;
     height: 10%;
     width: 100%;
-    background: transparent;
+    background: linear-gradient(90deg, #e5287e 0%, #7f3f98 100%);
     transition: all 0.3s ease;
     z-index: 7;
 }

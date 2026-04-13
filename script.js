@@ -50,7 +50,7 @@ mainContent.addEventListener("scroll", function () {
         mobileMenuLogo.setAttribute("src", "./assets/possibility_logo_rgb.png");
 
         for (i = 0; i < headers.length; i++) {
-            headers[i].style.backgroundColor = "#fff";
+            headers[i].style.background = "#fff";
         }
 
         for (i = 0; i < navLinks.length; i++) {
@@ -76,7 +76,7 @@ mainContent.addEventListener("scroll", function () {
         mobileMenuLogo.setAttribute("src", "./assets/possibility_logo_white.png");
 
         for (i = 0; i < headers.length; i++) {
-            headers[i].style.backgroundColor = "transparent";
+            headers[i].style.background = "linear-gradient(90deg, #e5287e 0%, #7f3f98 100%)";
         }
 
         for (i = 0; i < navLinks.length; i++) {
