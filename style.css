@@ -335,7 +335,7 @@ main::-webkit-scrollbar {
 }
 
 .secondary-content.about {
-    background-image: url("./assets/possibility_neuron_background_a50_bottom.png");
+    background-image: url("./assets/possibility_neuron_background_a50.png");
     background-origin: content-box;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -446,32 +446,25 @@ a.team-name:hover {
 }
 
 #partners {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 60px;
     align-items: center;
+    justify-items: center;
+    width: 80%;
 }
 
 #partners a {
     display: flex;
-    margin-left: 3%;
-    margin-right: 3%;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
 }
 
-#remarkable-logo {
-    height: 130px;
-}
-
-#innovate-logo {
-    height: 100px;
-}
-
-#cdl-logo {
-    height: 90px;
-}
-
-#cp-logo {
-    height: 130px;
+#partners img {
+    max-height: 80px;
+    max-width: 100%;
+    object-fit: contain;
 }
 
 /* ------------------- Concept Page ------------------- */

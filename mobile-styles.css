@@ -307,31 +307,24 @@
 
     #partners {
         width: 80%;
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 40px;
         align-items: center;
-        justify-content: flex-start;
+        justify-items: center;
     }
 
     #partners a {
         display: flex;
-        margin: 30px 0;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
     }
 
-    #remarkable-logo {
-        height: 120px;
-    }
-
-    #innovate-logo {
-        height: 90px;
-    }
-
-    #cdl-logo {
-        height: 80px;
-    }
-
-    #cp-logo {
-        height: 120px;
+    #partners img {
+        max-height: 100px;
+        max-width: 80%;
+        object-fit: contain;
     }
 
     /* ------------------- Concept Page ------------------- */
