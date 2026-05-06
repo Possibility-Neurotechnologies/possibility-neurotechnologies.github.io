@@ -791,6 +791,110 @@ a.team-name:hover {
     margin-top: auto;
 }
 
+/* ------------------- FAQ Section ------------------- */
+.faq-list {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+}
+
+.faq-card {
+    background-color: #fff;
+    border: 1px solid #e8e8e8;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.faq-card[open] {
+    border-color: #7f3f98;
+    box-shadow: 0 4px 16px rgba(127, 63, 152, 0.1);
+}
+
+.faq-question {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 20px;
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #222;
+    list-style: none;
+    user-select: none;
+    gap: 16px;
+}
+
+.faq-question::-webkit-details-marker {
+    display: none;
+}
+
+.faq-question::after {
+    content: '';
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-right: 2px solid #7f3f98;
+    border-bottom: 2px solid #7f3f98;
+    transform: rotate(45deg);
+    flex-shrink: 0;
+    transition: transform 0.2s ease;
+    margin-top: -3px;
+}
+
+.faq-card[open] .faq-question::after {
+    transform: rotate(-135deg);
+    margin-top: 3px;
+}
+
+.faq-answer {
+    display: block;
+    height: auto;
+    padding: 0 20px 18px;
+    text-align: left;
+}
+
+.faq-answer p {
+    font-family: "Lato", sans-serif;
+    font-size: 0.95rem;
+    color: #444;
+    margin: 0 0 10px;
+    line-height: 1.6;
+}
+
+.faq-answer p:last-child {
+    margin-bottom: 0;
+}
+
+.faq-answer ul {
+    font-family: "Lato", sans-serif;
+    font-size: 0.95rem;
+    color: #444;
+    margin: 0 0 10px;
+    padding-left: 20px;
+    line-height: 1.6;
+}
+
+.faq-answer li {
+    margin-bottom: 4px;
+}
+
+.faq-answer a {
+    color: #7f3f98;
+    font-family: "Lato", sans-serif;
+    font-size: inherit;
+    text-decoration: underline;
+}
+
+.faq-answer a:hover {
+    color: #ec3096;
+}
+
 /* ------------------- Privacy Policy Page ------------------- */
 #privacy-text {
     max-height: 60%;
