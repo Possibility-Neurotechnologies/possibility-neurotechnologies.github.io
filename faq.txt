@@ -1,0 +1,106 @@
+Think2Switch™ — Frequently Asked Questions
+What is Think2Switch™?
+Think2Switch™ is a non-invasive brain-computer interface (BCI) system that translates brain activity into actionable commands, enabling individuals to control devices using thought alone. No movement required! 
+When paired with the Muse S Athena headset, the Think2Switch™ app allows users to communicate, make choices, and interact with their environment—without requiring physical movement or speech.
+
+How does Think2Switch™ work?
+Think2Switch™ operates through a simple, guided process:
+The user wears the Muse S Athena headset, a soft, non-invasive device with sensors positioned on the forehead and right above the ears.
+The system is calibrated to distinguish between an “active command” and a resting state.
+The app interprets these brain signals in real time.
+These recognized signals are translated into commands that activate selected outputs.
+For example, a trained active command can be used to turn on a light, make a selection, or control media—without physical interaction.
+For more detailed guidance, please refer to the Think2Switch™ Knowledge Guide:
+https://think2switch.gitbook.io/think2switch-knowledge-guide
+
+What is an active command?
+An active command is a consistent mental signal that triggers a selected output. It is the foundation of how the Think2Switch™ functions. 
+During calibration, users are asked to think of a consistent command (such as a word, phrase, or imagined movement). Once trained, Think2Switch™ detects this signal and uses it to activate functions such as:
+Communicating a word or phrase
+Making a selection
+Controlling devices or media
+The command does NOT need to be a word.. Any consistent internal thought can be used, provided it can be reproduced reliably.  Examples of effective command thoughts can be found here: 
+https://drive.google.com/file/d/1izlVB1sftKFrNQDuCH6w9KZuQePWod_t/view?usp=sharing
+For Clinicians:
+https://docs.google.com/document/d/1hUcsh3ny3w6kjITLMFNK66OMzzVFVYoYVdgql-1p1cw/edit?usp=sharing
+
+Who is Think2Switch™ for?
+Think2Switch™ was designed primarily for individuals with severe physical and communication disabilities, particularly children who face significant barriers to interaction and participation.
+The system, however, is used by adults and individuals with a range of neurological conditions, supporting communication, independence, and engagement in everyday activities.
+
+What do I need to use Think2Switch™?
+To get started, you will need:
+The Think2Switch™ app
+The Muse S Athena headset
+Optional integrations:
+HomeKit Output: Control compatible smart devices (e.g., lights or appliances) using HomeKit-enabled smart plugs.
+Keyboard Output: Send keyboard inputs to a connected computer or tablet to control applications, games, or media.
+Click here to get started: https://www.possneuro.com/start.html
+
+What can you control with Think2Switch™?
+Think2Switch™ enables control of devices and applications that respond to simple on/off or input-based commands.  See examples here:
+Quick Guide for Calibration & What You Can Do with Think2Switch™
+https://drive.google.com/file/d/1izlVB1sftKFrNQDuCH6w9KZuQePWod_t/view?usp=sharing
+Quick Guide & Ideas for using the Keyboard output on Think2Switch ™
+https://drive.google.com/file/d/1qlkA7vWZN88OVdIf7CJyqCON-378tS21/view?usp=sharing
+
+
+How long does it take to learn and use Think2Switch™?
+Initial setup and calibration typically take 5–10 minutes.
+Learning to use Think2Switch™ is a personalized process. Some users respond quickly, while others benefit from shorter, repeated sessions over time. Progress varies by individual, and there is no fixed learning timeline.
+
+Is Think2Switch™ backed by research?
+Yes. Think2Switch™ is grounded in neuroscience and assistive technology research.
+The system is based on the doctoral research of Dr. Dion Kelly, co-founder and CEO of Possibility Neurotechnologies, which explored how brain-computer interfaces can enable children with severe physical disabilities to participate in meaningful and purposeful activities, determined by the child. 
+
+How much does Think2Switch™ cost?
+Think2Switch™ app:  $35 USD / month or $350 USD / year
+Muse S Athena headset: One-time purchase of approximately $475 USD
+Get started here: https://www.possneuro.com/start.html
+
+Does Think2Switch™ work with other assistive technologies?
+Think2Switch™ currently supports select integrations, including compatibility with devices such as Tobii Dynavox systems.
+We are actively expanding compatibility with additional assistive technologies, including AAC devices and platforms such as Alexa, Android and Google Home.
+For specific integration inquiries, please contact our team at info@possneuro.com
+Does Think2Switch™ read my thoughts?
+No. Think2Switch™ does not read or interpret your inner thoughts.
+When you think, your brain generates electrical brain signals and this is what Think2Switch™detects and interprets as your active command. It does not recognize specific words or ideas—only the unique brain activity pattern associated with a user’s command.
+
+Does the Muse S Athena headset fit all users?
+The Muse S Athena headset is designed to accommodate a wide range of head shapes and sizes.
+If fit issues arise, please contact our team for support at info@possneuro.com
+
+I’m not sure if Think2Switch™ is the right fit. Can I try it first?
+Yes. We offer options to help you evaluate whether Think2Switch™is right for you :
+The Muse S Athena headset includes a 30-day return policy (purchased here)
+The Think2Switch™ app includes a 30-day free trial.
+This allows you to explore the system and determine if it meets your needs before committing.
+https://www.possneuro.com/start.html
+
+Is Think2Switch™ covered by insurance?
+The Muse S Athena headset may be eligible for reimbursement through health spending accounts, depending on your provider.
+At this time, the Think2Switch™ app is not covered by insurance and is considered an out-of-pocket expense. We are actively working toward broader coverage options.
+
+Is Think2Switch™ available outside of Canada?
+Yes. Think2Switch™ is available globally.
+All you need is the Think2Switch™ app and the Muse S Athena headset.
+
+Is Think2Switch™ available in multiple languages?
+Not yet. We are actively working to expand language support while ensuring accuracy and usability.
+
+I represent an organization purchasing for multiple clients. What if subscriptions are not permitted?
+We recognize that subscription-based payments may not align with institutional procurement policies.
+We offer flexible purchasing options, including:
+Direct invoicing for app licensing
+Bulk procurement of Muse S Athena headsets
+Centralized billing for multiple users
+This approach allows organizations to avoid in-app subscriptions while maintaining streamlined purchasing and deployment.
+To discuss your requirements, please contact: info@possneuro.com
+
+How can I learn more?
+If you have additional questions or would like further support, our team is here to help! 
+Email: info@possneuro.com
+
+
+
+
