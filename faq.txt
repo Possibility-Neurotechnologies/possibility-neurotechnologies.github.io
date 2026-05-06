@@ -19,10 +19,16 @@ During calibration, users are asked to think of a consistent command (such as a 
 Communicating a word or phrase
 Making a selection
 Controlling devices or media
-The command does NOT need to be a word.. Any consistent internal thought can be used, provided it can be reproduced reliably.  Examples of effective command thoughts can be found here: 
-https://drive.google.com/file/d/1izlVB1sftKFrNQDuCH6w9KZuQePWod_t/view?usp=sharing
+The command does NOT need to be a word.. Any consistent internal thought can be used, provided it can be reproduced reliably.
+Quick Guide for Calibration & What You Can Do With Think2Switch™
+https://drive.google.com/file/d/1dkGHItrULer6ZWr7N2jAhcyWmQrL0iat/view?usp=sharing
 For Clinicians:
-https://docs.google.com/document/d/1hUcsh3ny3w6kjITLMFNK66OMzzVFVYoYVdgql-1p1cw/edit?usp=sharing
+What is Think2Switch™ and How to Calibrate for Success 
+https://drive.google.com/file/d/1Zdk5CXAqVcQLNshgjR7t6rmwcexX6hok/view?usp=sharing
+
+Does Think2Switch™ read my thoughts?
+No. Think2Switch™ does not read or interpret your inner thoughts.
+When you think, your brain generates electrical brain signals and this is what Think2Switch™detects and interprets as your active command. It does not recognize specific words or ideas—only the unique brain activity pattern associated with a user’s command.
 
 Who is Think2Switch™ for?
 Think2Switch™ was designed primarily for individuals with severe physical and communication disabilities, particularly children who face significant barriers to interaction and participation.
@@ -39,11 +45,17 @@ Click here to get started: https://www.possneuro.com/start.html
 
 What can you control with Think2Switch™?
 Think2Switch™ enables control of devices and applications that respond to simple on/off or input-based commands.  See examples here:
-Quick Guide for Calibration & What You Can Do with Think2Switch™
-https://drive.google.com/file/d/1izlVB1sftKFrNQDuCH6w9KZuQePWod_t/view?usp=sharing
-Quick Guide & Ideas for using the Keyboard output on Think2Switch ™
-https://drive.google.com/file/d/1qlkA7vWZN88OVdIf7CJyqCON-378tS21/view?usp=sharing
+Quick Guide for Calibration & What You Can Do With Think2Switch™
+https://drive.google.com/file/d/1dkGHItrULer6ZWr7N2jAhcyWmQrL0iat/view?usp=sharing
 
+What is Think2Switch™ and How to Calibrate for Success 
+https://drive.google.com/file/d/1Zdk5CXAqVcQLNshgjR7t6rmwcexX6hok/view?usp=sharing
+
+
+Does Think2Switch™ work with other assistive technologies?
+Think2Switch™ currently supports select integrations, including compatibility with devices such as Tobii Dynavox systems.
+We are actively expanding compatibility with additional assistive technologies, including AAC devices and platforms such as Alexa, Android and Google Home.
+For specific integration inquiries, please contact our team at info@possneuro.com
 
 How long does it take to learn and use Think2Switch™?
 Initial setup and calibration typically take 5–10 minutes.
@@ -54,17 +66,9 @@ Yes. Think2Switch™ is grounded in neuroscience and assistive technology resear
 The system is based on the doctoral research of Dr. Dion Kelly, co-founder and CEO of Possibility Neurotechnologies, which explored how brain-computer interfaces can enable children with severe physical disabilities to participate in meaningful and purposeful activities, determined by the child. 
 
 How much does Think2Switch™ cost?
-Think2Switch™ app:  $35 USD / month or $350 USD / year
+Think2Switch™ app:  approximately $35 USD / month or $350 USD / year
 Muse S Athena headset: One-time purchase of approximately $475 USD
 Get started here: https://www.possneuro.com/start.html
-
-Does Think2Switch™ work with other assistive technologies?
-Think2Switch™ currently supports select integrations, including compatibility with devices such as Tobii Dynavox systems.
-We are actively expanding compatibility with additional assistive technologies, including AAC devices and platforms such as Alexa, Android and Google Home.
-For specific integration inquiries, please contact our team at info@possneuro.com
-Does Think2Switch™ read my thoughts?
-No. Think2Switch™ does not read or interpret your inner thoughts.
-When you think, your brain generates electrical brain signals and this is what Think2Switch™detects and interprets as your active command. It does not recognize specific words or ideas—only the unique brain activity pattern associated with a user’s command.
 
 Does the Muse S Athena headset fit all users?
 The Muse S Athena headset is designed to accommodate a wide range of head shapes and sizes.
