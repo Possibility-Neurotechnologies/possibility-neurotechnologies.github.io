@@ -969,7 +969,8 @@ footer {
     box-sizing: border-box;
 }
 
-footer.scrolled {
+footer.scrolled,
+footer.always-scrolled {
     background-color: #fff;
     box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.06);
     fill: #7f3f98;
