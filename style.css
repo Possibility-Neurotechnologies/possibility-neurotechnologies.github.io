@@ -1028,3 +1028,47 @@ footer span {
         display: none;
     }
 }
+
+.pills-row {
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    height: auto !important;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 24px 0 8px;
+    width: 100%;
+}
+
+.what-you-need-row {
+    flex-direction: row !important;
+    align-items: flex-start !important;
+    justify-content: space-between !important;
+    height: auto !important;
+    width: 100%;
+    padding: 14px 0;
+    box-sizing: border-box;
+}
+
+.what-you-need-left {
+    flex: 1 !important;
+    align-items: flex-start !important;
+    height: auto !important;
+    text-align: left !important;
+    width: 70% !important;
+    max-width: 70% !important;
+}
+
+.what-you-need-right {
+    text-align: right !important;
+    align-items: flex-end !important;
+    height: auto !important;
+    flex-shrink: 0 !important;
+    margin-left: 16px !important;
+    width: 30% !important;
+}
+
+.what-you-need-left p,
+.what-you-need-left a {
+    max-width: 100%;
+}
