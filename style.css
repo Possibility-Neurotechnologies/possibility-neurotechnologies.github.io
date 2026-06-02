@@ -602,6 +602,7 @@ a.team-name:hover {
     min-height: 120%;
     height: auto;
     padding-top: 4rem;
+    padding-bottom: 200px;
 }
 
 #start-content div {
