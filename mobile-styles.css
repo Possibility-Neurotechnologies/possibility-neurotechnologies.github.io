@@ -429,6 +429,10 @@
         width: 85%;
     }
 
+    #events-descrip ul {
+        font-size: 1rem;
+    }
+
     .events-grid {
         grid-template-columns: 1fr;
         gap: 16px;
