@@ -670,6 +670,28 @@ a.team-name:hover {
     color: #7f3f98;
 }
 
+/* ------------------- Resources Section ------------------- */
+#resources-content {
+    min-height: 100%;
+    height: auto;
+}
+
+#resources-content .overlay {
+    width: 100%;
+    min-height: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 0;
+}
+
+#resources-descrip {
+    width: 70%;
+    height: auto;
+}
+
 /* ----------------- Get Started Page ----------------- */
 #start-content {
     min-height: 120%;

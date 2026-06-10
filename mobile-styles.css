@@ -445,6 +445,15 @@
         border: 0.15rem solid #7f3f98;
     }
 
+    /* ------------------- Resources Section ------------------- */
+    #resources-content .overlay {
+        padding: 40px 0;
+    }
+
+    #resources-descrip {
+        width: 85%;
+    }
+
     /* ----------------- Get Started Page ----------------- */
     #start-content {
         display: flex;
