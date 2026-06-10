@@ -501,23 +501,23 @@ a.team-name:hover {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    min-height: 100%;
+    min-height: 30%;
     height: auto;
 }
 
 #contact-content .overlay {
     width: 100%;
-    min-height: 100%;
+    min-height: 30%;
     height: auto;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    padding-bottom: 150px;
 }
 
 #contact-descrip {
     width: 70%;
-    margin-right: 4%;
     height: auto;
 }
 
@@ -593,13 +593,13 @@ a.team-name:hover {
 
 /* ------------------- Events Section ------------------- */
 #events-content {
-    min-height: 100%;
+    min-height: 30%;
     height: auto;
 }
 
 #events-content .overlay {
     width: 100%;
-    min-height: 100%;
+    min-height: 30%;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -623,8 +623,8 @@ a.team-name:hover {
     height: auto;
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
 }
 
 .event-card {
@@ -672,13 +672,13 @@ a.team-name:hover {
 
 /* ------------------- Resources Section ------------------- */
 #resources-content {
-    min-height: 100%;
+    min-height: 30%;
     height: auto;
 }
 
 #resources-content .overlay {
     width: 100%;
-    min-height: 100%;
+    min-height: 30%;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -694,13 +694,13 @@ a.team-name:hover {
 
 /* ------------------- Follow Our Journey Section ------------------- */
 #follow-content {
-    min-height: 100%;
+    min-height: 30%;
     height: auto;
 }
 
 #follow-content .overlay {
     width: 100%;
-    min-height: 100%;
+    min-height: 30%;
     height: auto;
     display: flex;
     flex-direction: column;
