@@ -420,6 +420,27 @@
         margin-right: 10px;
     }
 
+    /* ------------------- Events Section ------------------- */
+    #events-content .overlay {
+        padding: 40px 0;
+    }
+
+    #events-descrip {
+        width: 85%;
+    }
+
+    .events-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .event-register {
+        font-size: 1.1rem;
+        padding: 6px 12px;
+        border-radius: 22px;
+        border: 0.15rem solid #7f3f98;
+    }
+
     /* ----------------- Get Started Page ----------------- */
     #start-content {
         display: flex;
