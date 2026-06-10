@@ -454,6 +454,15 @@
         width: 85%;
     }
 
+    /* ------------------- Follow Our Journey Section ------------------- */
+    #follow-content .overlay {
+        padding: 40px 0;
+    }
+
+    #follow-descrip {
+        width: 85%;
+    }
+
     /* ----------------- Get Started Page ----------------- */
     #start-content {
         display: flex;
